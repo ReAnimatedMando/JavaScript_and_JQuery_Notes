@@ -26,3 +26,9 @@
         *   Information is added to a form
         *   An interval of time has passed
         *   A web page has finished loading
+*   Examples of JavaScript in the Browser
+    -   Being able to change the content of an HTML page while it's loaded in the browser. These rely on the ability to...
+        *   Access - Get each image or slide from a slideshow page, get values from a field on the page, access links users click on, access pages to be replaced when reloading specific areas of the page.
+        *   Modify - Only show first slide and hide others, change slide or img shown, show requested slide, showing warnings is field isn't filled out correctly, replace old content with new content, show subset of imgs that use certain tags.
+        *   Program - Set timers for when to show slides, determine which slides to show, chech that information in fields are long enough, load new content that is required from a link, collect keywords from imgs, find the relevant subset of imgs that should be shown.
+        *   React - Script triggered when the page loads, when user clicks button for different slide, user presses the submit button when they have entered their name, script triggers when user clicks on link.
