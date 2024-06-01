@@ -43,3 +43,13 @@
 *   Writing a script - to write a script, you need to first state your goal and then list the tasks that need to be completed in order to achieve it.
     -   Scripts may seem complicated at first but are really just a series of short instructions, each of which is performed in order to solve the problem at hand. This is how a script is like a recipe or manual, it allows a computer to solve a puzzle one step at a time.
         *   A computer doesn't learn how to perform tasks permanently and needs to follow instructions every time it performs the task so a program must give it enough detail to perform the task everytime as if it were its first time.
+    -   Always start with the big picture of what you want to achieve, and break that down into smaller steps.
+        *   1. Define the goal - First, define the task you want to achieve like a puzzle you want the computer to solve.
+        *   2. Design the script - Split the goal out into a series of tasks that are going to be involved in solving this puzzle. Can be represented using a flow chart. You can write down individual steps the computer needs to perform in order to complete each task as well as any information it needs to perform the task, again like a recipe it needs to follow.
+        *   3. Code each step - Each of the steps needs to be written in a programming language that the computer understands, in our case JavaScript. 
+            - It pays to spend time designing your script before you start writing it.
+*   Designing a script: Tasks
+    -   Once you know the goal of your script, you can work out the individual tasks needed to achive it. This high-level view of the tasks can be represented using a flowchart.
+*   Designing a script: Steps
+    -   Each individual task may be broken down into a sequence of steps. When you are ready to code the script, these steps can then be translated into individual lines of code.
+        *   The steps that a computer needs to follow in order to perform a task are often very different from those that you or I might take.
