@@ -53,3 +53,20 @@
 *   Designing a script: Steps
     -   Each individual task may be broken down into a sequence of steps. When you are ready to code the script, these steps can then be translated into individual lines of code.
         *   The steps that a computer needs to follow in order to perform a task are often very different from those that you or I might take.
+*   From steps to Code - Every step for every task shown in a flowchart needs to be written in a language the computer can understand and follow.
+    -   We will be learning JavaScript and in doing so we will learn the VOCABULARY & SYNTAX. We will also learn how a computer  uses a programmatic approach to problem-solving.
+    -   Computers are very logical and obedient so they need to be told every detail of what they are expected to do, and they will do it without question.
+    -   We will need to learn to think like a computer because they solve tasks different than we would. i.e.
+        *   If a computer wanted to determine who the tallest person of a group was it would have to look at each person in turn, one by one. It would also have to designate the first person looked at as the tallest. then, when going through each person it would compare them to the designated tallest person and determine if the new/current person it was looking at was now the tallest and then designate it as so, moving on to the next person and repeating the process until it has gone through everyone in the room and can deliver a definitive answer.
+*   Defining a goal & designing the script - Consider how you might approach a different type of script.
+    -   Detail your goals for the script, what you want it to achieve.
+    -   Break it into a series of tasks that have to be performed in order to achieve the goals:
+        *   1. Script is triggered when the button is clicked
+        *   2. It collects the name entered into the form field
+        *   3. It checks that the user has entered a value
+        *   4. If the user has not entered anything, a message will appear telling them to enter a name
+        *   5. If a name has been entered, calculate the cost of the sign by multiplying the number of letters by the cost per letter
+        *   6. Show how much the plaque costs
+    -   Flowcharts are used to work out how the tasks fit together
+        *   Arrows show how the script moves from one task to the next and some different decisions/interactions can cause the code to follow different paths.
+##
