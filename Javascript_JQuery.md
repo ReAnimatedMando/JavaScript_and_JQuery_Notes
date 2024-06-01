@@ -40,3 +40,6 @@
 *   Scripts are made up of instructions a computer can follow step by step.
 *   A browser may use different parts of the script depending on how the user interacts with the web page.
 *   Scripts can run different sections of the code in response to the situation around them.
+*   Writing a script - to write a script, you need to first state your goal and then list the tasks that need to be completed in order to achieve it.
+    -   Scripts may seem complicated at first but are really just a series of short instructions, each of which is performed in order to solve the problem at hand. This is how a script is like a recipe or manual, it allows a computer to solve a puzzle one step at a time.
+        *   A computer doesn't learn how to perform tasks permanently and needs to follow instructions every time it performs the task so a program must give it enough detail to perform the task everytime as if it were its first time.
