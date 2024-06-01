@@ -32,3 +32,11 @@
         *   Modify - Only show first slide and hide others, change slide or img shown, show requested slide, showing warnings is field isn't filled out correctly, replace old content with new content, show subset of imgs that use certain tags.
         *   Program - Set timers for when to show slides, determine which slides to show, chech that information in fields are long enough, load new content that is required from a link, collect keywords from imgs, find the relevant subset of imgs that should be shown.
         *   React - Script triggered when the page loads, when user clicks button for different slide, user presses the submit button when they have entered their name, script triggers when user clicks on link.
+##  What Is A Script & How Do I Create One?
+*   A script is a series of instructions that a computer can follow to achieve a goal. You could compare scripts to any of the following.
+    -   Recipes - By following the istructions in a recipe, one-by-one in the order set out, cooks can create a dish they have never made before.
+    -   Handbooks - Handbooks contain procedures to follow in certain situations.
+    -   Manuals - Contain series of tests to check the key functions along with details of how to fix. 
+*   Scripts are made up of instructions a computer can follow step by step.
+*   A browser may use different parts of the script depending on how the user interacts with the web page.
+*   Scripts can run different sections of the code in response to the situation around them.
