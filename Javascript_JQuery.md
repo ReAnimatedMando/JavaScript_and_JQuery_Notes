@@ -69,4 +69,7 @@
         *   6. Show how much the plaque costs
     -   Flowcharts are used to work out how the tasks fit together
         *   Arrows show how the script moves from one task to the next and some different decisions/interactions can cause the code to follow different paths.
-##
+##  Computers & The World Around Them
+*   Computers create models of the world using data
+    -   A computer has no predefined concept of what things in the world are and doesn't know what they are used for.
+    -   Programmers make models using data as instructions for computers to follow and this is all that the computer needs to carry out its' tasks.
