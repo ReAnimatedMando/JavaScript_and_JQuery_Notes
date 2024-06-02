@@ -73,3 +73,13 @@
 *   Computers create models of the world using data
     -   A computer has no predefined concept of what things in the world are and doesn't know what they are used for.
     -   Programmers make models using data as instructions for computers to follow and this is all that the computer needs to carry out its' tasks.
+*   Objects - Are things, in computer programming, each physical thing in the world can be represented as an object.
+    -   If your objects are a hotel and two cars, programmers would say that there are one instance of a hotel and two of a car.
+        *   Each object has its own...
+            -   Properties
+            -   Events
+            -   Methods
+        *   Together these make up the working model of that object. 
+            -   Name/Value pairs are used alot in programming. Same for JS as in HTML & CSS
+*   Properties - Are characteristics, such as color, model, speed, size. The characteristics work in name/value pairs.
+*   Events - 
