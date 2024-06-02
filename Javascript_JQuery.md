@@ -82,4 +82,7 @@
         *   Together these make up the working model of that object. 
             -   Name/Value pairs are used alot in programming. Same for JS as in HTML & CSS
 *   Properties - Are characteristics, such as color, model, speed, size. The characteristics work in name/value pairs.
-*   Events - 
+*   Events - Simply put an event is the users interaction with an object that triggers a functionality. It's a computers way of raising its hand and saying, "Hey, this just happened".
+    -   Programmers choose which events they respond to. When a specific event happens, that event can be used to trigger a specific section of the code.
+    -   Scripts often use different events to trigger different types of functionality.
+    -   So, a script will state which events the programmer wants to respond to, and what part of the script should be run when each of those events occur.
