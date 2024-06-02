@@ -92,3 +92,14 @@
         *   Change the value of one or more of that object's properties
     -   The code for a method can contain lots of instructions that together represent one task.
         *   When you use a method, you do not always need to know how it achieves its task; you just need to know how to ask the question and how to interpret any answers it gives you.
+*   Putting it all together
+    -   Computers use data to create models of things in the real world. The events, methods, and properties of an object all relate to each other: Events can trigger methods, and methods can retrieve or update an objects properties.
+    -   Hotel Object;
+        *   1. When a reservation is made, the book event fires.
+            2. The book event triggers the makeBooking() method, which increases the value of the bookings property.
+            3. The value of the bookings property is changed to reflect how many rooms the hotel has available.
+    -   Car Objects;
+        *   1. As a driver speeds up, the accelerate event fires.
+            2. The accelerate event calls the changeSpeed() method, which in turn increases the value of the currentSpeed property.
+            3. The value of the currentSpeed property reflects how fast the car is traveling.
+            
