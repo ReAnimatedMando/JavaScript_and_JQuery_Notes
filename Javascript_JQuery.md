@@ -102,4 +102,22 @@
         *   1. As a driver speeds up, the accelerate event fires.
             2. The accelerate event calls the changeSpeed() method, which in turn increases the value of the currentSpeed property.
             3. The value of the currentSpeed property reflects how fast the car is traveling.
-            
+    -   Web browsers are programs built using objects
+        *   Window object - A browser represents each window or tab using a window object.
+        *   Document object - The current web page loaded into each window is a document object.
+            -   Just like the hotel, the document object has properties, methods, and events.
+                *   Properties;
+                    -   URL
+                    -   lastModified
+                    -   title
+                *   Event;
+                    -   load
+                    -   click
+                    -   keypress
+                *   Method;
+                    -   write()
+                    -   getElementByld()
+*   How a Browser sees a Web Page
+    -   1. Recieve a page as HTML - each page seen as a separate document
+    -   2. Create a model (like a family tree) and store it in memory - The HTML is the document object and beneath it each other box/element is called a node and each is another document object.
+    -   3. Use a rendering engine to show the page on the screen - With or without CSS, the rendering engine processes all folders associate with the HTML document object and displays it on the page using an interpreter. A JS one to be exact.
