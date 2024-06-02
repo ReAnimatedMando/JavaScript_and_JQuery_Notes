@@ -86,3 +86,9 @@
     -   Programmers choose which events they respond to. When a specific event happens, that event can be used to trigger a specific section of the code.
     -   Scripts often use different events to trigger different types of functionality.
     -   So, a script will state which events the programmer wants to respond to, and what part of the script should be run when each of those events occur.
+*   Methods - Methods represent things people need to do with objects. They can retrieve or update the values of an object's properties.
+    -   Methods represent how people interact with an object in the real world. They are like questions and instructions that:
+        *   Tell you something about that object (using information stored in its properties)
+        *   Change the value of one or more of that object's properties
+    -   The code for a method can contain lots of instructions that together represent one task.
+        *   When you use a method, you do not always need to know how it achieves its task; you just need to know how to ask the question and how to interpret any answers it gives you.
