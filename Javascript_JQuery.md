@@ -149,3 +149,11 @@
     -   4.Test in browser
     -    The source code is not amended in this example and the HTML for your page remains the same.
     -   Placing the script in the page. You may see JS in the HTML between opening script> and closing /script> but it's better to put scripts in their own files.
+*   How to use Objects & Methods
+    -   document.write('Good afternoon!');
+        *   document object represents the entire page. Use by giving its name.
+        *   member operator is a dot between the object name and object member you want to access.
+        *   write method of the document allows new content to be written into the page wherever the script> element sits.
+        *   parameters are pieces of information inside parentheses. In the above example the parameter is what needs to be written into the page.
+            -    So you know your object and method and how to tell it what information it needs to do the job you want.
+            -   Also, JS runs where it is found in the HTML (the script> element)
