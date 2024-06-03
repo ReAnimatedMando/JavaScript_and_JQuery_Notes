@@ -147,3 +147,5 @@
     -   2.Get CSS images from www.javascriptbook.com
     -   3.Enter HTML from book example pg. 47. Link JS with a script> src="">/script>
     -   4.Test in browser
+    -    The source code is not amended in this example and the HTML for your page remains the same.
+    -   Placing the script in the page. You may see JS in the HTML between opening script> and closing /script> but it's better to put scripts in their own files.
