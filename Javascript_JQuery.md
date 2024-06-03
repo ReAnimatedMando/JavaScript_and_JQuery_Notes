@@ -127,3 +127,23 @@
     -   CSS - The presentation layer. This is the styling of the page.
     -   JS - Behavior layer. Adds interactivity. Each language forms a separate layer with a different purpose.
 *   Progressive Enhancement - the 3 layers form the basis of progressive enhancement. Progressive meaning that starting with HTML, then moving to CSS, and lastly JS, a programmer can enhance there page without losing the usability of its lowest functions. HTML is the content and most important part, without the others it still gets a point across albeit in a boring way. Building from there a programmer just makes there page more appealing with CSS and JS. 
+*   Creating a Basic JavaScript - JS, like HTML & CSS, is written in plain text.
+    -   1.A JavaScript file is just a text file with an extension of .js. Create a folder to put the example in called c01, then start up your favorite code editor, and enter the text as follows;
+        *   var today = new Date();
+            var hourNow = today.getHours();
+            var greeting;
+
+            if (hourNow > 18) {
+                greeting = 'Good evening!';
+            } else if (hourNow > 12) {
+                greeting = 'Good afternoon!';
+            } else if (hourNow > 0) {
+                greeting = 'Good morning!';
+            } else {
+                greeting = 'Welcome!';
+            }
+
+            document.write('h3>' + greeting + '/h3>');
+    -   2.Get CSS images from www.javascriptbook.com
+    -   3.Enter HTML from book example pg. 47. Link JS with a script> src="">/script>
+    -   4.Test in browser
