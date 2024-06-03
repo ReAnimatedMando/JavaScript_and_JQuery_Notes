@@ -121,3 +121,9 @@
     -   1. Recieve a page as HTML - each page seen as a separate document
     -   2. Create a model (like a family tree) and store it in memory - The HTML is the document object and beneath it each other box/element is called a node and each is another document object.
     -   3. Use a rendering engine to show the page on the screen - With or without CSS, the rendering engine processes all folders associate with the HTML document object and displays it on the page using an interpreter. A JS one to be exact.
+##  How to Write a Script for a Web Page
+*   How HTML, CSS, & JAVASCRIPT Fit Together
+    -   HTML - Is the content layer. This is where the content of the page lives. It adds structure and semantics. HTML will contain links to the folders for the CSS and JS.
+    -   CSS - The presentation layer. This is the styling of the page.
+    -   JS - Behavior layer. Adds interactivity. Each language forms a separate layer with a different purpose.
+*   Progressive Enhancement - the 3 layers form the basis of progressive enhancement. Progressive meaning that starting with HTML, then moving to CSS, and lastly JS, a programmer can enhance there page without losing the usability of its lowest functions. HTML is the content and most important part, without the others it still gets a point across albeit in a boring way. Building from there a programmer just makes there page more appealing with CSS and JS. 
