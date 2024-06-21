@@ -157,3 +157,7 @@
         *   parameters are pieces of information inside parentheses. In the above example the parameter is what needs to be written into the page.
             -    So you know your object and method and how to tell it what information it needs to do the job you want.
             -   Also, JS runs where it is found in the HTML (the script> element)
+##  Basic JavaScript Instructions
+*   Statements - A script is a series of instructions that a computer can follow one-by-one. Each individual instruction or step is known as a statement. Statements should end with a semicolon.
+    -   Statements are instructions and each one starts on a new line and ends with a semicolon. The semicolon tells that JS interpreter when a step is over, indicating it should move on to the next step.
+    -   Some statements are surrounded by curly braces and are known as code blocks, the curly brace does not end with a semicolon. 
