@@ -166,3 +166,6 @@
         *   To write a comment that stretches over more than one line, you use a multi-line comment starting with /* and ending with */. Anything between these characters is not processed by the JS interpreter. They are used by the author as descriptions of how the script works or to prevent section of the script from running during testing.
     -   Single-line comments
         *   In a single-line comment, anything that follows // on that line will not be processed by the JS interpreter. These should be short descriptions of what the code is doing. 
+*   What Is A Variable? - A script will have to temporarily store the bits of information it needs to do its job. It can store this data into variables.
+    -   When writing JS you must tell the interpreter every individual step that you want it to perform. This involves alot of data.
+    -   Variable is a good name for this concept because the data stored can change/vary each time the script runs.
