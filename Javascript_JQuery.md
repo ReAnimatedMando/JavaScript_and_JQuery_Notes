@@ -169,3 +169,5 @@
 *   What Is A Variable? - A script will have to temporarily store the bits of information it needs to do its job. It can store this data into variables.
     -   When writing JS you must tell the interpreter every individual step that you want it to perform. This involves alot of data.
     -   Variable is a good name for this concept because the data stored can change/vary each time the script runs.
+*   Variables - How to declare them
+    -   Before you can use a variable, you need to announce that you want to use it. This involves creating the variable and giving it a name. Programmers say that you declare the variable. i.e... var is the variable keyword, quantity is the variable name. JS knows that var is used to declare/create a variable. The second name, quantity, is the identifier. If a variable name is more than one word, it is usually written in camelCase. Meaning the first letter of the first word is lower case and the first letter of the second word is uppercase. 
