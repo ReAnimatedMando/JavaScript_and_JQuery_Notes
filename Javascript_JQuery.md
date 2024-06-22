@@ -243,3 +243,21 @@
             elShip.className = shipping;
             -   Booleans are only used when the value can be true or false, or 0/1. 0 being false and 1 being true.
             -   Booleans are used when your code can take more than one path. Remember, different code may run in different circumstances. The path the code takes depends on a test or a condition.
+*   Shorthand for Creating Variables
+    -   Variables are declared and values assigned in the same statement.
+        *   var price = 5;
+            var quantity = 14;
+            var total = price * quantity;
+    -   Three variables are declared on the same line, then values assigned to each.
+        *   var price, quantity, total;
+            price = 5;
+            quantity = 14;
+            total = price * quantity;
+    -   Two variables are declared and assigned values on the same line. Then one is declared and assigned a value on the next line.
+        *   var price = 5, quantity = 14;
+            var total = price * quantity;
+    -   Here, a variable is used to hold a reference to an element in the HTML page. This allows you to work directly with the element stored in that variable.
+        *   // Write total into the element with id of cost
+            var el = document.getElementById('cost');
+            el.textContent = '$' + total;
+            -   Note that shorthand, while convenient to write can make your code harder to follow.
