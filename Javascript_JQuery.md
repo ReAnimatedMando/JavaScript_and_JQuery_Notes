@@ -206,3 +206,20 @@
         *   Note that the numbers are not written inside quotation marks. Once a value has been assigned to a variable, you can use the variable name to represent that value(like in algebra). Here, the total cost is calculated by multiplying the price of a single tile by the number of tiles the user wants.
             -   The result is then written into the page on the final two lines. The first two lines finds the element whose id attribute has a value of cost, and the final line replaces the content of that element with the new cost.
                 *   Note there are many ways to write content into a page, and several places you can place your script.
+*   Using a Variable to Store a String
+    -   i.e.
+        *   var username;
+            var message;
+            username = 'Molly';
+            message = 'See our upcoming range';
+
+            var elName = document.getElementById('name');
+            elName.textContent = username;
+            var elNote = document.getElementById('note');
+            elNote.textContent = message;
+        *   Note in the first four lines, the two variables are declared, username and message, and they are used to hold strings the users' name and a message for that user. The last four lines is the code to update the page. This code selects two elements using the values of their id attributes. The text in those elements is updated using the values stored in these variables.
+            -   Remember that...
+                *   text needs quotes, single or double, "" ''
+                *   quotes should be straight
+                *   quotes must match "" '' not '" "'
+                *   strings must always be written on one line
