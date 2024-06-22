@@ -224,9 +224,22 @@
                 *   quotes must match "" '' not '" "'
                 *   strings must always be written on one line
 *   Using Quotes Inside a String
-    -   Sometimes you will want to use a double or single quote mark within a string. "asldkfj'lasdjf'laskdjf"
+    -   Sometimes you will want to use a double or single quote mark within a string.
         *   Because strings can live in single or double quotes, if you just want to use double quotes in the string, you could surround the entire string in single quotes.
         *   If you just want to use single quotes in the string, you could surround the string in double quotes... title = "Molly's Special Offers";
         *   You can also use a technique called escaping the quotation characters. This is done by using a backwards slash before any type of quote mark that appears within a string... message = '<a href=\"sale.html\">25% off!<a/>';
         The backslash tells the interpreter that the following character is part of the string, rather than the end of it. 
-        
+*   Using a Variable to Store a Boolean
+    -   i.e.
+        *   var inStock;
+            var shipping;
+            inStock = true;
+            shipping = false;
+
+            var elStock = document.getElementById('stock');
+            elStock.className = inStock;
+
+            var elShip = document.getElementById('shipping');
+            elShip.className = shipping;
+            -   Booleans are only used when the value can be true or false, or 0/1. 0 being false and 1 being true.
+            -   Booleans are used when your code can take more than one path. Remember, different code may run in different circumstances. The path the code takes depends on a test or a condition.
