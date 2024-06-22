@@ -191,3 +191,18 @@
             -   boolean may seem abstract but is actually very helpful
             -   think of boolean as a light switch, it is either on or off
             -   helpful when determining which part of a script should run
+*   Using a Variable to Store a Number
+    -   i.e.
+        *   var price;
+            var quantity;
+            var total;
+
+            price = 5;
+            quantity = 14;
+            total = price * quantity;
+
+            var el = document.getElementById('cost');
+            el.textContent = '$' + total;
+        *   Note that the numbers are not written inside quotation marks. Once a value has been assigned to a variable, you can use the variable name to represent that value(like in algebra). Here, the total cost is calculated by multiplying the price of a single tile by the number of tiles the user wants.
+            -   The result is then written into the page on the final two lines. The first two lines finds the element whose id attribute has a value of cost, and the final line replaces the content of that element with the new cost.
+                *   Note there are many ways to write content into a page, and several places you can place your script.
