@@ -223,3 +223,10 @@
                 *   quotes should be straight
                 *   quotes must match "" '' not '" "'
                 *   strings must always be written on one line
+*   Using Quotes Inside a String
+    -   Sometimes you will want to use a double or single quote mark within a string. "asldkfj'lasdjf'laskdjf"
+        *   Because strings can live in single or double quotes, if you just want to use double quotes in the string, you could surround the entire string in single quotes.
+        *   If you just want to use single quotes in the string, you could surround the string in double quotes... title = "Molly's Special Offers";
+        *   You can also use a technique called escaping the quotation characters. This is done by using a backwards slash before any type of quote mark that appears within a string... message = '<a href=\"sale.html\">25% off!<a/>';
+        The backslash tells the interpreter that the following character is part of the string, rather than the end of it. 
+        
