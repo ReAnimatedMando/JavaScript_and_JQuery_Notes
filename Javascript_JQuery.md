@@ -174,3 +174,20 @@
 *   Variables - How to assign them value
     -   Once you have created a variable, you can tell it what information you would like it to store for you. Programmers say that you assign a value to the variable. 
     -    Here you can use the variable name, quantity, as it should represent the kind of data that the variable holds. Here the = sign is the assignment operator. This assigns a value to the variable, until you assign a value to the quantity variable it will be said to be undefined.
+*   Data Types - JS distinguishes between numbers, strings, and true or false values known as Booleans
+    -   Numeric Data Type
+        *   The numeric data type handles numbers. Numbers are used for calculators, determining sizes, moving position of elements, or setting an amount of time for a command. 
+            -   uses numbers 0-9
+            -   there are no commas in between hundreds and thousandths
+            -   numbers can be negative
+            -   numbers can be decimals
+    -   String Data Type
+        *   The string data type consists of letters and other characters.
+            -   string data is enclosed in '' or "" but must match
+            -   can be used with any kind of text
+            -   used to add new content and can contain HTML
+    -   Boolean Data Type
+        *   Boolean data types can have one of two values: true or false.
+            -   boolean may seem abstract but is actually very helpful
+            -   think of boolean as a light switch, it is either on or off
+            -   helpful when determining which part of a script should run
