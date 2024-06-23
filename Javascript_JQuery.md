@@ -285,3 +285,14 @@
         *   Using an array is better than creating enough variables for a long list. 
         *   A good example of an array is storing individual items for a shopping list because all of the items are related, and each time you write a new list, the number of items may differ.
         *   Values in an array are separated by a comma.
+*   Creating an Array
+    -   You create an array and give it a name just like you would any other variable. The values are assigned to the array inside a pair of square brackets, and each value is separated by a comma. You can store a string, a number, and a boolean all in the same array.
+        *   Example;
+            -   var colors;
+                colors = ['white', 'black', 'custom'];
+                -   Here the variable is colors and the colors = an array in square brackets
+        *   Example 2; an array constructor
+            -   var colors = new Array('white',
+                                        'black',
+                                        'custom');
+                -   Here the var = is followed by the var name, then =, then the words new Array, and are listed inside of a parenthesis and separated by a comma.
