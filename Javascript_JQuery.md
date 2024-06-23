@@ -272,3 +272,10 @@
 
             inStock = false;
             shipping = true;
+*   Rules for Naming Variables - Here are 6 rules you must always follow when giving a variable a name:
+    -   1 - The name must begin with a letter, dollar sign, or an underscore. It must NOT start with a number
+    -   2 - The name can contain letters, numbers, $, _. Note that must not use a dash or a period in a variable name
+    -   3 - You cannot use keywords or reserved words. Keywords are special words that tell the interpreter to do something. For example, var is a keyword used to declare a variable. Reserved words are ones that may be used in a future version of JS
+    -   4 - All variables are case sensitive, so score and Score would be different variable names, but it is bad practice to create two variables that have the same name using different cases
+    -   5 - Use a name that describes the kind of information that the variable stores. For example, firstName might be used to store a person's first name, lastName for their last name, and age for their age.
+    -   6 - If your variable name is made up of more than one word, use a capital letter for the first letter of every word AFTER the first word. For example, firstName rather than firstname, this is referred to as camel case. You can also use an underscore between each word(you cannot use a dash)
