@@ -279,3 +279,9 @@
     -   4 - All variables are case sensitive, so score and Score would be different variable names, but it is bad practice to create two variables that have the same name using different cases
     -   5 - Use a name that describes the kind of information that the variable stores. For example, firstName might be used to store a person's first name, lastName for their last name, and age for their age.
     -   6 - If your variable name is made up of more than one word, use a capital letter for the first letter of every word AFTER the first word. For example, firstName rather than firstname, this is referred to as camel case. You can also use an underscore between each word(you cannot use a dash)
+*   Arrays - An array is a special type of variable. It doesn't just store one value; it stores a list of values. 
+    -   You should use an array whenever you are working with a LIST or a set of values that are RELATED to each other. 
+        *   You do not need to specify how many values it will hold
+        *   Using an array is better than creating enough variables for a long list. 
+        *   A good example of an array is storing individual items for a shopping list because all of the items are related, and each time you write a new list, the number of items may differ.
+        *   Values in an array are separated by a comma.
