@@ -261,3 +261,14 @@
             var el = document.getElementById('cost');
             el.textContent = '$' + total;
             -   Note that shorthand, while convenient to write can make your code harder to follow.
+*   Changing the Value of a Variable
+    -   Once you have assigned a value to a variable, you can then change what is stored in the variable later in the same script. Once the variable has been created, you do not need to use the var keyword to assign it a new value. You just use the variable name, the equals sign also known as the assignment operator, and the new value for that attribute. 
+        *   i.e.
+            var inStock;
+            var shipping;
+
+            inStock = true;
+            shipping = false;
+
+            inStock = false;
+            shipping = true;
