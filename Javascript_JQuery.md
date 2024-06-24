@@ -296,3 +296,24 @@
                                         'black',
                                         'custom');
                 -   Here the var = is followed by the var name, then =, then the words new Array, and are listed inside of a parenthesis and separated by a comma.
+*   Values in Arrays
+    -   Values in an array are accessed as if they are in a numbered list. It is important to know that the numbering of this list starts at zero(not one).
+        *   Each item in an array is given a number called an index. This is used to access items in the array.
+            -   i.e.
+                var colors;
+                colors = ['white',
+                            'black',
+                            'custom'];
+                *   The index for these would be assigned as follows...
+                    INDEX   VALUE
+                    0       'white'
+                    1       'black'
+                    2       'custom'
+        *   You access items in the array as follows
+            var itemThree;
+            itemThree = colors[2];
+            -   Here you have declared a new var of itemThree, and then identified itemThree using brackets to pick the color with the index of [2]
+        *   Each array has a property called length, which holds the number of items in the array. Next we can declare a var of numColors and retrieve the length of our array.
+            var numColors;
+            numColors = colors.length;
+
