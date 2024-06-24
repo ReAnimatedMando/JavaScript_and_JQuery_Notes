@@ -337,4 +337,10 @@
             *   You can change the value of an item in an array by selecting it and assigning it a new value just as you would any other variable. Using the = sign and the new value for that item
             *   In the last two statements, the newly updated third item in the array is added to the page
             *   If you wanted to write out all of the items in an array, you would use a loop
+*   Expressions
+    -   An EXPRESSION evaluates into (results in) a single value. Broadly speaking there are two types of expressions.
+        *   Expressions that just assign a value to a variable
+            -   In order for a variable to be useful, it needs to be given a value. As you have seen, this is done using the assignment operator = (var color = 'beige';)
+        *   Expressions that use two or more values to return a single value
+            -   You can perform operations on any number of individual values to determine a single value (var area = 3 * 2;) < the value area of this var is 6
 
