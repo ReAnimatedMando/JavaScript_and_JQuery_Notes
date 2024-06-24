@@ -316,4 +316,25 @@
         *   Each array has a property called length, which holds the number of items in the array. Next we can declare a var of numColors and retrieve the length of our array.
             var numColors;
             numColors = colors.length;
+*   Accessing & Changing Values in an Array
+    -   Example
+        //Create the array
+        var colors = ['white',
+                       'black',
+                       'custom'];
+
+        //Update the third item in the array
+        colors[2] = 'beige';
+
+        //Get the element with an id of colors
+        var el = document.getElementById('colors');
+
+        //Replace with third item from array
+        el.textContent = colors[2];
+            *   The first lines of code create an array of colors
+            *   The 3rd item on the list is changed from 'custom' to 'beige'
+            *   To access a value from an array, after the array name you specify the index number for that value inside square brackets
+            *   You can change the value of an item in an array by selecting it and assigning it a new value just as you would any other variable. Using the = sign and the new value for that item
+            *   In the last two statements, the newly updated third item in the array is added to the page
+            *   If you wanted to write out all of the items in an array, you would use a loop
 
