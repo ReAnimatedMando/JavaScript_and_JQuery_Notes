@@ -343,4 +343,22 @@
             -   In order for a variable to be useful, it needs to be given a value. As you have seen, this is done using the assignment operator = (var color = 'beige';)
         *   Expressions that use two or more values to return a single value
             -   You can perform operations on any number of individual values to determine a single value (var area = 3 * 2;) < the value area of this var is 6
+*   Operators
+    -   Expressions rely on things called operators; they allow programmers to create a single value from one or more values.
+        *   Assignment operators - assign a value to a variable
+            -   color = 'beige';
+            -   the value of color is now beige
+        *   Arithmetic operators - Perform basic math
+            -   area = 3 * 2;
+            -   the value of the area is now 6
+        *   String operators - Combine two strings
+            -   greeting = 'HI' + 'Molly';
+            -   The value of greeting is now Hi Molly
+        *   Comparison operators - Compare two values and return true or false
+            -   buy = 3 > 5;
+            -   The value of buy is false
+        *   Logical operators - Combine expressions and return true or false
+            -   buy = (5 > 3) && (2 < 4>);
+            -   The value of buy is now true
+
 
