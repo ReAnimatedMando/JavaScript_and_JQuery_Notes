@@ -391,5 +391,27 @@
         elTotal.textContent = total;
         -   The remaining six lines of code write the results to the screen.
             *   Notice how the variables represent the numbers so that the numbers did not need to be written into the code.
-
+*   String Operators
+    -   There is only one string operator: the + symbol and it is used to join the strings on either side of it.
+        *   There are many occasions when you may need to join two or more strings to create a single value. Programmers call the process of joining together two or more strings to create one new string CONCATENATION.
+            -   Example;
+                var firstName = 'Ivy';
+                var lastName = 'Stone';
+                var fullName = firstName + lastName; Result is Ivy Stone!
+        *   Mixing Numbers and strings together
+            -   When you place quotes around a number, it is a string(not a numeric data type), and you cannot perform addition operations on strings.
+                -   var cost1 = '7';
+                    var cost2 = '9';
+                    var total = cost1 + cost2;
+                    *   The result is a string saying '79'
+            -   If you try to add a numeric data type to a string, then the number becomes part of the string, e.g., adding a house number to a street name.
+                -   var number = 12;
+                    var street = 'Ivy Road';
+                    var add = number + street;
+                    *   The resulting string is '12Ivy Road'
+            -   If you try to use any of the other arithmetic operators on  a string, then the value that results is usually a value called NaN. This means not a number.
+                -   var score = 'seven';
+                    var score2 = 'nine';
+                    var total = score * score2;
+                    *   You would end up with the value NaN.
 
