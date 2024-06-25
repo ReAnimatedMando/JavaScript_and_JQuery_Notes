@@ -378,9 +378,9 @@
     -   Example;
         var subtotal = (13 + 1) * 5;    //Subtotal is 70
         var shipping = 0.5 * (13 + 1);  //Shipping is 7
-        -   The first couple of lines create two variables: one to store the subtotal of the order, the other to hold the cost of shipping the order; so the variables are named accordingly: subtotal and shipping.
+        *   The first couple of lines create two variables: one to store the subtotal of the order, the other to hold the cost of shipping the order; so the variables are named accordingly: subtotal and shipping.
         var total = subtotal + shipping; //Total is 77
-        -   On the third line, the total is calculated by adding together these two values.
+        *   On the third line, the total is calculated by adding together these two values.
         var elSub = document.getElementById('subtotal');
         elSub.textContent = subtotal;
 
@@ -389,8 +389,8 @@
 
         var elTotal = document.getElementById('total');
         elTotal.textContent = total;
-        -   The remaining six lines of code write the results to the screen.
-            *   Notice how the variables represent the numbers so that the numbers did not need to be written into the code.
+        *   The remaining six lines of code write the results to the screen.
+            -   Notice how the variables represent the numbers so that the numbers did not need to be written into the code.
 *   String Operators
     -   There is only one string operator: the + symbol and it is used to join the strings on either side of it.
         *   There are many occasions when you may need to join two or more strings to create a single value. Programmers call the process of joining together two or more strings to create one new string CONCATENATION.
@@ -414,4 +414,8 @@
                     var score2 = 'nine';
                     var total = score * score2;
                     *   You would end up with the value NaN.
-
+*   Using String Operators
+    -   Example;
+        var greeting = 'Howdy';
+        var name = 'Molly';
+        *   
