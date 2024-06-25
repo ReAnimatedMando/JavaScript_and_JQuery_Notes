@@ -360,5 +360,19 @@
         *   Logical operators - Combine expressions and return true or false
             -   buy = (5 > 3) && (2 < 4>);
             -   The value of buy is now true
-
+*   Arithmetic Operators
+    -   JS contains the following mathematical operators, which you can use with numbers. You may remember some from math class.
+        *   Addition + adds one value to another
+        *   Subtraction - Subtracts one value from another
+        *   Division / Divides two values
+        *   Multiplication * Multiplies two values using an asterisk(not the letter x)
+        *   Increment ++ Adds one to the current number
+        *   Decrement -- Subracts one from the current number
+        *   Modulus % Divides two values and returns the remainder
+    -   Order of Execution - Several arithmetic operations can be performed in one expression, but it is important to understand how the result will be calculated. Multiplication and division are performed before addition or subtraction. This can affect the number that you expect to see.
+        *   i.e
+            total = 2 + 4 + 10; the result is left to right... 16!
+            total = 2 + 4 * 10; the result is * and / before + and - so.... 42!
+        *   To change the order of which the operation occurs, place the operation you want to happen first inside of (). total = (2 + 4) * 10; Now the answer is 60!
+ 
 
