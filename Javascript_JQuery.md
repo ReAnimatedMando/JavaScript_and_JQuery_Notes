@@ -440,5 +440,16 @@
         *   A RETURN VALUE is the response you get when a function is meant to provide an answer to a question.
         *   Remember that programming languages rely on name/value pairs. The function will have a name followed by a code block containing statements.
         *   You can also have anonumous functions. They do not have a name, so they cannot by called. Instead, they are executed as soon as the interpreter comes across them.
+*   Declaring a Function
+    -   To create a function, you give it a name and then write the statements nedded to achieve its task inside the curly braces. This is known as a FUNCTION DECLARATION.
+        *   Declare a function using the function keyword
+        *   Give the function a name(identifier), followed by ()
+        *   The statements that perform the task sit in a code block. Inside curly braces.
+        *   Example;
+            -   function sayHello() {
+            -    document.write('Hello');
+            -   }
+        *   Remember that functions store the code required to perform a specific task, and that the script can ask the function to perform that task whenever needed.
+        *   If different parts of a script need to perform the same task, you don't need to repeat the same statements multiple times - you use a function to do it(and reuse the same code).
 
 
