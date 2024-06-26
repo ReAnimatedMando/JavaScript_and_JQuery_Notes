@@ -430,5 +430,15 @@
     -   Functions & Methods - Functions consist of a series of statements that have been grouped together because they perform a specific task. A method is the same as a function, except methods are created inside(and are part of) an object.
     -   Objects - Programmers use objects to create models of the world using data, and that objects are made up of properties and methods. You will learn how to create your own objects using JS.
     -   Built-in Objects - The browser comes with a set of objects that act like a toolkit for creating interactive web pages. You will be introduced to a number of built-in objects, which you will then see used throughout.
+*   What is a Function?
+    -   Functions let you group a series of statements together to perform a specific task. If different parts of a script repeat the same task, you can reuse the function(rather than repeating the same set of statements).
+        *   Grouping statements that are required to answer a question or to perform a task together helps to organize your code.
+        *   Statements in a function aren't always executed when a page loads. Functions offer a way to store steps needed to achieve a task. The script can ask the function to perform all of those tasks as and when they are required. Such as a user clicking on a specific element in the page.
+        *   If requiring a function to perform a task later, you need to name your function such as it describes the task being performed when CALLED. Known as CALLING the function.
+        *   The steps that the function needs to perform in order to perform its task are packaged in a code block. A code block consists of one or more statements contained within curly braces. There is no semi-colon after closing the curly braces.
+        *   Some functions require parameters to achieve a given task, such as height and width when calculating the area of a box.
+        *   A RETURN VALUE is the response you get when a function is meant to provide an answer to a question.
+        *   Remember that programming languages rely on name/value pairs. The function will have a name followed by a code block containing statements.
+        *   You can also have anonumous functions. They do not have a name, so they cannot by called. Instead, they are executed as soon as the interpreter comes across them.
 
 
