@@ -395,34 +395,34 @@
     -   There is only one string operator: the + symbol and it is used to join the strings on either side of it.
         *   There are many occasions when you may need to join two or more strings to create a single value. Programmers call the process of joining together two or more strings to create one new string CONCATENATION.
             -   Example;
-                var firstName = 'Ivy';
-                var lastName = 'Stone';
-                var fullName = firstName + lastName; Result is Ivy Stone!
+                *   var firstName = 'Ivy';
+                *   var lastName = 'Stone';
+                *   var fullName = firstName + lastName; Result is Ivy Stone!
         *   Mixing Numbers and strings together
             -   When you place quotes around a number, it is a string(not a numeric data type), and you cannot perform addition operations on strings.
-                -   var cost1 = '7';
-                    var cost2 = '9';
-                    var total = cost1 + cost2;
-                    *   The result is a string saying '79'
+                *   var cost1 = '7';
+                *   var cost2 = '9';
+                *   var total = cost1 + cost2;
+                    -   The result is a string saying '79'
             -   If you try to add a numeric data type to a string, then the number becomes part of the string, e.g., adding a house number to a street name.
-                -   var number = 12;
-                    var street = 'Ivy Road';
-                    var add = number + street;
-                    *   The resulting string is '12Ivy Road'
+                *   var number = 12;
+                *   var street = 'Ivy Road';
+                *   var add = number + street;
+                    -   The resulting string is '12Ivy Road'
             -   If you try to use any of the other arithmetic operators on  a string, then the value that results is usually a value called NaN. This means not a number.
-                -   var score = 'seven';
-                    var score2 = 'nine';
-                    var total = score * score2;
-                    *   You would end up with the value NaN.
+                *   var score = 'seven';
+                *   var score2 = 'nine';
+                *   var total = score * score2;
+                    -   You would end up with the value NaN.
 *   Using String Operators
     -   Example;
-        var greeting = 'Howdy ';
-        var name = 'Molly';
-        *   The first line creates the variable 'greeting' to store a message for the user, the second line creates the variable 'name', storing the name of the user.
-        var welcomeMessage = greeting + name + '!';
+        *   var greeting = 'Howdy ';
+        *   var name = 'Molly';
+            -   The first line creates the variable 'greeting' to store a message for the user, the second line creates the variable 'name', storing the name of the user.
+        *   var welcomeMessage = greeting + name + '!';
 
-        var el = document.getElementById('greeting');
-        el.textContent = welcomeMessage;
-        *   The personal message is created by concatenating(or joining) these two variables, adding an exclamation mark, and storing them in a new variable called welcomeMessage.
+        *   var el = document.getElementById('greeting');
+        *   el.textContent = welcomeMessage;
+            -   The personal message is created by concatenating(or joining) these two variables, adding an exclamation mark, and storing them in a new variable called welcomeMessage.
             -   Notice in the greeting variable Howdy, there is a space after Howdy. If the space is omitted, the value of the welcomeMessage would be HowdyMolly!
 
