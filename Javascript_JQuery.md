@@ -490,5 +490,16 @@
             -   People often use the terms parameter and argument interchangeably, but there is a subtle difference.
                 *   When declaring the function, the width and height given in curly braces act as variables and are PARAMETERS.
                 *   When calling the function, the code in curly braces given are real numbers and will be used to perform the calculation. These are ARGUMENTS.
+*   Getting a single value out of a Function
+    -   Some functions return information to the code that called them. For example, when they perform a calculation, they return the result.
+        *   Example;
+            -   function calculateArea(width, height) {
+            -       let area = width * height;
+            -       return area;
+            -   }
+            -   let wallOne = calculateArea(3, 5);
+            -   let wallTwo = calculateArea(8, 5);
+                *   This calculateArea() function returns the area of a rectangle to the code that called it. Inside the function, a variable called area is created. It holds the calculated area of the box. The return keyword is used to return a value to the code that called the function.
+                *   This also demonstrates how the same function can be used to perform the same steps with different values.
 
 
