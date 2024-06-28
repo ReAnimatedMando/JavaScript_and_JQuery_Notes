@@ -501,5 +501,18 @@
             -   let wallTwo = calculateArea(8, 5);
                 *   This calculateArea() function returns the area of a rectangle to the code that called it. Inside the function, a variable called area is created. It holds the calculated area of the box. The return keyword is used to return a value to the code that called the function.
                 *   This also demonstrates how the same function can be used to perform the same steps with different values.
+*   Getting multiple values out of a Function
+    -   Functions can return more than one value using an array. For example, this function calculates the area and volume of a box.
+        *   Example;
+            -   function getSize(width, height, depth) {
+            -       let area = width * height;
+            -       let volume = width * height * depth;
+            -       let sizes = [area, volume];
+            -       return sizes;
+            -   }
+            -   let areaOne = getSize(3, 2, 3)[0];
+            -   let volumeOne = getSize(3, 2, 3)[1];
+                *   First, getSize function is declared, the area of the box is calculated and stored inside area variable. The volume is calculated and stored inside volume variable. Both are then placed inside the array sizes. The array is then returned to the code that called the getSizes( function, allowing the values to be used)
+                *   The areaOne variable holds the area of a box that is 3 * 2. The area is the first value in the sizes array. The volumeOne variable holds the volume of a box that is 3 * 2 * 3. The volume is the second variable in the sizes array.
 
 
