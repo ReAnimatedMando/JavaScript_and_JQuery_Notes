@@ -451,5 +451,19 @@
             -   }
         *   Remember that functions store the code required to perform a specific task, and that the script can ask the function to perform that task whenever needed.
         *   If different parts of a script need to perform the same task, you don't need to repeat the same statements multiple times - you use a function to do it(and reuse the same code).
+*   Calling a Function
+    -   Having declared the Function, you can then execute all of the statements between the curly braces with just one line of code. This is known as calling the function.
+    -   To run the code you use the function name followed by parentheses. You can call the code as many times as you want within the same JS.
+    -   The function can store instructions for a specific task.
+    -   When you need the script to perform that task, you call the function.
+    -   The function executes the code in that code block.
+    -   When it has finished, the code continues to run from the point where it was initially called. 
+        *   Example
+        *   function sayHello() {
+            document.write('Hello!');
+        }
+        // Code before Hello...
+        sayHello();
+        // Code after hello....
 
 
