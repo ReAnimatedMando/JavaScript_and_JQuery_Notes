@@ -465,5 +465,16 @@
         // Code before Hello...
         sayHello();
         // Code after hello....
+*   Declaring Functions that need information
+    -   Sometimes a function needs specific information to perform its task. In such cases, when you declare the function you give it parameters. Inside the function, the parameters act like variables.
+    -   If a function needs information to work, you indicate what it needs to know in the parentheses after the function name.
+    -   Items that appear inside these parentheses are known as the parameters of the function. Inside the function those words act like variable names.
+        *   Example
+            -   function getArea(width, height) {
+            -       return width * height;
+            -   }
+        *   This function will calculate and return the area of a rectangle. To do this, it needs the rectangle's width and height. Each time you call the function these values should be different. So when you write a script, you need to note the information the function will require in order to perform its task.
+        *   If you look inside the function, the parameter names are used just as you would use variables. Here, the parameter names width and height represent the width and height of the wall. 
+        *   This demonstrates how the code can perform a task without knowing the exact details in advance, as long as it has rules it can follow to achieve the task.
 
 
