@@ -476,5 +476,19 @@
         *   This function will calculate and return the area of a rectangle. To do this, it needs the rectangle's width and height. Each time you call the function these values should be different. So when you write a script, you need to note the information the function will require in order to perform its task.
         *   If you look inside the function, the parameter names are used just as you would use variables. Here, the parameter names width and height represent the width and height of the wall. 
         *   This demonstrates how the code can perform a task without knowing the exact details in advance, as long as it has rules it can follow to achieve the task.
+*   Calling Functions that need information
+    -   When you call a function that has parameters, you specify the values it should use in the parameters that follow its name. The values are called arguments, and they can be provided as values or variables.
+        *   Arguments as values - using above example...
+            -   getArea(3, 5);
+            -   When this function is called, the number 3 will be used for the width and 5 will be used for its height.
+        *   Arguments as variables
+            -   wallWidth = 3;
+            -   wallHeight = 5;
+            -   getArea(wallWidth, wallHeight);
+            -   You do not have to specify actual values when calling a function - you can use variables in their place. So the above does the same thing.
+        *   Parameters vs. Arguments
+            -   People often use the terms parameter and argument interchangeably, but there is a subtle difference.
+                *   When declaring the function, the width and height given in curly braces act as variables and are PARAMETERS.
+                *   When calling the function, the code in curly braces given are real numbers and will be used to perform the calculation. These are ARGUMENTS.
 
 
