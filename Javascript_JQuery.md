@@ -532,5 +532,23 @@
         *   let size = area(3, 4);
             -   This function is stored in a variable named area. It can be called like any function, with a function declaration
         *   In a function expression, the function is not processed until the interpreter gets to that statement. This means you cannot call this function before the interpreter has discovered it. It also means that any code that appears up to that point could potentially alter what goes on inside this function.
+*   Immediately invoked Function Expressions
+    -   This way of writing a functino is used in several different situations. Often functions are used to ensure that the variable names do not conflict with each other (especially if the page uses more than one script).
+    -   Immediately Invoked Function Expressions(IIFE) - Pronounced "iffy", these functions are not given a name. Instead, they are executed once as the interpreter comes across them.
+        *   Example
+        *    let area = (function() {
+        *    let width = 3;
+        *    let height = 2;
+        *    return width * height;
+        *   }())
+            -   Above, the variable called area will hold the value returned from the function(rather than storing the function itself so that it can be called later)
+            -   The final parentheses after the closing curly brace of the bode block tell the interpreter to call the function immediately. The grouping operators are parentheses there to ensure the interpreter treats this as an expression
+    -   When to use anonymous functions and IIFES - You will see many ways in which anonymous functino expressions and IIFEs are used throughout these notes.
+    -   They are used for code that only needs to run code within a task, rather than repeatedly being called by other parts of the script. i.e...
+        *   As an argument when a function is called (to calculate a value for that function)
+        *   To assign the value of a property to an object
+        *   In event handlers and listeners to perform a task when an event occurs
+        *   To prevent conflicts between two scripts that might use the same variable names
+    -   IFFEs are commonly used as a wrapper around a set of code. Any variables declared within that anonymous function are effectively protected from variables in other scripts that might have the same name. This is due to a concept called scope, which you meet on the next seciont. It is also a very popular technique with jQuery.
 
 
