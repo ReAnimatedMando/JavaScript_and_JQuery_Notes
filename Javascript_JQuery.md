@@ -550,5 +550,23 @@
         *   In event handlers and listeners to perform a task when an event occurs
         *   To prevent conflicts between two scripts that might use the same variable names
     -   IFFEs are commonly used as a wrapper around a set of code. Any variables declared within that anonymous function are effectively protected from variables in other scripts that might have the same name. This is due to a concept called scope, which you meet on the next seciont. It is also a very popular technique with jQuery.
+*   Variable Scope
+    -   The location where you declare a variable will affect where it can be used within your code. If you declare it within a function, it can only be used within that function. This is known as the variable's scope.
+    -   Local Variables - When a variable is created inside a function using the let keyword, it can only be used in that function. It is called a local variable or function-level variable. It is said to have local scope or function-level scope. It cannot be accessed outside of the function in which it was declared.
+        *   The interpreter creates local variables when the function is run, and removes them as soon as the function has finished its task. This means...
+            -   If the function runs twice, the variable can have different values each time
+            -   Two different functions can use variables with the same name without any kind of conflict
+    -   Global Variables - If you create a variable outside of a function, then it can be used anywhere within the script. It is called a global variable and has global scope.
+        *   Global variables are stored in memory for as long as the web page is loaded into the web browser. This means they take up more memory than local variables, and it also increases the risk of naming conflicts. For these reasons you should use local variables wherever possible.
+            -   If you forget to declare a variable using the let keyword, the variable will work, but it will be treated as a global variable(this is considered bad practice).
+    -   Example
+    -   function getArea(width, height) {
+    -       let area = width * height;
+    -       return area;
+    -   }
+    -   let wallSize = getArea(3, 2);
+    -   document.write(wallSize);
+        *   area = Local or Function-level scope
+        *   wallSize = Global scope
 
 
