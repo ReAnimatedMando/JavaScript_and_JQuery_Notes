@@ -573,5 +573,51 @@
     -   Creating the variables in code - Each variable that you declare takes up memory. The more variables a browser has to remember, the more memory your script requires to run. Scripts that require a lot of memory can perform slower, which in turn makes your web page take longer to respond to the user.
     -   Naming Collisions - You might think you would avoid naming collisions; after all you know which variables you are using. But many sites use scripts written by several people. If an HTML page uses two JS files, and both have a global variable with the same name, it can cause errors.
         *   Remember, variables in global scope that share a name will have conflicts, while variables in local scope that share a name will not.
-
+*   What is an Object?
+    -   Objects group together a set of variables and functions to create a model of something you would recognize from the real world. In an object, variables and functions take on new names.
+        *   In an object: variables become known as properties. If a variable is part of an object, it is called a property. Properties tell us about the object, such as the name of a hotel or the number of rooms it has. Each individual hotel might have a different name and a different number of rooms.
+        *   In an object: functions become known as methods. If a function is part of an object, it is called a method. Methods represent tasks that are associated with the object. For example, you can check how many rooms are available by subtracting the number of booked rooms from the total number of rooms.
+    -   Example
+    -   let hotel = {
+    -   name: 'Quay',
+    -   rooms: 40,
+    -   booked: 25,
+    -   gym: true,
+    -   roomTypes: ['twin', 'double', 'suite'],
+    -   checkAvailability: function() {
+    -       return this.rooms - this.booked;
+    -       }
+    -   };
+        *   This object represents a hotel. It has five properties and one method. The object is in curly braces. It is stored in a variable called hotel.
+    -   Like variables and named functions, properties and methods have a name and a value. In an object, that name is called a KEY.
+    -   An object cannot have two keys with the same name. This is because keys are used to access their corresponding values.
+    -   The value of a property can be a string, nember, Boolean, array, or even another object. The value of a mehtod is always a function.
+    -   In the example above the hotel object contains the following key/value pairs:
+        *   Properties:
+            -   Key;
+                *   name
+                *   rooms
+                *   booked
+                *   gym
+                *   roomTypes
+            -   Value;
+                *   string
+                *   number
+                *   number
+                *   Boolean
+                *   array
+        *   Methods:
+            -   Key;
+                *   chechAvailability
+            -   Value;
+                *   function
+                    -   This is just one of the ways you can create an object
+    -   Programmers use a lot of name/value pairs:
+        *   HTML uses attributes names and values.
+        *   CSS uses property names and values.
+        *   In JS
+            -   Variables have a name and you can assign them a value of a string, number, or Boolean
+            -   Arrays have a name and a group of values. (Each item in an array is a name/value pair because it has an index number and a value.)
+            -   Named functions have a name and value that is a set of statements to run if the function is called.
+            -   Objects consist of a set of name/value pairs(but the names are referred to as keys).
 
