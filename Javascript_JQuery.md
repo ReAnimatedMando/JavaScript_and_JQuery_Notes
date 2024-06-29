@@ -568,5 +568,10 @@
     -   document.write(wallSize);
         *   area = Local or Function-level scope
         *   wallSize = Global scope
+*   How Memory & Variables work
+    -   Global variables use more memory. The browser has to remember them for as long as the web page using them is loaded. Loval variables are only remembered during the period of time that a function is being executed.
+    -   Creating the variables in code - Each variable that you declare takes up memory. The more variables a browser has to remember, the more memory your script requires to run. Scripts that require a lot of memory can perform slower, which in turn makes your web page take longer to respond to the user.
+    -   Naming Collisions - You might think you would avoid naming collisions; after all you know which variables you are using. But many sites use scripts written by several people. If an HTML page uses two JS files, and both have a global variable with the same name, it can cause errors.
+        *   Remember, variables in global scope that share a name will have conflicts, while variables in local scope that share a name will not.
 
 
