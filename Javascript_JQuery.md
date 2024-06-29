@@ -514,5 +514,23 @@
             -   let volumeOne = getSize(3, 2, 3)[1];
                 *   First, getSize function is declared, the area of the box is calculated and stored inside area variable. The volume is calculated and stored inside volume variable. Both are then placed inside the array sizes. The array is then returned to the code that called the getSizes( function, allowing the values to be used)
                 *   The areaOne variable holds the area of a box that is 3 * 2. The area is the first value in the sizes array. The volumeOne variable holds the volume of a box that is 3 * 2 * 3. The volume is the second variable in the sizes array.
+*   Anonymous Functions & Function Expressions
+    -   Expressions produce a value. They can be used where values are expected. If a function is placed where a browser expects to see an expression, or as an argument to a function, then it  gets treated as an expression.
+    -   Function Declaration - A function declaration creates a function that you can call later in your code. It is the type of function you have seen so far in these examples.
+        *   Example
+        *   function area(width, height) {
+        *       return width * height;
+        *   };
+        *   let size = area(3, 4);
+            -   The function above is named area() and can be called using its name
+        *   Interpreters always look for variables and function declarations before going through each section of the script, line-by-line. This means that a function created with a Function declaration can be called before is has even been declared.
+    -   Function Expression - If you put a function where the interpreter would wxpect to see an expression, then it is treated as an expression, and it is known as a functino expression. In function expressions, the name is usually omitted. A function with no name is called an anonymous function.
+        *   Example
+        *   let area = function(width, height) {
+        *       return width * height;
+        *   };
+        *   let size = area(3, 4);
+            -   This function is stored in a variable named area. It can be called like any function, with a function declaration
+        *   In a function expression, the function is not processed until the interpreter gets to that statement. This means you cannot call this function before the interpreter has discovered it. It also means that any code that appears up to that point could potentially alter what goes on inside this function.
 
 
