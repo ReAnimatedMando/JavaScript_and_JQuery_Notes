@@ -666,4 +666,18 @@
         *   To access a property of this object, the object name is followed by a dot (the period symbol) and the name of the property that you want.
         *   Similarly, to use the method, you can use the object name followed by the method name. hotel.checkAvailability().
         *   If the method needs parameters, you can supply them in the parentheses just like you can pass arguments to a function.
+*   Creating an Object: Constructor Notation
+    -   The new keyword and the object constructor create a blank object. You can then add properties and methods to the object.
+    -   Example
+    -   let hotel = new Object();
+    -   hotel.name = 'Quay';
+    -   hotel.rooms = 40;
+    -   hotel.booked = 25;
+    -   hotel.checkAvailability = function() {
+    -       return this.rooms - this.booked;
+    -   };
+        *   First, you create a new object using a combination of the new keyword and the object() constructor function. This function is part of the JS language and is used to create objects.
+        *   Next, having created the blank object, you can add properties and methods to it using dot notation. Each statement that adds a property or method should end with a semicolon.
+        *   You can use this syntax to add properties and methods to any object you have created, no matter which notation you used to create it.
+        *   To create an empty object using literal notation you use: let hotel = {}. The curly brackets create an empty object.
 
