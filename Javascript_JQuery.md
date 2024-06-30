@@ -647,4 +647,23 @@
             -   This notation is most commonly used when:
                 *   The name of the property is a number (technically allowed, but should generally be avoided)
                 *   A variable is being used in place of the property name (you will see this technique used later)
+* Example - Creating Objects using Literal Notation
+    -   let hotel = {
+    -   name: 'Quay',
+    -   rooms: 40,
+    -   booked: 25,
+    -   checkAvailability: function() {
+    -       return this.rooms - this.booked;
+    -       }
+    -   };
+    -   let elName = document.getElementById('hotelName');
+    -   elName.textContent = hotel.name;
+    -   let elRooms = document.getElementById('rooms');
+    -   elRooms.textContent = hotel.checkAvailability();
+        *   This example starts by creating an object using literal notation.
+        *   This object is called hotel which represents a hotel called Quay with 40 rooms, 25 of which have been booked.
+        *   Next, the content of the page is updated with data from this object. It shows the name of the hotel by accessing the object's name property and the number of vacant rooms using the checkAvailability() method.
+        *   To access a property of this object, the object name is followed by a dot (the period symbol) and the name of the property that you want.
+        *   Similarly, to use the method, you can use the object name followed by the method name. hotel.checkAvailability().
+        *   If the method needs parameters, you can supply them in the parentheses just like you can pass arguments to a function.
 
