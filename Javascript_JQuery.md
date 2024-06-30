@@ -635,4 +635,16 @@
             -   Separate each key from its value using a colon. Separate each property and method with a comma(but not after the last value).
             -   In the checkAvailability() method, the this keyword is used to indicate that it is using the rooms and booked properties of this object.
             -   When setting properties, treat the values like you would do for variables: strings live in quotes and arrays live in square brackets.
+*   Accessing an Object & Dot Notation
+    -   You access the properties or methods of an object using dot notation. You can also access properties using square brackets.
+        *   Example
+        *   let hotelName = hotel.name;
+        *   let roomsFree = hotel.checkAvailability();
+            -   To access a property or method of an object you use the name of the object, followed by a period, then the name of the property or method you want to access. This is known as dot notation.
+            -   The period is known as the member operator. The property or method on its right is a member of the object on its left. Here, two variables are created to hold the hotel name and number of vacant rooms.
+        *   You can also access the properties of an object (but not its methods) using square bracket syntax. This time the object name is followed by square brackets, and the property name is inside them.
+        *   let hotelName = hotel['name'];
+            -   This notation is most commonly used when:
+                *   The name of the property is a number (technically allowed, but should generally be avoided)
+                *   A variable is being used in place of the property name (you will see this technique used later)
 
