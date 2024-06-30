@@ -718,4 +718,23 @@
         *   The second object is called parkHotel. Its name is 'Park', has 120 rooms, 77 of which are booked.
         *   Even when many objects are created using the same constructor function, the methods stay the same because they access, update, or perform a calculation on the data stored in the properties.
         *   You might use this technique if your script contains a very complex object that needs to be available but might not be used. The object is defined in the function, but it is only created if it is needed.
+*   Creating Objects using Constructor Syntax
+    -   Example;
+    -   let hotel = new Object();
+    -   hotel.name = 'Park';
+    -   hotel.rooms = 120;
+    -   hotel.booked = 77;
+    -   hotel.checkAvailability = function() {
+    -       return this.rooms - this.booked;
+    -       };
+    -   let elName = document.getElementById('hotelName');
+    -   elName.textContent = hotel.name;
+    -   let elRooms = document.getElementById('rooms');
+    -   elRooms.textContent = hotel.checkAvailability();
+        *   Here an empty object called hotel is created using the constructor function
+        *   Once it has been created, three properties and a method are then assigned to the object
+        *   If the object already had any of these properties, this would overwrite the values in those properties
+        *   To access a property of this object, you can use dot notation, just as you can with any object
+        *   For example, to get the hotel's name you could use hotel.name
+        *   Similarly, to use the method, you can use the object name followed by the method name: hotel.checkAvailability()
 
