@@ -620,4 +620,19 @@
             -   Arrays have a name and a group of values. (Each item in an array is a name/value pair because it has an index number and a value.)
             -   Named functions have a name and value that is a set of statements to run if the function is called.
             -   Objects consist of a set of name/value pairs(but the names are referred to as keys).
+*   Creating an Object: Literal Notation
+    -   Literal notation is the easiest and most popular way to create objects. Though there are several.
+        *   Example
+        *   let hotel = {
+        *   name: 'Quay',
+        *   rooms: 40,
+        *   booked: 25,
+        *   checkAvailability: function() {
+        *       return this.rooms - this.bookd;
+        *       }
+        *   }
+            -   The object is the curly braces and their contents. The object is stored in a variable called hotel, so you would refer to it as the hotel object.
+            -   Separate each key from its value using a colon. Separate each property and method with a comma(but not after the last value).
+            -   In the checkAvailability() method, the this keyword is used to indicate that it is using the rooms and booked properties of this object.
+            -   When setting properties, treat the values like you would do for variables: strings live in quotes and arrays live in square brackets.
 
