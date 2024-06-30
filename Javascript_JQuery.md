@@ -680,4 +680,17 @@
         *   Next, having created the blank object, you can add properties and methods to it using dot notation. Each statement that adds a property or method should end with a semicolon.
         *   You can use this syntax to add properties and methods to any object you have created, no matter which notation you used to create it.
         *   To create an empty object using literal notation you use: let hotel = {}. The curly brackets create an empty object.
+*   Updating an Object
+    -   To update the value of properties, use dot notation or square brackets. They work on objects created using literal or constructor notation. To delete a property, use the delete keyword.
+        *   Dot notation;
+            -   hotel.name = 'park';
+                *   Same method as adding properties to any object but just give it a different value. From 'Quay' to 'Park'
+        *   Square bracket;
+            -   hotel['name'] = 'Park';
+                *   Surrounding property with square brackets indicates the property you are changing.
+        *   Deleting a property;
+            -   delete hotel.name;
+                *   To delete a property just use the keyword delete followed by the object name and property name.
+                *   If you just want to clear the value of a property, you could set it to a blank string
+                    -   hotel.name = '';
 
