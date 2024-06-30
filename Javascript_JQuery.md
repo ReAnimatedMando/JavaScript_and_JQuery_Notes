@@ -693,4 +693,29 @@
                 *   To delete a property just use the keyword delete followed by the object name and property name.
                 *   If you just want to clear the value of a property, you could set it to a blank string
                     -   hotel.name = '';
+*   Creating many Objects: Constructor Notation
+    -   Sometimes you will want several objects to represent similar things. Object Constructors can use a function as a template for creating Objects. First, create the template with the object's properties and methods.
+    -   Example
+    -   function Hotel(name, rooms, booked) {
+    -   this.name = name;
+    -   this.rooms = rooms;
+    -   this.booked = booked;
+    -   this.checkAvailability = function() {
+            return this.rooms - this.booked;
+    -       };
+    -   }
+        *   A function called Hotel will be ised as a template for creating new objects that represent hotels. Like all functions, it contains statements. In this case, they add properties or methods to the object.
+        *   The function has three parameters. Each one sets the value of a property in the object. The methods will be the same for each object created using this function.
+        *   The THIS keyword is used instead of the object name to indicate that the property or method belongs to the object that THIS function creates.
+        *   Each statement that creates a new property or method for this object ends in a semicolon, not a comma, which is used in the literal syntax.
+        *   The name of a constructor function usually begins with a capital letter, unlike other functions, which tend to begin with a lowercase character.
+        *   The uppercase letter is supposed to help remind developers to use the new keyword when they create an object using that function.
+    -   You create instances of the object using the constructor function. The new keyword followed by a call to the function creates a new object. The properties of each object are given as arguments to the function.
+    -   Example;
+    -   let quayHotel = new Hotel('Quay', 40, 25);
+    -   let parkHotel = new Hotel('Park', 120, 77);
+        *   The first object is called quatHotel. Its name is 'Quay', has 40 rooms, 25 of which are booked.
+        *   The second object is called parkHotel. Its name is 'Park', has 120 rooms, 77 of which are booked.
+        *   Even when many objects are created using the same constructor function, the methods stay the same because they access, update, or perform a calculation on the data stored in the properties.
+        *   You might use this technique if your script contains a very complex object that needs to be available but might not be used. The object is defined in the function, but it is only created if it is needed.
 
