@@ -890,4 +890,17 @@
         *   2. Child objects are stored as properties of their parents objects. So dot notation is used to access them, like you access any other property of that object. In turn, to access the properties of the cheld object, another dot is used between the cheld object's name and its properties, i.e. window.history.length
         *   3. The element whose id attribute has a value of info is selected, and the message that has been built up to this point is written into the page. 
         *   4. The window object's alert() method is used to create a dialog box shown on top of the page. It is known as an alert box. Although this is a mehtod of the window object, you may see it used on its own as shown here because the window object is treated as the default object if none is specified. Historically the alert() method was used to display warnings to users. These days there are better ways to provide feedback
+*   The Document Object Model: The Document Object
+    -   The topmost object in the DOM is the document object. It represents the web page loaded into the current browser window or tab. You meet its child objects later.
+    -   Here are some properties of the document object which tell you about the current page.
+        *   document.title - title of current doc
+        *   document.lastModified - last time doc was updated
+        *   document.URL - returns string containing URL of doc
+        *   document.domain - returns domain of current doc
+    -   The DOM is vital to accessing and amending the contents of the current page. Following are the methods used to select or update content of a page.
+        *   document.write() - Writes text to document
+        *   document.getElementById() - returns element, if there is an element with the value of the id attribute that matches
+        *   document.querySelectorA() - returns list of elements that match CSS selector, which is specified as a parameter
+        *   document.createElement() - Creates new element
+        *   document.createTextNode() - Creates new text node
 
