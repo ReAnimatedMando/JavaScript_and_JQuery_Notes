@@ -830,4 +830,8 @@
             -   here, shows the same showWidth() function expression as the one above it, but its assigned as a method of an object.
             -   The last but one line indicates that the showWidth() function is used as a method of the shape object. THe method is given a different anem: getWidth().
             -   When the getWidth() method is called, even though it uses the showWidth() function, this now refers to the shape object, not the global context and this.width refers to the width property of the shape object. So it writes a value of 300 to the page.
+*   Recap - storing data on PG 116-117
+*   Arrays are Objects
+    -   Arrays are actually a special type of object. They hold a related set of key/value pairs(like all objects), but the key for each value is its index number.
+        *   so an object holds its values in properties and arrays hold theirs in index numbers.
 
