@@ -779,4 +779,55 @@
     -   To delete a property, you use the keyword delete, and then use dot notation to identify the property or method you want to remove from the object.
     -   In this case, the booked Property is removed from the object.
         *   If an object is created using a constructor function, this syntax only adds or removes the properties from the one instance of the object, not all objects created with that function.
+*   Recap: PG 113.
+*   The keyword THIS
+    -   The keyword this is commonly used inside functions and objects. Where the function is declared alters what this means. It always refers to one object, usually the object in which the function operates.
+    -   A Function in global scope - when a function is created at the top level of a script, that is, not inside another object or function, then it is in the global scope/context.
+        *   The default object in this context is the window object, so when this is used inside a function in the global context it refers to the window object.
+        *   example;
+        *   function windowSize() {
+        *   let width = this.innerWidth;
+        *   let height = this.innerHeight;
+        *   return [height, width];
+        *   }
+            -   Under the hood, the this keyword is a reference to the object that the function is created inside.
+    -   Global Variables - all global variables also become properties of the window object, so when a function is in the global context, you can access global variables using the window object, as well as its other properties.
+        *   example;
+        *   let width = 600;
+        *   let shape = {width: 300};
+        *   
+        *   let showWidth = function() {
+        *   document.write(this.width);
+        *   };
+        *   
+        *   showWidth();
+            -   Here, the showWidth() function is in global scope, and this.width refers to the width variable.
+            -   Here, the function would write a value of 600 into the page, using the document object's write() method.
+    -   A Method of an Object - When a function is defined inside an object, it becomes a method. In a method, this refers to the containing object.
+        *   example;
+        *   let shape = {
+        *   width: 600,
+        *   height: 400,
+        *   getArea: function() {
+        *       return this.width * this.height;
+        *       }
+        *   };
+            -   here, the getArea() method appears inside the shape object, so this refers to the shape object it is contained in.
+            -   because the this keyword here refers to the shape object, it would be the same as writing:
+                *   return shape.width * shape.height;
+            -   if you were creating several objects using an object constructor and each shape had different dimensions, this would refer to the individual instance of the new object you are creating. When you called getArea(), it would calculate the dimensions of that particular instance of the object.
+    -   Function Expressions as Method - If a named functino has been defined in global scope, and it is then used as a method of an object, this refers to the object it is contained within.
+        *   example;
+        *   let width = 600;
+        *   let shape = {width: 300};
+        *   
+        *   let showWidth = function() {
+        *       document.write(this.width) ;
+        *   };
+        *   
+        *   shape.getWidth = showWidth;
+        *   shape.getWidth();
+            -   here, shows the same showWidth() function expression as the one above it, but its assigned as a method of an object.
+            -   The last but one line indicates that the showWidth() function is used as a method of the shape object. THe method is given a different anem: getWidth().
+            -   When the getWidth() method is called, even though it uses the showWidth() function, this now refers to the shape object, not the global context and this.width refers to the width property of the shape object. So it writes a value of 300 to the page.
 
