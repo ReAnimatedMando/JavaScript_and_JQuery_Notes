@@ -875,4 +875,19 @@
         *   window.alert() - Creates dialog box with message
         *   window.open() - Opens new browser window with URL specified as parameter. Won't work if browser has pop-up blocking software
         *   window.print() - Tells browser that user wants to print contents of current page, acts like user has clicked a print option in the browser's user interface
+*   Using the Browser Object Model
+    -   Example
+    -   let msg = '<h2>browser window</h2><p>width: ' + window.innerWidth + '</p>';
+    -   msg += '<p>height: ' + window.innerHeight + '</p>';
+    -   msg += '<h2>history</h2><p>items: ' + window.history.length + '</p>';
+    -   msg += '<h2>screen</h2><p>width: ' + window.screen.width + '</p>;
+    -   msg += '<p>height: ' + window.screen.height + '</p>';
+    -   let el = document.getElementById('info');
+    -   el.innerHTML = msg;
+    -   alert('Current page: ' + window.location);
+        *   Here, data about the browser is collected from the window object and its children, stored in the msg variable, and shown in the page. The += operator adds data onto the end of the msg variable.
+        *   1. Two of the window object's properties, innerWidth and innerHeight, show width and height of the browser window. 
+        *   2. Child objects are stored as properties of their parents objects. So dot notation is used to access them, like you access any other property of that object. In turn, to access the properties of the cheld object, another dot is used between the cheld object's name and its properties, i.e. window.history.length
+        *   3. The element whose id attribute has a value of info is selected, and the message that has been built up to this point is written into the page. 
+        *   4. The window object's alert() method is used to create a dialog box shown on top of the page. It is known as an alert box. Although this is a mehtod of the window object, you may see it used on its own as shown here because the window object is treated as the default object if none is specified. Historically the alert() method was used to display warnings to users. These days there are better ways to provide feedback
 
