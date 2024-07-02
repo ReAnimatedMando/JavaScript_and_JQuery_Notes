@@ -856,4 +856,23 @@
     -   Global JavaScript Objects - The global objects do not form a single model. They are a groupd of individual objects that relate to different parts of the JavaScript language.
         *   The String object's toUpperCase() method makes all letters in the following variable uppercase: hotel.toUpperCase();
         *   The Math object's PI property will return the value of pi: Math.PI();
+    -   Using built-in objects: The 3 sets of built-in objects each offer a different range of tools that help you write scripts for web pages.
+*   The Browser Object Model: The Window Object
+    -   The window object represents the current browser window or tab. It is the topmost object in the browser object model, and it contains other objects that tell you about the browser.
+    -   Here are selections of the window object's properties and methods. You can also see some properties of the screen and history objects which are children of the window object.
+        *   window.innerHeight - Height of window in px
+        *   window.innerWidth - Width of window in px
+        *   window.pageXOffset - Distance document has been scrolled horizontally in px
+        *   window.screenX - x-coordinate of pointer, relative to top left corner of screen in px
+        *   window.screenY - y-coordinate of pointer, relative to top left corner of screen
+        *   window.location - Current URL of window object or local file path
+        *   window.document - Reference to document object, which is used to represent the current page contained in window
+        *   window.history - Reference to history object for browser window or tab, which contains details of the pages that have been viewed in that window or tab
+        *   window.history.length - Number of items in history object for browser window or tab
+        *   window.screen - Reference to screen object
+        *   window.screen.width - Accesses screen object and finds value of its width property in px
+        *   window.screen.height - Accesses screen object and finds calue of its height property in px
+        *   window.alert() - Creates dialog box with message
+        *   window.open() - Opens new browser window with URL specified as parameter. Won't work if browser has pop-up blocking software
+        *   window.print() - Tells browser that user wants to print contents of current page, acts like user has clicked a print option in the browser's user interface
 
