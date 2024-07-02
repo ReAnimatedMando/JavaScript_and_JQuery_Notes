@@ -846,4 +846,14 @@
     -   Built in objects contain functionality commonly needed by many scripts. These objects are available as soon as a web page is loaded into your browser and help you get a wide range of information.
     -   An object model is a group of objects, each of which represent related things from the real world. Together they form a model of something larger.
     -   It is possible for the property of an object to be another object, also known as child object.
+*   3 Groups of Built-In Objects
+    -   Browser Object Model - The browser object model creates a model of the browser tab or window.
+        *   The window objects print() method will cause the browser's print dialogue box to be shown: window.print();
+        *   The screen object's width property will let you find the width of the device's screen in pixels: window.screen.width;
+    -   Document Object Model - The document object model creates a model of the current web page.
+        *   The document object's getElementById() method gets an element by the value of its id attribute: document.getElementById('one');
+        *   The document object's lastModified property will tell you the date that the page was last updated: document.lastModified;
+    -   Global JavaScript Objects - The global objects do not form a single model. They are a groupd of individual objects that relate to different parts of the JavaScript language.
+        *   The String object's toUpperCase() method makes all letters in the following variable uppercase: hotel.toUpperCase();
+        *   The Math object's PI property will return the value of pi: Math.PI();
 
