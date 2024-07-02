@@ -764,4 +764,19 @@
         *   For each hotel, a variable is created to hold the hotel name, followed by space, and the word rooms.
         *   The line after it adds to that variable with the number of available rooms in that hotel.
         *   The += operator is used to add content to an existing variable.
+*   Adding & Removing Properties
+    -   Once you've created an object using literal or constructor notation, you can add new properties to it. You do this using the dot notation.
+    -   In the following example we use dot notation to add details on the hotel facilities using Booleans.
+        *   let hotel = {
+        *   name: 'Park',
+        *   rooms: 120,
+        *   booked: 77
+        *   };
+        *   hotel.gym = true;
+        *   hotel.pool = false;
+        *   delete hotel.booked;
+    -   Having added these properties to the object, you can access them just like any of the objects other properties. Here, they update the value of the class attribute on their respective elements to show either a check mark or a cross mark.
+    -   To delete a property, you use the keyword delete, and then use dot notation to identify the property or method you want to remove from the object.
+    -   In this case, the booked Property is removed from the object.
+        *   If an object is created using a constructor function, this syntax only adds or removes the properties from the one instance of the object, not all objects created with that function.
 
