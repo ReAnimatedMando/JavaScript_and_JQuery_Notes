@@ -834,4 +834,8 @@
 *   Arrays are Objects
     -   Arrays are actually a special type of object. They hold a related set of key/value pairs(like all objects), but the key for each value is its index number.
         *   so an object holds its values in properties and arrays hold theirs in index numbers.
+*   Arrays of Objets & Objects in Arrays
+    -   You can combine arrays and objects to create complex data structures: Arrays can store a series of objects and remember their order. Objects can also hold arrays as values of their properties.
+        *   Arrays in an Object - the property of any object can hold an array. 
+        *   Objects in Arrays - The value of any element in an array can be an object written using the object literal syntax.
 
