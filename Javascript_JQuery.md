@@ -838,4 +838,12 @@
     -   You can combine arrays and objects to create complex data structures: Arrays can store a series of objects and remember their order. Objects can also hold arrays as values of their properties.
         *   Arrays in an Object - the property of any object can hold an array. 
         *   Objects in Arrays - The value of any element in an array can be an object written using the object literal syntax.
+*   What are Built in Objects?
+    -   Browsers come with a set of built-in objects that represent things like the browser window and the current web page shown in that window. These built-in objects act like a toolkit for creating interactive web pages.
+        *   Browser Object Model - Contains objects that represent the current browser window or tab. It contains objects that model things like browser history and the device's screen.
+        *   Document Object Model - Uses objects to create a representation of the current page. It creates a new object for each element and each individual section of text within the page.
+        *   Global Javascript Objects - Represent things that the JS language needs to create a model of. i.e. There is an object that deals only with dates and time.
+    -   Built in objects contain functionality commonly needed by many scripts. These objects are available as soon as a web page is loaded into your browser and help you get a wide range of information.
+    -   An object model is a group of objects, each of which represent related things from the real world. Together they form a model of something larger.
+    -   It is possible for the property of an object to be another object, also known as child object.
 
