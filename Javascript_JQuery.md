@@ -903,4 +903,15 @@
         *   document.querySelectorA() - returns list of elements that match CSS selector, which is specified as a parameter
         *   document.createElement() - Creates new element
         *   document.createTextNode() - Creates new text node
+*   Using the DOM
+    -   example
+    -   let msg - '<p><b>page title: </b>' + document.title + '<br />';
+    -   msg += '<b>page address: </b>' + document.URL + <br />';
+    -   msg += '<b>last modified: </b>' + document.lastModified + '</p>;
+    -   
+    -   let el = document.getElementById('footer');
+    -   el.innerHTML = msg;
+        *   This example gets information about the page, and then adds that information to the footer.
+        *   1. The details about the page are collected from properties of the document object. These details are stored inside a variable called msg, along with HTML markup to display the information. Again, the += operator adds the new value onto the existing content of the msg variable.
+        *   2. You have seen the document object's getElementById() method in several examples so far. It selects an element from the page using the value of its id attribute. 
 
