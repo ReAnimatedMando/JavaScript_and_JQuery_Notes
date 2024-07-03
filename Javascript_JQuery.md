@@ -914,4 +914,21 @@
         *   This example gets information about the page, and then adds that information to the footer.
         *   1. The details about the page are collected from properties of the document object. These details are stored inside a variable called msg, along with HTML markup to display the information. Again, the += operator adds the new value onto the existing content of the msg variable.
         *   2. You have seen the document object's getElementById() method in several examples so far. It selects an element from the page using the value of its id attribute. 
+*   Global Objects: String Object
+    -   Whenever you have a value that is a string, you can use the properties and mehtods of the string object on that value. This example stores the phrase "Home sweet home" in a variable
+    -   Example;
+    -   let saying = 'Home sweet home';
+    -   The following properties and methods are often used to work with text stored in variables or objects.
+    -   Property:   Descripting:    Example:    Result:
+    -   length - Returns number of characters in the string - saying.length; - 16
+    -   toUpperCase() - Changes strings to uppercase characters - saying.toUpperCase(); - 'HOME SWEET HOME'
+    -   toLowerCase() - Changes strings to lowercase characters - saying.toLowerCase(); - 'home sweet home'
+    -   charAt() - Takes an index number as a parameter, and returns the character found at that position - saying.charAt(12); - 'o'
+    -   indexOf() - Returns index number of the first time a character or set of characters is found in a string - saying.indexOf('ee'); - 7
+    -   lastIndexOf() - Returns index number of last time a character or set of characters is found within a string - saying.lastIndexOf('e'); - 14
+    -   substring() - Returns characters found between two index #'s where the character for the first index # is included & the character for the last index # is not included - saying.substring(8,14); - 'et hom'
+    -   split() - When a character is specified, it splits the string each time it is found, then stores each individual part in an array - saying.split(' '); - ['Home', 'sweet', 'home', '']
+    -   trim() - Removes whitespace from start and end of string - saying.trim(); - 'Home sweet home'
+    -   replace() - Takes one value that should be found, and another to replace it, only replaces the first match it finds - saying.replace('me','w'); - 'How sweet home'
+        *   Each character in a string is automatically given a number, called an index number. Index numbers always start at zero and not one, just like items in an array.
 
