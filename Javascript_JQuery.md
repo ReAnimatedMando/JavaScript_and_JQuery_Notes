@@ -931,4 +931,23 @@
     -   trim() - Removes whitespace from start and end of string - saying.trim(); - 'Home sweet home'
     -   replace() - Takes one value that should be found, and another to replace it, only replaces the first match it finds - saying.replace('me','w'); - 'How sweet home'
         *   Each character in a string is automatically given a number, called an index number. Index numbers always start at zero and not one, just like items in an array.
+*   Working with strings
+    -   Example;
+    -   let saying = 'Home sweet home ';
+    -   let msg = '<h2>length</h2><p>' + saying.length + '</p>';
+    -   msg += '<h2>uppercase</h2><p>' + saying.toUpperCase() + '</p>';
+    -   msg += '<h2>lowercase</h2><p>' + saying.toLowerCase() + '</p>';
+    -   msg += '<h2>character index: 12</h2><p>' + saying.charAt(12) + '</p>';
+    -   msg += '<h2>first ee</h2><p>' + saying.indexOf('ee') + '</p>';
+    -   msg += '<h2>last e</h2><p>' + saying.lastIndexOf('e') + '</p>';
+    -   msg += '<h2>character index 8-14</h2><p>' + saying.substring(8, 14) + '</p>';
+    -   msg += '<h2>replace</h2><p>' + saying.replace('me', 'w') + '</p>';
+    -   
+    -   let el = document.getElementById('info');
+    -   el.innerHTML = msg;
+        *   This example demonstrates the length property and many of the string object's methods shown above.
+        *   1. This example starts by storing the phrase "Home sweet home " in a variable called saying.
+        *   2. The next line tells you how many characters are in the string using the length property of the string object and stores the result in a variable called msg.
+        *   3. This is followed by examples showing several of the string object's methods. The name of the variable saying is followed by a dot, then the property or method that is being demonstrated in the same way that the other objects in this chapter used the dot notation to indicate a property or method of an object.
+        *   4. The final two lines select the element with an id attribute whose value is info and then add the value of the msg variable inside that element.
 
