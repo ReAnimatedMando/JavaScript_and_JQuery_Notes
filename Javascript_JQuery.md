@@ -968,4 +968,16 @@
             -   Under the hood, arrays and functions are considered types of objects.
             -   Arrays are Objects; an array is a set of key/value pairs just like any other object. But you do not specify the name in the key/value pair of an array - it is an index number. Like other objects, arrays have properties and methods. Arrays have a property called length, which tells you how many items are in that array. There is also a set of methods you can use with any array to add items to it, remove items from it, or reorder its contents.
             -   Functions are Objects; Technically, but they have an additional feature: they are callable, which means you can tell the interpreter when you want to execute the statements that it contains.
+*   Global Objects: Number Objects - Whenever you have a value that is a number, you can use the methods and properties of the Number object on it. 
+    -   These methods are helpful when dealing with a range of applications from financial calculations to animations. Many calculations involving currency such as tax rates will need to be rounded to a specific number of decimal places. Or, in an animation, you might want to specify that cerain elements should be evenly spaced out across the page.
+        *   Method  -   Description
+        *   isNaN() - Checks if the value is not a number
+        *   toFixed() - Rounds to specified number of decimal places, returns a string
+        *   toPrecision() - Rounds to total number of places, returns a string
+        *   toExponential() - Returns a string representing the number in exponential notation
+    -   Commonly used terms;
+        *   An INTEGER is a whole number not a fraction.
+        *   A REAL NUMBER is a number that can contain a fractional part.
+        *   A FLOATING POINT NUMBER is a real number that uses decimals to represent a fraction. The term floating point refers to the decimal point.
+        *   SCIENTIFIC NOTATION is a way of writing numbers that are too big or too small to be conveniently written in decimal form. For example: 3,750,000,000 can be represented as 3.75 * 10 to the 9th power or 3.75e+12.
 
