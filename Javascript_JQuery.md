@@ -980,4 +980,16 @@
         *   A REAL NUMBER is a number that can contain a fractional part.
         *   A FLOATING POINT NUMBER is a real number that uses decimals to represent a fraction. The term floating point refers to the decimal point.
         *   SCIENTIFIC NOTATION is a way of writing numbers that are too big or too small to be conveniently written in decimal form. For example: 3,750,000,000 can be represented as 3.75 * 10 to the 9th power or 3.75e+12.
+*   Working with Decimal Numbers
+    -   Example;
+    -   let originalNumber = 10.23456;
+    -   let msg = '<h2>original number</h2><p>' + originalNumber + '</p>';
+    -   msg += '<h2>3 decimal places</h2><p>' + originalNumber.toFixed(3); + '</p>';
+    -   msg += '<h2>3 digits</h2><p>' + originalNumber.toPrecision(3) + '</p>';
+    -   let el = document.getElementById('info');
+    -   el.innerHTML = msg;
+        *   As with string object, the properties and methods of the Number object can be used with any value that is a number.
+        *   1. In this example, a number is stored in a variable valled originalNumber, and it is then rounded up or down using two different techniques. In both cases, you need to indicate how many digits you want to round to. This is provided as a parameter in the parentheses for that method.
+        *   2. originalNumber.toFixed(3) will round the number stored in the variable originalNumber to three decimals places. The number of decimal places is specified in the parentheses. It will return the number as a string. It returns a string because fractions cannot always be accurately represented using floating point numbers.
+        *   3. toPrecision(3) uses the number in parantheses to indicate the total number of digits the number should have. It will also return the number as a string. It may return a scientific notation if there are more digits than the specified number of positions.
 
