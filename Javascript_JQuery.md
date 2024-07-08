@@ -992,4 +992,15 @@
         *   1. In this example, a number is stored in a variable valled originalNumber, and it is then rounded up or down using two different techniques. In both cases, you need to indicate how many digits you want to round to. This is provided as a parameter in the parentheses for that method.
         *   2. originalNumber.toFixed(3) will round the number stored in the variable originalNumber to three decimals places. The number of decimal places is specified in the parentheses. It will return the number as a string. It returns a string because fractions cannot always be accurately represented using floating point numbers.
         *   3. toPrecision(3) uses the number in parantheses to indicate the total number of digits the number should have. It will also return the number as a string. It may return a scientific notation if there are more digits than the specified number of positions.
+*   Global Objects: Math Object - The Math Object has properties and mehtods for mathematical constants and functions.
+    -   Method - Description
+    -   Math.PI - Returns pi, appx; 3.14159265359
+    -   Math.round() - Rounds number to the nearest integer
+    -   Math.sqrt(n) - Returns square root of positive number, e.g., Math.sqrt(9) returns 3
+    -   Math.ceil() - Rounds number up to the nearest integer
+    -   Math.floor() - Rounds number down to the nearest integer
+    -   Math.random() - Generates a random number between 0, inclusive, and 1, not inclusive
+        *   Because it is known as a global object, you can just use the name of the Math object followed by the property or method you want to access.
+        *   Typically you will then store the resulting number in a variable. This object also has many trigonometric functions such as sin(), cos(), and tan().
+        *   The trigonometric functions return angles in radians which can then be converted into degrees if you divide the number by (pi/180).
 
