@@ -1018,4 +1018,17 @@
         *   If you used the round() method instead of the floor() method, the numbers 1 and 10 would be chosen around half of the number of times that 2-9 would be chosen.
         *   Anything between 1.5 and 1.999 would get rounded up to 2, and anything between 9 and 9.5 would be rounded down to 9.
         *   Using the floor() method ensures that the number is always rounded down to the neaerest integer, and you can then add 1 to ensure the number is between 1 and 10.
+*   Creating an Instance of the Date Object
+    -   In order to work with dates, you create an instance of the date object. You can then specify the time and date that you want it to represent.
+    -   To create a date object, use the Date() object constructor. The syntax is the same for creating any object with a constructor function. You can use it to create more than one Date object.
+    -   By default, when you create a date object it will hold today's date and the current time. If you want it to store another date, you must explicitly specify the date and time you want it to hold.
+        *   let today = new Date();
+    -   You can think of the above as creating a variable called today that holds a number. This is because in JS, dates are stored as a number: specifically the number of milliseconds since midnight on january 1, 1970.
+    -   Note that the current date/time is determined by the computer's clock. If the user is in a different time zone than you, their day may start earlier or later than yours. Also, if the internal clock on their computer has the wrong date or time, the Date object could reflect this by holding the wrong date.
+    -   The Date() object constructor tells the JS interpreter that this variable is a date, and this in turn allows you to use the Date object's methods to set and retrieve dates and times from this Date object.
+    -   You can set the date and/or time using any of the following formats or methods shown on the right.
+        *   examples;
+        *   let dob = new Date(1996, 11, 26, 15, 45, 55);
+        *   let dob = new Date('Dec 26, 1996 15:45:55');
+        *   let dob = new Date(1996, 11, 26);
 
