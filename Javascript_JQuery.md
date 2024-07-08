@@ -1003,4 +1003,19 @@
         *   Because it is known as a global object, you can just use the name of the Math object followed by the property or method you want to access.
         *   Typically you will then store the resulting number in a variable. This object also has many trigonometric functions such as sin(), cos(), and tan().
         *   The trigonometric functions return angles in radians which can then be converted into degrees if you divide the number by (pi/180).
+*   Math Object to create random numbers
+    -   Example;
+    -   let randomNum = Math.floor((Math.random() * 10) + 1;
+    -   
+    -   let el = document.getElementById('info');
+    -   el.innerHTML = '<h2>random number</h2><p>' + randomNum + '</p>';
+        *   This example is designed to generate a random whole number between 1 and 10
+        *   The Math objects random() method generates a random number between 0 and 1 with many decimal places
+        *   To get a random whole number between 1 and 10, you need to multiply the randomly generated number by 10.
+        *   This number will still have many decimal places, so you can round it down to the nearest integer.
+        *   The floor() method is used to specifically round a number down rather than up or down.
+        *   This will give you a value between 0 and 9. You then add 1 to make it a number between 1 and 10.
+        *   If you used the round() method instead of the floor() method, the numbers 1 and 10 would be chosen around half of the number of times that 2-9 would be chosen.
+        *   Anything between 1.5 and 1.999 would get rounded up to 2, and anything between 9 and 9.5 would be rounded down to 9.
+        *   Using the floor() method ensures that the number is always rounded down to the neaerest integer, and you can then add 1 to ensure the number is between 1 and 10.
 
