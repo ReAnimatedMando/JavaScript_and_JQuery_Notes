@@ -1062,4 +1062,34 @@
         *   1. In this example, a new Date object is created using Date() object constructor it is called today. If you do not specify a date when creating a Date object, it will contain the date and time when the JS interpreter encounters that line of code. Once you have an instance of the Date object holding the current date and time, you can use any of its properties or methods.
         *   2. In this example, you can see that getFullYear() is used to return the year of the date being stored in the Date object.
         *   3. In this case, it is being used to write the current year in a copyright statement.
+*   Working with Date and Times
+    -   To specify a date and time, you can use this format:
+        *   YYYY, MM, DD, HH, MM, SS
+        *   1996, 03, 16, 15, 45, 55
+    -   This represents 3:45pm and 55 seconds on April 06, 1996
+    -   The order and syntax for this is;
+        *   Year    four digits
+        *   Month   0-11(Jan is 0)
+        *   Day     1-31
+        *   Hour    0-23
+        *   Minutes 0-59
+        *   Seconds 0-59
+        *   Milliseconds    0-999
+    -   Another way to format the date and time is;
+        *   MMM DD, YYYY HH:MM:SS
+        *   Apr 16, 1996 15:45:55
+            -   You can omit the time portion if you don't need it
+    -   Example;
+    -   let today = new Date();
+    -   let year = today.getFullYear();
+    -   let est = new Date('Apr 16, 1996 15:45:55');
+    -   let difference = today.getTime() - est.getTime();
+    -   difference = (difference / 31556900000);
+    -   
+    -   let elMsg = document.getElementById('message');
+    -   elMsg.textContent = Math.floor(difference) + 'years of online travel advice';
+        *   1. In this example, you can see a date being set in the past.
+        *   2. If you try to find the difference between two dates, you will end up with a result in milliseconds.
+        *   3. To get the difference in days/weeks/years, you divide this number by the number of milliseconds in a day/week/year.
+        *   Here the number is divided by 31,556,900,000 - the number of milliseconds in a year that is not a leap year.
 
