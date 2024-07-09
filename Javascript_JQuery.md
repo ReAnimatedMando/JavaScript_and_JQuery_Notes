@@ -1031,4 +1031,25 @@
         *   let dob = new Date(1996, 11, 26, 15, 45, 55);
         *   let dob = new Date('Dec 26, 1996 15:45:55');
         *   let dob = new Date(1996, 11, 26);
+*   Global Objects: Date Object & Time - Once you have created a date object, the following methods let you set and retrieve the time and date that it represents.
+    -   Method - Description
+    -   getDate() setDate() - Returns/sets the day of the month(1-31)
+    -   getDay() - Returns the day of the week(0-6)
+    -   getFullYear() setFullYear() - Returns/sets the year(4digits)
+    -   getHours() setHours() - Returns/sets the hour(0-23)
+    -   getMilliseconds() setMilliseconds() - Returns/sets the milliseconds(0-99)
+    -   getMinutes() setMinutes() - Returns/sets the minutes(0-59)
+    -   getMonth() setMonth() - Returns/sets the month(0-11)
+    -   getSeconds() setSeconds() - Returns/sets the seconds(0-59)
+    -   getTime() setTime() - Number of milliseconds since january 1, 1970, 00:00:00 UTC, coordinated universal time, and a negative number for any time before
+    -   getTimeZoneOffset() - Returns time zone offset in mins for locale
+    -   toDateString() - Returns "date" as a human-readable string
+    -   toTimeString() - Returns "time" as a human-readable string
+    -   toString() - Returns a string representing the specified date
+        *   The toDateString() method will display the date in the following format: Wed Apr 16 1975.
+        *   If you want to display the date in another way, you can construct a different date format using the individual methods listed above to represent the individual parts: day, date, month, year.
+        *   toTimeString() shows the time. Several programming languages specify dates in milliseconds since midnight on Jan 1, 1970. This is known as Unix time.
+        *   A visitor's location may affect time zones and language spoken. Programmers use the term locale to refer to this kind of location-based information.
+        *   The Date object does not store the names of days or months as they vary between languages. Instead, it uses a number from 0 to 6 for the days of the week and 0 to 11 for the months.
+        *   To show their names, you need to create an array to hold them.
 
