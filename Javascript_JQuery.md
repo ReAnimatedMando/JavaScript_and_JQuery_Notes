@@ -1052,4 +1052,14 @@
         *   A visitor's location may affect time zones and language spoken. Programmers use the term locale to refer to this kind of location-based information.
         *   The Date object does not store the names of days or months as they vary between languages. Instead, it uses a number from 0 to 6 for the days of the week and 0 to 11 for the months.
         *   To show their names, you need to create an array to hold them.
+*   Creating a Date Object
+    -   Example;
+    -   let today = new Date();
+    -   let year = today.getFullYear();
+    -   
+    -   let el = document.getElementById('footer');
+    -   el.innerHTML = '<p>Copyright &copy;' + year + '</p>;
+        *   1. In this example, a new Date object is created using Date() object constructor it is called today. If you do not specify a date when creating a Date object, it will contain the date and time when the JS interpreter encounters that line of code. Once you have an instance of the Date object holding the current date and time, you can use any of its properties or methods.
+        *   2. In this example, you can see that getFullYear() is used to return the year of the date being stored in the Date object.
+        *   3. In this case, it is being used to write the current year in a copyright statement.
 
