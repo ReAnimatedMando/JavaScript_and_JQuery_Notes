@@ -1092,4 +1092,11 @@
         *   2. If you try to find the difference between two dates, you will end up with a result in milliseconds.
         *   3. To get the difference in days/weeks/years, you divide this number by the number of milliseconds in a day/week/year.
         *   Here the number is divided by 31,556,900,000 - the number of milliseconds in a year that is not a leap year.
+##  Decisions & Loops
+*   Decisions & Loops
+*   Looking at a flowchart (for all but the most basic scripts), the code can take more than one path, which means the browser runs different code in different situations. In this section, you will learn how to create and control the flow of data in your scripts to handle different situations.
+*   Scripts often need to behave differently depending upon how the user interacts with the web page and/or the browser window itself. To determine which path to take, programmers often rely upon the following 3 concepts.
+    -   Evaluations - You can analyze values in your scripts to determine whether or not they match expected results.
+    -   Decsision - Using the results of evaluations, you can decide which path your script should go down.
+    -   Loops - There are also many occassions where you will want to perform the same set of steps repeatedly.
 
