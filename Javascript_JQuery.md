@@ -1099,4 +1099,10 @@
     -   Evaluations - You can analyze values in your scripts to determine whether or not they match expected results.
     -   Decsision - Using the results of evaluations, you can decide which path your script should go down.
     -   Loops - There are also many occassions where you will want to perform the same set of steps repeatedly.
+*   Decision Making
+    -   There are often several places in  a script where decisions are made that determine which lines of code should be run next. Flowcharts can help you plan for these occassions.
+    -   In a flowchart, the diamond shape represents a point where a decision must be made and the code can take one of two different paths. Each path is made up of a different set of tasks, which means you have to write different code for each situation.
+    -   In order to determine which path to take, you set a condition. For example, you can check that one value is equal to another, greater than another, or less than another. If the condition returns true, you take one path; if it is false, you take another path. Such as pass or fail depending on the score being greater than or less than 50.
+    -   In the same way that there are operators to do basic math, or to join two strings, there are comparison operators that allow you to compare values and test whether a condition is met or not.
+    -   Examples of comparison operators include the greater than (>) and less than (<) symbols, and double equals sign (==) which checks whether two values are the same.
 
