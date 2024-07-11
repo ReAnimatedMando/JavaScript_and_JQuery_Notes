@@ -1122,4 +1122,22 @@
         *   What This is saying:
         *   if the condition returns true, execute the statement between the first set of curly brackets, otherwise, execute the statements between the second set of curly brackets.
     -   You can also have multiple conditions by combining two or more comparision operators. For example, you can check whether two conditions are both met, or if just one of several condtions is met. 
-
+*   Comparison Operators: Evaluation Conditions
+    -   You can evaluate a situation by comparing one value in the script to what you expect it might be. The result will be a Boolean: true or false.
+    -   == Is equal to
+        *   This operator compares two values, numbers, strings or Booleans, to see if they are the same. 'Hello' == 'Goodbye' returns false. 'Hello' == 'Hello' returns true.
+    -   != is not equal to
+        *   This operator compares two values to see if they are not the same. 'Hello' != 'Goodbye' returns true. 'Hello' != 'Hello' returns false.
+    -   === Strict equal to
+        *   This operator compares two values to check that both the data type and value are the same. '3' === 3 returns false. '3' === '3' returns true (both are a string).
+    -   !== Strict not equal to
+        *   This operator compares two values to check that both the data type and value are not the same. '3' !== 3 returns true. '3' !== '3' returns false.
+    -   > Greater than
+        *   This operator checks if the number on the left is greater than the number on the right. 4 > 3 returns true. 3 > 4 returns false.
+    -   < Less than
+        *   This operator checks if the number on the left is less than the number on the right. 4 < 3 returns false. 3 < 4 returns true.
+    -   >= Greater than or equal to
+        *   This operator checks if the number on the left is greater than or equal to the number on the right. 4 >= 3 returns true. 3 >= 4 returns false. 3 >= 3 returns true.
+    -   <= Less than or equal to
+        *   This operator checks if the number on the left is less than or equal to the number on the right. 4 <= 3 returns false. 3 <= 4 returns true. 3 <= 3 returns true.
+    -   Programmers refer to the testing or checking of a condition as evaluating the condition. Conditions can be much more complex than those shown here, but they usually result in a value of true or false. There are a couple of notable exeptions: i) Every value can be treated as true or false even if it is not a Boolean true or false value. ii) In short-circuit evaluation, a condition might not need to run.
