@@ -1105,4 +1105,21 @@
     -   In order to determine which path to take, you set a condition. For example, you can check that one value is equal to another, greater than another, or less than another. If the condition returns true, you take one path; if it is false, you take another path. Such as pass or fail depending on the score being greater than or less than 50.
     -   In the same way that there are operators to do basic math, or to join two strings, there are comparison operators that allow you to compare values and test whether a condition is met or not.
     -   Examples of comparison operators include the greater than (>) and less than (<) symbols, and double equals sign (==) which checks whether two values are the same.
+*   Evaluation Conditions & Conditional Statements
+    -   There are two components to a decision
+        *   1: An expression is evaluated, which returns a value
+        *   2: A conditional statement says what to do in a given situation
+    -   Evaluation of a Condition
+        *   In order to make a decision, your code checks the current status of the script. This is commonly done by comparing two values using a comparison operator which returns a value of true or false.
+    -   Conditional Statements
+        *   A conditional statement is based on a concept of if/then/else; if a condition is met, then your code executes one or more statements, else your code does something different or just skips the step.
+    -   example
+    -   if (score > 50) {
+    -     document.write('You passed!');
+    -   } else {
+    -   document.write('Try again...');
+    -   }
+        *   What This is saying:
+        *   if the condition returns true, execute the statement between the first set of curly brackets, otherwise, execute the statements between the second set of curly brackets.
+    -   You can also have multiple conditions by combining two or more comparision operators. For example, you can check whether two conditions are both met, or if just one of several condtions is met. 
 
