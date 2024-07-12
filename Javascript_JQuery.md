@@ -1164,3 +1164,21 @@
     -   The Operand does not have to be a single value or variable name. An operand can be an expression (because each expression evaluates into a single value).
     -   Example;
     -   ((score1 + score2) > (highScore1 + highScore2))
+*   Comparing two Expressions
+    -   Example;
+    -   let score1 = 90; // Round 1 score
+    -   let score2 = 95; // Round 2 score
+    -   let highScore1 = 75; // Round 1 high score
+    -   let highScore2 = 95; // Round 2 high score
+    -   
+    -   // Check if scores are higher than current high score
+    -   let comparison = (score1 + score2) > (highScore1 + highScore2);
+    -   
+    -   // Write the message into the page
+    -   let el = document.getElementById('answer');
+    -   el.textContent = 'New high score: ' + comparison;
+        *   In this example, there are two rounds to the test and the code will check if the user has achieved a new high score, beating the previous record.
+        *   The script starts by storing the user's scores for each round in variables. Then the highest scores for each round are stored in two more variables. The comparison operator checks if the user's total score is greater than the highest score for the test and stores the results in a variable called comparison.
+        *   In the comparison operator, the operand on the left calculates the user's total score. The operand on the right adds together the highest scores for each round. The result is then added to the page. 
+        *   When you assign the result of the comparison to a variable, you  do not strictly need the containing parentheses.
+        *   Some programmers use them anyway to indicate that the code evaluates into a single value. Others only use containing parentheses when they form part of a condition.
