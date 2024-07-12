@@ -1141,3 +1141,8 @@
     -   <= Less than or equal to
         *   This operator checks if the number on the left is less than or equal to the number on the right. 4 <= 3 returns false. 3 <= 4 returns true. 3 <= 3 returns true.
     -   Programmers refer to the testing or checking of a condition as evaluating the condition. Conditions can be much more complex than those shown here, but they usually result in a value of true or false. There are a couple of notable exeptions: i) Every value can be treated as true or false even if it is not a Boolean true or false value. ii) In short-circuit evaluation, a condition might not need to run.
+*   Structuring Comparison Operators
+    -   In any condition, there is usually one operator and two operands. The operands are placed on each side of the operator. They can be values or variables. You often see expressions enclosed in brackets.
+    -   Example;
+    -   (score >= pass)
+        *   score is the operand. >= is the operator. pass is the second operand. This will result in a single value, either true or false.
