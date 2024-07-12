@@ -1182,3 +1182,18 @@
         *   In the comparison operator, the operand on the left calculates the user's total score. The operand on the right adds together the highest scores for each round. The result is then added to the page. 
         *   When you assign the result of the comparison to a variable, you  do not strictly need the containing parentheses.
         *   Some programmers use them anyway to indicate that the code evaluates into a single value. Others only use containing parentheses when they form part of a condition.
+*   Logical Operators
+    -   Comparison operators usually return single values of true or false. Logical operators allow you to compare the results of more than one comparison operator.
+    -   Example;
+    -   ((5 < 2) && (2 >= 3))
+        *   Here in one line of code are three expressions, each of which will resolve to the value true or false.
+        *   The expression on the left and the right both use comparison oeprators, and both return false.
+        *   The third expression uses a logical operator rather than a comparison operator. The locical and operator checks to see whether both expressions on either side of it return true(in this case they don't), so it evaluates to false.
+    -   && - Logical AND
+        *   This operator tests more than one condition. If both expressions evaluate to true then the expression returns true. If just one of the expressions returns false, then the expression will return false.
+    -   || - Logical OR
+        *   This operator tests at least one condition. If either expression evaluates to true, then the expression returns true. If both return false, then the expression is false. 
+    -   ! - Logical NOT
+        *   This operator takes a single Boolean value and inverts it. This reverses the state of an expression. If it was false without the ! before, it would return true. If the statement was true, it would return false. 
+    -   Short-Circuit Evaluation
+        *   Logical expressions are evaluated left to right. If the first condition can provide enough information to get the answer, then there is no need to evaluate the second condition.
