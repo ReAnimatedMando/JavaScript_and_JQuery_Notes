@@ -1146,3 +1146,17 @@
     -   Example;
     -   (score >= pass)
         *   score is the operand. >= is the operator. pass is the second operand. This will result in a single value, either true or false.
+*   Using Comparison Operators
+    -   Example;
+    -   let pass = 50; // Pass mark
+    -   let score = 90; // Score
+    -   
+    -   // Check if the user has passed
+    -   let hasPassed = Score >= pass;
+    -   
+    -   // Write the message into the page
+    -   let el = document.getElementById('answer');
+    -   el.textContent = 'Level passed: ' + hasPassed;
+        *   At the most basic level, you can evaluate two variables using a comparison operator to return a true or false value.
+        *   In this example, a user is taking a test, and the script tells the user whether they have passed this round of the test.
+        *   First the two variables are set. pass and score. To see if the user has passed, a comparison operator checks whether score is greater than or equal to pass. The result will be true or false, and is stored in a variable called hasPassed. On the the next line(textContent), the result is written on the screen. The last two lines select the element whose id attribute has a value of answer, and then updates its contents.
