@@ -1160,3 +1160,7 @@
         *   At the most basic level, you can evaluate two variables using a comparison operator to return a true or false value.
         *   In this example, a user is taking a test, and the script tells the user whether they have passed this round of the test.
         *   First the two variables are set. pass and score. To see if the user has passed, a comparison operator checks whether score is greater than or equal to pass. The result will be true or false, and is stored in a variable called hasPassed. On the the next line(textContent), the result is written on the screen. The last two lines select the element whose id attribute has a value of answer, and then updates its contents.
+*   Using Expressions with Comparison Operators
+    -   The Operand does not have to be a single value or variable name. An operand can be an expression (because each expression evaluates into a single value).
+    -   Example;
+    -   ((score1 + score2) > (highScore1 + highScore2))
