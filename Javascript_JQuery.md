@@ -1234,3 +1234,10 @@
         *   Here is the same test but this time using the logical OR operator to find out if the user has passed at least one of the two rounds. If they pass just one round, they do not need to retake the test.
         *   Look at the numbers stored in the four variables at the start of the example. The user has passed both rounds, so the minPass variable will hold the Boolean value of true.
         *   Next, the message is stored in a variable called msg. At the end of the message, the logical NOT will invert the result of the Boolean variable so it is false. It is then written into the page.
+*   If Statements - The if statement evaluates or checks a condition. If the condition evaluates to true, any statements in the subsequent code block are executed.
+    -   Example;
+    -   if (score >= 50) {
+    -   congratulate();
+    -   }
+        *   If the condition evaluates to true, the following code block, the code in the next set of curly braces, is executed.
+        *   If the condition resolves to false, the statement in that code block are not run. The script will continue to run from the end of the next code block.
