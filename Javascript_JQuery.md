@@ -1197,3 +1197,21 @@
         *   This operator takes a single Boolean value and inverts it. This reverses the state of an expression. If it was false without the ! before, it would return true. If the statement was true, it would return false. 
     -   Short-Circuit Evaluation
         *   Logical expressions are evaluated left to right. If the first condition can provide enough information to get the answer, then there is no need to evaluate the second condition.
+*   Using Logical And
+    -   Example;
+    -   let score1 = 8; // Round 1 score
+    -   let score2 = 8; // Round 2 score
+    -   let pass1 = 6; // Round 1 pass mark
+    -   let pass2 = 6; // Round 2 pass mark
+    -   
+    -   // Check whether user passed both rounds, store result in variable
+    -   let passBoth = (score1 >= pass1) && (score2 >= pass2);
+    -   
+    -   // Create message
+    -   let msg = 'Both rounds passed: ' + passBoth;
+    -   
+    -   // Write the message into the page
+    -   let el = document.getElementById('answer');
+    -   el.textContent = msg;
+        *   In this example, a math test has two rounds. For each round there are two variables: one holds the user's score for that round; the other holds the pass mark for that round. The logical AND is used to see if the user's score is greater than or equal to the pass mark in both of the rounds of the test. The result is stored in a varuable called passBoth. The example finishes off by letting the user know whether or not they have passed both rounds.
+        *   It is rare that you would ever write the Boolean result into the page like we are doing here. As you will see later, it is more likely that you would check a condition, and if it is true, run other statements.
