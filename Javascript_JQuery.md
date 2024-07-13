@@ -1241,3 +1241,17 @@
     -   }
         *   If the condition evaluates to true, the following code block, the code in the next set of curly braces, is executed.
         *   If the condition resolves to false, the statement in that code block are not run. The script will continue to run from the end of the next code block.
+*   Using IF Statements
+    -   Example;
+    -   let score = 75; // Score
+    -   let msg;        // Message
+    -   
+    -   if (score >= 50) {  // if score is 50 or higher
+    -       msg = 'Congratulations!';
+    -       msg += ' Proceed to the next round. ';
+    -   }
+    -   let el = document.getElementById('answer');
+    -   el.textContent = msg;
+        *   In this example, the IF statement is checking if the value currently held in a variable called score is 50 or more. In this case, the statement evaluates to true. Therefore, the contents of the statement within the subsequent code block are run, creating a message that congratulates the user and tells them to proceed.
+        *   After the code block, the message is written to the page.
+        *   If the value of the score variable had been less, the statements in the code block would not have run, and the code would have continued on to the next line after the code block.
