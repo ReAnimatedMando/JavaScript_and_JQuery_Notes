@@ -1257,3 +1257,25 @@
         *   If the value of the score variable had been less, the statements in the code block would not have run, and the code would have continued on to the next line after the code block.
 *   IF ELSE Statements
     -   The if... else statement checks a condition. If it resolves to true the first code block is executed. If the condition resolves to false the second code block is run instead.
+*   Using IF... ELSE Statements
+    -   Example;
+    -   let pass = 50;  // Pass mark
+    -   let score = 75; // Current score
+    -   let msg =       // Message
+    -   
+    -   // Select message to write based on score
+    -   if (score >= pass) {
+    -   msg = 'Congratulations, you passed!';
+    -   } else {
+    -   msg = 'Have another go!';
+    -   }
+    -   
+    -   let el = document.getElementById('answer');
+    -   el.textContent = msg;
+        *   Here you can see that an if... else statement allows you to provide two sets of code:
+            -   1. one set if the condition evaluates to true.
+            -   2. another set if the condtiion is false.
+        *   In this test, there are two possible outcomes: a user can either get a score equal to or greater than the pass mark, or they can score less than the pass mark. One response is required for each eventuality. The response is then written to the page.
+        *   Note that the statements inside an if statement should be followed by a semicolon, but there is no need to place one after the closing curly braces of the code blocks.
+    -   An if statement only runs a set of statements if the condition is true.
+    -   An if... else statement runs one set of code if the condition is true or a different set if it is false.
