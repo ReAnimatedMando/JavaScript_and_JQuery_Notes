@@ -1279,3 +1279,28 @@
         *   Note that the statements inside an if statement should be followed by a semicolon, but there is no need to place one after the closing curly braces of the code blocks.
     -   An if statement only runs a set of statements if the condition is true.
     -   An if... else statement runs one set of code if the condition is true or a different set if it is false.
+*   Switch Statements
+    -   A switch statement starts with a variable called the switch value. Each case indicates a possible value for this variable and the code that should run if the variable matches the value.
+    -   Example;
+    -   switch (level) {
+    -   case 'One':
+    -       title = 'Level 1';
+    -       break;
+    -   
+    -   case 'Two':
+    -       title = 'Level 2';
+    -       break;
+    -   
+    -   case 'Three':
+    -       title = 'Level 3';
+    -       break;
+    -   
+    -   default:
+    -       title = 'Test';
+    -       break;
+    -   }
+        *   Here, the variable named level is the switch value. If the value of the level variable is the string One, then the code for the first case is executed. If it is Two, the second case is executed. If it is Three, the third case is executed. If it is none of these, the code for the default case is executed.
+        *   The entire statement lives in one code block, and a colon separates the option from the statements that are to be run if the case mathces the switch value.
+    -   If... Else vs. Switch
+        *   If... Else - There is no need to provide an else option, you can just use an if statement. With a series of if statements, they are all checked even if a match has been found so it performs more slowly than a switch.
+        *   Switch - You have a default option that is run if none of the cases match. If a match is found, that code is run; then the break statement stops the rest of the switch statement running providing better performance than multiple if statements.
