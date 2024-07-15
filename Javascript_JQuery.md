@@ -1304,3 +1304,31 @@
     -   If... Else vs. Switch
         *   If... Else - There is no need to provide an else option, you can just use an if statement. With a series of if statements, they are all checked even if a match has been found so it performs more slowly than a switch.
         *   Switch - You have a default option that is run if none of the cases match. If a match is found, that code is run; then the break statement stops the rest of the switch statement running providing better performance than multiple if statements.
+*   Using Switch Statements
+    -   Example;
+    -   let msg;    // Message
+    -   let level = 2;  // Level
+    -   
+    -   // Determine message based on level
+    -   switch (level) {
+    -   case 1:
+    -       msg = 'Good luck on the first test';
+    -       break;
+    -   
+    -   case 2:
+    -       msg = 'Second of three - keep going!';
+    -       break;
+    -   
+    -   case 3:
+    -       msg = 'Final round, almost there!';
+    -       break;
+    -   
+    -   default:
+    -       msg = 'Good luck!';
+    -       break;
+    -   }
+        *   In this example, the purpose of the switch statement is to present the user with a different message depending on which level they are at. The message is stored in a variable called msg.
+        *   The variable called level contains a number indicating which level the user is on. This is then used as the switch value. The switch value could also be an expression.
+        *   In the following code block, there are three options for what the value of the level variable might be: the numbers 1, 2, or 3.
+        *   If the value of the level variable is the number 1, the value of the msg variable is set to 'Good luck on the first test' and so on with each case.
+        *   Each case ends with the break keyword which will tell the JavaScript interpreter to skip the rest of this code block and continue onto the next.
