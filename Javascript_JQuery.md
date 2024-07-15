@@ -1255,3 +1255,5 @@
         *   In this example, the IF statement is checking if the value currently held in a variable called score is 50 or more. In this case, the statement evaluates to true. Therefore, the contents of the statement within the subsequent code block are run, creating a message that congratulates the user and tells them to proceed.
         *   After the code block, the message is written to the page.
         *   If the value of the score variable had been less, the statements in the code block would not have run, and the code would have continued on to the next line after the code block.
+*   IF ELSE Statements
+    -   The if... else statement checks a condition. If it resolves to true the first code block is executed. If the condition resolves to false the second code block is run instead.
