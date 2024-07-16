@@ -1424,4 +1424,21 @@
         *   This is a for loop. the condition is a counter that counts to ten. The result would write "0123456789" to the page.
         *   If the variable i is less than ten, the code inside the curly braces is executed. Then the counter is incremented.
         *   The condition is checked again, if i is less than ten it runs again.
+*   Loop Counters
+    -   A for loop uses a counter as a condition. This instructs the code to run a specified number of times. Here you can see the condition is made up of three statements:
+        *   Initialization - Create a variable and set it to 0. This variable is commonly called i, and it acts as the counter.
+            -   let i = 0;
+            -   The variable is only created the first time the loop is run. You will sometimes see this variable declared before the condition. The following is the same and it is mainly a preference of the coder.
+                *   let i;
+                *   for (i = 0; i < 10; i++) {
+                *       // code goes here
+                *   }
+        *   Condition - The loop should continue to run until the counter reaches a specified number.
+            -   i < 10
+            -   The value of i was initially set to 0, so in this case the loop will run 10 times before stopping. The condition may also use a variable that holds a number. If a variable called rounds held the number of rounds in a test and the loop ran once for each round, the condition would be:
+                *   let rounds = 3;
+                *   i < (rounds);
+        *   Update - Every time the loop has run the statements in the curly braces, it addes one to the counter.
+            -   i++
+            -   One is added to the counter using the increment operator (++). Another way of reading this is that it says, "Take the variable i, and add one using the ++ operator." It is also possible for loops to count downwards using the decrement operator (--).
 
