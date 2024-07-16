@@ -1357,3 +1357,32 @@
         *   falsy values are treated as if they are false. The table above shows a highScore variable with a series of values, all of which are falsy. Falsy values can also be treated as the number 0.
         *   Truthy values are treated as if they are true. Almost everything that is not in the falsy table can be treated as if it were true. Truthy values can also be treated as the number 1.
         *   In addition, the presence of an object or an array is usually considered truthy, too. This is commonly used when checking for the presence of an element in a page. 
+*   Checking Equality & Existence
+    -   Because the presence of an object or array can be considered truthy, it is often used to check for the existence of an element within a page.
+    -   A unary operator returns a result with just one operand. Here you can see an if statement checking for the presence of an element. If the element is found, the result is truthy, so the first set of code is run. If it is not found, the second set is run instead.
+        *   Example;
+        *   if (document.getElementById('header')) {
+        *       // Found: do something
+        *   }   else {
+        *       // Not Found: do something else
+        *   }
+            -   Those new to JavaScript often think the following would do the same: if (document.getElementById('header') == true) but the document.getElementById('header') would return an object which is a truthy value but it is not equal to a Boolean value of true.
+    -   Because of type coercion, the strict equality operators === and !== result in fewer unexpected values than == and != do.
+    -   If you use ==, the following values can be considered equal: false, 0, and ''. However, they are not equivalent when using the strict operators.
+        *   false == 0 - true
+        *   false === 0 - false
+        *   false == '' - true
+        *   false === '' - false
+        *   0 == '' - true
+        *   0 === '' - false
+    -   Although null and undefined are both falsy, they are not equal to anything other than themselves. Again, they are not equivalent when using strict operators.
+        *   undefined == null - true
+        *   null == false - false
+        *   undefined == false - false
+        *   null == 0 - false
+        *   undefined == 0 - false
+        *   undefined === null - false
+    -   Although NaN is considered falsy, it is not equivalent to anything; it is not even equivalent to itself since NaN is an undefinable number, two cannot be equal.
+        *   NaN == null - false
+        *   NaN == NaN - false
+
