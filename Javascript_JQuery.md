@@ -1413,4 +1413,15 @@
     -   As soon as a truthy value is found, the remaining options are not checked. Therefore experienced programmers often:
         *   Put the code most likely to return true first in OR operations, and false answers first in AND operations.
         *   Place the options requiring the most processing power last, just in  case another value returns true and they do not need to be run.
+*   Loops
+    -   Loops check a condition. If it returns true, a code block will run. Then the condition will be checked again and if it still returns true, the code block will run again. It repeats until the condition returns false. There are three common types of loops:
+        *   For - If you need to run code a specific number of times, use a for loop. it is the most common loop. In a for loop, the condition is usually a counter which is used to tell how many times the loop should run.
+        *   While - If you do not know how many times the code should run, you can use a while loop. Here the condition can be something other than a counter, and the code will continue to loop for as long as the condition is true.
+        *   Do While - the do... while loop is very similar to the while loop, but has one key difference: it will always run the statements inside the curly braces at least once, even if the condition evaluates to false. 
+    -   for (let i = 0; i < 10; i++) {
+    -   document.write(i);
+    -   }
+        *   This is a for loop. the condition is a counter that counts to ten. The result would write "0123456789" to the page.
+        *   If the variable i is less than ten, the code inside the curly braces is executed. Then the counter is incremented.
+        *   The condition is checked again, if i is less than ten it runs again.
 
