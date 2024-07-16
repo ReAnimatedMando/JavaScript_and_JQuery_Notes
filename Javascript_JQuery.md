@@ -1385,4 +1385,32 @@
     -   Although NaN is considered falsy, it is not equivalent to anything; it is not even equivalent to itself since NaN is an undefinable number, two cannot be equal.
         *   NaN == null - false
         *   NaN == NaN - false
+*   Short Circuit Values
+    -   Logical operators are processed left to right. They short-circuit/stop as soon as they have a result - but they return the value that stopped the processing, not necessarily true or false.
+    -   Logical operators will not always return true or false because:
+        *   They return the value that stopped processing.
+        *   That value might have been treated as truthy or falsy although it was not a Boolean.
+    -   Programmers use this creatively, for example, to set values for variables or even create objects.
+    -   Example;
+    -   let artist = 'Rembrandt';
+    -   let artistA = (artist || 'Unknown');
+        *   On line 1, the variable artist is given a value.
+        *   On line 2, if the variable artist has a value, then artistA will be given the same value as artist because a non-empty string is truthy.
+    -   let artist = '';
+    -   let artistA = (artist || 'Unknown');
+        *   If the string is empty, artistA becomes a string 'Unknown'.
+    -   let artist = '';
+    -   let artistA = (artist || {});
+        *   You could even create an empty object if artist does not have a value.
+    -   valueA = 0;
+    -   valueB = 1;
+    -   valueC = 2;
+    -   if (valueA || valueB || valueC) {
+    -       // Do something here
+    -   }
+        *   Here there are three values. If any one of them is considered truthy, the code inside the if statement will execute. When the script encounters valueB in the logical operator, it will short circuit because the number 1 is considered truthy and the subsequent code block is executed.
+        *   This technique could also by used to check for the existence of elements within a page.
+    -   As soon as a truthy value is found, the remaining options are not checked. Therefore experienced programmers often:
+        *   Put the code most likely to return true first in OR operations, and false answers first in AND operations.
+        *   Place the options requiring the most processing power last, just in  case another value returns true and they do not need to be run.
 
