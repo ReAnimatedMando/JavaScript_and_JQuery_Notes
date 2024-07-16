@@ -1337,3 +1337,23 @@
     -   JavaScript can convert data types behind the scenes to complete an operation. This is known as type coercion. For example, a string '1' could be converted to a number 1 in the following expression: ('1' > 0). As a result, the above expression would evaluate to true.
     -   JavaScript is said to use Weak Typing because the data type for a value can change. Some other languages require that you specify what data type each variable will be. They are said to use Strong Typing.
     -   Type coercion can lead to unexpected values in your code and also cause errors. Therefore, when checking if two values are equal, it is considered better to use strict equals operators === and !== rather than == and != as these strict operators check that the value and data types match.
+*   Truthy & Falsy Values
+    -   Due to type coercion, every value in JavaScript can be treated as if it were true or false; and this has some interesting side effects.
+    -   Example - Falsy Values;
+    -   let highScore = false;      //  The tradition Boolean false
+    -   let highScore = 0;          //  The number zero
+    -   let highScore = '';         //  Empty value
+    -   let highScore = 10/'score'; //  NaN Not a Number
+    -   let highScore;              //  A variable with no value assigned to it
+    -   
+    -   Example - Truthy Values;
+    -   let highScore = true;       //  The traditional Boolean true
+    -   let highScore = 1;          //  Numbers other than zero
+    -   let highScore = 'carrot';   //  Strings with content
+    -   let highScore = 10/5;       //  Number calculations
+    -   let highScore = 'true';     //  true written as a string
+    -   let highScore = '0';        //  Zero written as a string
+    -   let highScore = 'false';    //  false written as a string
+        *   falsy values are treated as if they are false. The table above shows a highScore variable with a series of values, all of which are falsy. Falsy values can also be treated as the number 0.
+        *   Truthy values are treated as if they are true. Almost everything that is not in the falsy table can be treated as if it were true. Truthy values can also be treated as the number 1.
+        *   In addition, the presence of an object or an array is usually considered truthy, too. This is commonly used when checking for the presence of an element in a page. 
