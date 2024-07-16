@@ -1441,4 +1441,15 @@
         *   Update - Every time the loop has run the statements in the curly braces, it addes one to the counter.
             -   i++
             -   One is added to the counter using the increment operator (++). Another way of reading this is that it says, "Take the variable i, and add one using the ++ operator." It is also possible for loops to count downwards using the decrement operator (--).
+*   Looping
+    -   Example;
+    -   for (let i = 0; i < 10; i++) {
+    -       document.write(i);
+    -   }
+        *   The first time the loop is run, the variable i (the counter) is assigned a value of zero.
+        *   Every time the loop is run, the condition is checked. Is the variable i less than 10?
+        *   Then the code inside the loop is run.
+        *   The variable i can be used inside the loop. Here it is used to write a number to the page.
+        *   When the statements have finished, the variable i is incremented by 1.
+        *   When the condition is no longer true, the loop ends. The script moves to the next line of code.
 
