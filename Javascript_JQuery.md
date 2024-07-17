@@ -1452,4 +1452,16 @@
         *   The variable i can be used inside the loop. Here it is used to write a number to the page.
         *   When the statements have finished, the variable i is incremented by 1.
         *   When the condition is no longer true, the loop ends. The script moves to the next line of code.
+*   Key Loop Concepts
+    -   Here are three points to consider when you are working with loops. Each is illustrated in examples.
+        * Keywords - You will commonly see these two keywords used withh loops:
+            -   Break - This keyword causes the termination of the loop and tells the interpreter to go onto the next statement of code outside of the loop. This is also used in functions.
+            -   Continue - This keyword tells the interpreter to stop the current iteration, and then check the condition again, if it is true the code runs again.
+        *   Loops and Arrays - Loops are very helpful when dealing with arrays if you want to run the same code for each item in the array. 
+            -   For example, you might want to write the value of each item stored in an array into the page. 
+            -   You may not know how many items will be in an array when writing a script, but, when the code runs, it can ckeck the total number of items in a loop, That figure can then be used in the counter to control how many times a set of statements is run. Once the loop has run the right number of times, the loop stops.
+        *   Performance Issues - It is important to remember that when a browser comes across JS, it will stop doing anything else until it has processed the script.
+            -   If your loop is dealing with only a small number of items, this will not be an issue. If, however, your loop contains a lot of items, it can make the page slower to load.
+            -   If the condition never returns false, you get what is commonly referred to as an infinite loop. The code will not stop running until your browser runs out of memory, breaking your script.
+            -   Any variable you can define outside of the loop and that does not change within the loop should be defined outside of it. If it were declared inside the loop, it would be recalculated every time the loop ran, needlessly using resources.
 
