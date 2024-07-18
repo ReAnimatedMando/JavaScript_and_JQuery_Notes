@@ -1543,4 +1543,10 @@
             -   At the top of the DOM tree is the document node and it represents the entire page. It is the starting point for all visits to the DOM tree.
         *   Element Nodes
             -   HTML elements describe the structure of an HTML, i.e. the headings, paragraphs, divs, lists, and body. To access the DOM tree, you start looking for elements. Once you find the element you want, then you can access its text and attribute nodes if you want to. This is why you start by learning methods that allow you to access element nodes, before learning to access and alter text or attributes.
-            
+        *   Attribute Nodes
+            -   The opening tags of HTML elements can carry attributes and these are represented by attribute nodes in the DOM tree. Attribute nodes are not children of the element that carries them; they are part of that element. Once you access an element, there are specific JS methods and properties to read or change that element's attributes. For example, it is common to change the values of class attributes to trigger new CSS rules that affect their presentation.
+        *   Text Nodes
+            -   Once you have accessed an element node, you can then reach the text within that element. THis is stored in its own text node. Text nodes cannot have children. If an element contains text and another child element, the child element is not a child of the text node but rather a child of the containing element. 
+        *   Note: Each node is an object with methods and properties. Scripts access and wupdate this DOM tree (not the source HTML file). Any changes made to the DOM tree are reflects in the browser.
+
+
