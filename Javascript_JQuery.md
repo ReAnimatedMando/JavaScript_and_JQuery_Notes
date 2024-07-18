@@ -1537,4 +1537,10 @@
             -   Each object represents a different part of the page loaded in the browser window.
         *   Accessing and changing the HTML page - The DOM also defines mothods and properties to access and update each object in this model, which in turn updates what the user sees in the browser.
             -   You will hear people call the DOM an Application Programming Interface (API). User interfaces let humans interact with programs; APIs let programs and scripts talk to each other. The DOM states what your script can ask the browser about the current page, and how to tell the browser to update what is being shown to the user.
-
+*   The DOM Tree is a Model of a Web Page
+    -   As a browser loads a web page, it creates a model of that page. The model is called  a DOM tree, and it is stored in the browsers' memory. It consists of four main types of nodes.
+        *   The Document Node
+            -   At the top of the DOM tree is the document node and it represents the entire page. It is the starting point for all visits to the DOM tree.
+        *   Element Nodes
+            -   HTML elements describe the structure of an HTML, i.e. the headings, paragraphs, divs, lists, and body. To access the DOM tree, you start looking for elements. Once you find the element you want, then you can access its text and attribute nodes if you want to. This is why you start by learning methods that allow you to access element nodes, before learning to access and alter text or attributes.
+            
