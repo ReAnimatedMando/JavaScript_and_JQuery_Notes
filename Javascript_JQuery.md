@@ -1527,4 +1527,14 @@
         *   The key difference between a while loop and a do while loop is that the statements in the code block come before the condition. This means that those statements are run once whether or not the condtion is met.
         *   If you take a look at the condition, it is checking that the value of the variable called i is less than 1, but that variable has already been set to a value of 1. Therefore, in this example the result is that the 5 times table is written out once, even though the counter is not less than 1.
         *   Some people liek to write while on a separate line from the closing curly brace before it.
+##  Document Object Model
+*   Document Object Model
+    -   The document object model (DOM) specifies how browsers should create a model of an HTML page and how JavaScript can access and update the contents of a web page while it is in the browser window.
+    -   The DOM is neither part of HTML, or part of JavaScript; it is a separate set of rules. It is implemented by all major browser makers, and covers two primary areas:
+        *   Making a model of the HTML page - When the browser loads a web page, it creates a model of the page in memory.
+            -   The DOM specifies the way in which the browser should structure this model using a DOM tree.
+            -   The DOM is called an object model because the model (the DOM tree) is made of objects.
+            -   Each object represents a different part of the page loaded in the browser window.
+        *   Accessing and changing the HTML page - The DOM also defines mothods and properties to access and update each object in this model, which in turn updates what the user sees in the browser.
+            -   You will hear people call the DOM an Application Programming Interface (API). User interfaces let humans interact with programs; APIs let programs and scripts talk to each other. The DOM states what your script can ask the browser about the current page, and how to tell the browser to update what is being shown to the user.
 
