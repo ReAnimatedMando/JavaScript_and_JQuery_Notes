@@ -1589,5 +1589,10 @@
     -   Methods that find elements in the DOM tree are called DOM queries. When you need to work with an element more than once, you should use a variable to store the result of this query.
     -   When a script selects an element to access or update, the interpreter must find the element(s) in the DOM tree.
     -   getElementById('one') - The interpreter is told to look through the DOM tree for an element whose id attribute has a value of one. Once it has found the node that represents the element(s), you can work with that node, its parent, or any children.
-    
+    -   When people talk about storing elements in variables, they are really storing the location of the element(s) within the DOM tree in a variable. The properties and methods of that element node work on the variable.
+    -   If your script needs to use the same element(s) more than once, you can store the location of the element(s) in a variable.
+    -   This saves the browser looking through the DOM tree to find the same element(s) again. It is known as caching the selection.
+    -   Programmers would say that the variable stores a reference to the object in the DOM tree. It is storing the location of the node. 
+    -   let itemOne = getElementById('one');
+        *   itemOne does not store the <li> element, it stores a reference to where that node is in the DOM tree. To access the text content of this element, you might use the variable name: itemOne.textContent
 
