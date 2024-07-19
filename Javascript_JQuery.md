@@ -1595,4 +1595,10 @@
     -   Programmers would say that the variable stores a reference to the object in the DOM tree. It is storing the location of the node. 
     -   let itemOne = getElementById('one');
         *   itemOne does not store the <li> element, it stores a reference to where that node is in the DOM tree. To access the text content of this element, you might use the variable name: itemOne.textContent
+*   Accessing Elements
+    -   DOM inqueries may return on element, or they may return a NodeList, which is a collection of nodes.
+    -   Sometimes you will want to access one individual element or a fragment of the page that is stored within that one element. Other times you may want to select a group of elements, for example, every h1 element in the page or every li element within a particular list.
+    -   Groups of element nodes - if a method can return more than one node, it will always return a NodeList. You then need to select the element you want from this list using an index number starting with 0 like any array.
+    -   Fastest Route - Finding the quickest way to access an element within your web page will make the page seem faster and or more responsive. This usually means evaluating the minimum number of nodes on the way to the element you want to work with. For example, getElementById() will quickly return one element because no two elements on the same page should have the same value for an id attribute, but it can only be used when the element you to access has an id attribute.
+
 
