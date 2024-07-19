@@ -1585,5 +1585,9 @@
             -   className/Id - Lets you get or update the value of the class and id attributes.
             -   hasAttribute, getAttribute, setAttribute, removeAttribute
                 *   The first checks if an attribute exists, the second gets its value, the third updates the value, the fourth removes an attribute.
-*   
+*   Caching DOM Queries
+    -   Methods that find elements in the DOM tree are called DOM queries. When you need to work with an element more than once, you should use a variable to store the result of this query.
+    -   When a script selects an element to access or update, the interpreter must find the element(s) in the DOM tree.
+    -   getElementById('one') - The interpreter is told to look through the DOM tree for an element whose id attribute has a value of one. Once it has found the node that represents the element(s), you can work with that node, its parent, or any children.
+    
 
