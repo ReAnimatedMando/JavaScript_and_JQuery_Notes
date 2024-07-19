@@ -1565,5 +1565,25 @@
             -   parentNode - Selects the parent of the current element node which will return just one element.
             -   previousSibling/nextSibling - Selects the previous or next sibling from the DOM tree.
             -   firstChild/lastChild - Select the first or last child of the current element.
-    
+    -   Work with those Elements - Here is an overview of methods and properties that work with the elements introduced earlier.
+        *   Access/Update text nodes.
+            -   The text inside any element is stored inside a text node. To access the text node above:
+                *   1. select the <li> element
+                *   2. Use the firstChild property to get the text node
+                *   3. Use the text node's only property (nodeValue) to get the text from the element
+            -   nodeValue - this property lets you access or update contents of a text node, the text node does not include text inside any child elements.
+        *   Work with HTML content
+            -   One property allows access to child elements and text content: innerHTML
+            -   Another just the text content: textContent
+            -   Several methods let you create new nodes, add nodes to a tree, and remove nodes from a tree:
+                *   createElement
+                *   createTextNode
+                *   appendChild/removeChild
+                    -   This is called DOM manipulation
+        *   Access or update attribute values
+            -   Here are some of the properties and methods you can use to work with attributes.
+            -   className/Id - Lets you get or update the value of the class and id attributes.
+            -   hasAttribute, getAttribute, setAttribute, removeAttribute
+                *   The first checks if an attribute exists, the second gets its value, the third updates the value, the fourth removes an attribute.
+*   
 
