@@ -1548,5 +1548,22 @@
         *   Text Nodes
             -   Once you have accessed an element node, you can then reach the text within that element. THis is stored in its own text node. Text nodes cannot have children. If an element contains text and another child element, the child element is not a child of the text node but rather a child of the containing element. 
         *   Note: Each node is an object with methods and properties. Scripts access and wupdate this DOM tree (not the source HTML file). Any changes made to the DOM tree are reflects in the browser.
-
+*   Working with the DOM Tree
+    -   Accessing and updating the DOM tree involves two steps:
+        *   1: Locate the node that represents the element you want to work with.
+        *   2: Use its text content, child elements, and attributes.
+    -   Access the Elements - Here is an overview of the methods and properties that access elements covered earlier.
+        *   Select an individual element node.
+            -   getElementById - Uses the value of an element's id attribute which should be unique within the page.
+            -   querySelector - Uses a CSS selector, and returns the first matching element.
+            -   You can also select individual elements by traversing from one element to another within the DOM tree.
+        *   Select multiple elements (Nodelists) - There are three common ways to select multiple elements.
+            -   getElementByClassName - Selects all elements that have a specific value for their class attribute
+            -   getElementByTagName - Selects all elements that have the specified tag name.
+            -   querySelectorAll - Uses a CSS selector to select all matching elements.
+        *   Traversing between element nodes - You can move from one element node to a related element node.
+            -   parentNode - Selects the parent of the current element node which will return just one element.
+            -   previousSibling/nextSibling - Selects the previous or next sibling from the DOM tree.
+            -   firstChild/lastChild - Select the first or last child of the current element.
+    
 
