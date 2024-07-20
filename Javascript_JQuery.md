@@ -877,11 +877,11 @@
         *   window.print() - Tells browser that user wants to print contents of current page, acts like user has clicked a print option in the browser's user interface
 *   Using the Browser Object Model
     -   Example
-    -   let msg = '<h2>browser window</h2><p>width: ' + window.innerWidth + '</p>';
-    -   msg += '<p>height: ' + window.innerHeight + '</p>';
-    -   msg += '<h2>history</h2><p>items: ' + window.history.length + '</p>';
-    -   msg += '<h2>screen</h2><p>width: ' + window.screen.width + '</p>;
-    -   msg += '<p>height: ' + window.screen.height + '</p>';
+    -   let msg = 'h2>browser window/h2>p>width: ' + window.innerWidth + '/p>';
+    -   msg += 'p>height: ' + window.innerHeight + '/p>';
+    -   msg += 'h2>history/h2>p>items: ' + window.history.length + '/p>';
+    -   msg += 'h2>screen/h2>p>width: ' + window.screen.width + '/p>;
+    -   msg += 'p>height: ' + window.screen.height + '/p>';
     -   let el = document.getElementById('info');
     -   el.innerHTML = msg;
     -   alert('Current page: ' + window.location);
@@ -905,9 +905,9 @@
         *   document.createTextNode() - Creates new text node
 *   Using the DOM
     -   example
-    -   let msg - '<p><b>page title: </b>' + document.title + '<br />';
-    -   msg += '<b>page address: </b>' + document.URL + <br />';
-    -   msg += '<b>last modified: </b>' + document.lastModified + '</p>;
+    -   let msg - 'p>b>page title: /b>' + document.title + 'br />';
+    -   msg += 'b>page address: /b>' + document.URL + br />';
+    -   msg += 'b>last modified: /b>' + document.lastModified + '/p>;
     -   
     -   let el = document.getElementById('footer');
     -   el.innerHTML = msg;
@@ -934,14 +934,14 @@
 *   Working with strings
     -   Example;
     -   let saying = 'Home sweet home ';
-    -   let msg = '<h2>length</h2><p>' + saying.length + '</p>';
-    -   msg += '<h2>uppercase</h2><p>' + saying.toUpperCase() + '</p>';
-    -   msg += '<h2>lowercase</h2><p>' + saying.toLowerCase() + '</p>';
-    -   msg += '<h2>character index: 12</h2><p>' + saying.charAt(12) + '</p>';
-    -   msg += '<h2>first ee</h2><p>' + saying.indexOf('ee') + '</p>';
-    -   msg += '<h2>last e</h2><p>' + saying.lastIndexOf('e') + '</p>';
-    -   msg += '<h2>character index 8-14</h2><p>' + saying.substring(8, 14) + '</p>';
-    -   msg += '<h2>replace</h2><p>' + saying.replace('me', 'w') + '</p>';
+    -   let msg = 'h2>length/h2>p>' + saying.length + '/p>';
+    -   msg += 'h2>uppercase/h2>p>' + saying.toUpperCase() + '/p>';
+    -   msg += 'h2>lowercase/h2>p>' + saying.toLowerCase() + '/p>';
+    -   msg += 'h2>character index: 12/h2>p>' + saying.charAt(12) + '/p>';
+    -   msg += 'h2>first ee/h2>p>' + saying.indexOf('ee') + '/p>';
+    -   msg += 'h2>last e/h2>p>' + saying.lastIndexOf('e') + '/p>';
+    -   msg += 'h2>character index 8-14/h2>p>' + saying.substring(8, 14) + '/p>';
+    -   msg += 'h2>replace/h2>p>' + saying.replace('me', 'w') + '/p>';
     -   
     -   let el = document.getElementById('info');
     -   el.innerHTML = msg;
@@ -983,9 +983,9 @@
 *   Working with Decimal Numbers
     -   Example;
     -   let originalNumber = 10.23456;
-    -   let msg = '<h2>original number</h2><p>' + originalNumber + '</p>';
-    -   msg += '<h2>3 decimal places</h2><p>' + originalNumber.toFixed(3); + '</p>';
-    -   msg += '<h2>3 digits</h2><p>' + originalNumber.toPrecision(3) + '</p>';
+    -   let msg = 'h2>original number/h2>p>' + originalNumber + '/p>';
+    -   msg += 'h2>3 decimal places/h2>p>' + originalNumber.toFixed(3); + '/p>';
+    -   msg += 'h2>3 digits/h2>p>' + originalNumber.toPrecision(3) + '/p>';
     -   let el = document.getElementById('info');
     -   el.innerHTML = msg;
         *   As with string object, the properties and methods of the Number object can be used with any value that is a number.
@@ -1008,7 +1008,7 @@
     -   let randomNum = Math.floor((Math.random() * 10) + 1;
     -   
     -   let el = document.getElementById('info');
-    -   el.innerHTML = '<h2>random number</h2><p>' + randomNum + '</p>';
+    -   el.innerHTML = 'h2>random number/h2>p>' + randomNum + '/p>';
         *   This example is designed to generate a random whole number between 1 and 10
         *   The Math objects random() method generates a random number between 0 and 1 with many decimal places
         *   To get a random whole number between 1 and 10, you need to multiply the randomly generated number by 10.
@@ -1058,7 +1058,7 @@
     -   let year = today.getFullYear();
     -   
     -   let el = document.getElementById('footer');
-    -   el.innerHTML = '<p>Copyright &copy;' + year + '</p>;
+    -   el.innerHTML = 'p>Copyright &copy;' + year + '/p>;
         *   1. In this example, a new Date object is created using Date() object constructor it is called today. If you do not specify a date when creating a Date object, it will contain the date and time when the JS interpreter encounters that line of code. Once you have an instance of the Date object holding the current date and time, you can use any of its properties or methods.
         *   2. In this example, you can see that getFullYear() is used to return the year of the date being stored in the Date object.
         *   3. In this case, it is being used to write the current year in a copyright statement.
@@ -1482,7 +1482,7 @@
     -   msg += 'Round' + roundNumber + ': ';
     -   
     -   // Get the score from the scores array
-    -   msg += scores[i] + '<br />';
+    -   msg += scoresi] + 'br />';
     -   }
     -   
     -   document.getElementById('answer').innerHTML = msg;
@@ -1500,7 +1500,7 @@
     -   
     -   // Store 5 times table in a variable
     -   while (i < 10) {
-    -   msg += i + ' x 5 = ' + (i * 5) + '<br />';
+    -   msg += i + ' x 5 = ' + (i * 5) + 'br />';
     -   }
     -   
     -   document.getElementById('answer').innerHTML = msg;
@@ -1568,7 +1568,7 @@
     -   Work with those Elements - Here is an overview of methods and properties that work with the elements introduced earlier.
         *   Access/Update text nodes.
             -   The text inside any element is stored inside a text node. To access the text node above:
-                *   1. select the <li> element
+                *   1. select the li> element
                 *   2. Use the firstChild property to get the text node
                 *   3. Use the text node's only property (nodeValue) to get the text from the element
             -   nodeValue - this property lets you access or update contents of a text node, the text node does not include text inside any child elements.
@@ -1594,7 +1594,7 @@
     -   This saves the browser looking through the DOM tree to find the same element(s) again. It is known as caching the selection.
     -   Programmers would say that the variable stores a reference to the object in the DOM tree. It is storing the location of the node. 
     -   let itemOne = getElementById('one');
-        *   itemOne does not store the <li> element, it stores a reference to where that node is in the DOM tree. To access the text content of this element, you might use the variable name: itemOne.textContent
+        *   itemOne does not store the li> element, it stores a reference to where that node is in the DOM tree. To access the text content of this element, you might use the variable name: itemOne.textContent
 *   Accessing Elements
     -   DOM inqueries may return on element, or they may return a NodeList, which is a collection of nodes.
     -   Sometimes you will want to access one individual element or a fragment of the page that is stored within that one element. Other times you may want to select a group of elements, for example, every h1 element in the page or every li element within a particular list.
@@ -1614,15 +1614,15 @@
 *   Selecting Elements using ID Attributes
     -   Example;
     -   HTML
-    -   <h1 id="header">List King</h1>
-    -   <h2>Buy groceries</h2>
-    -   <ul>
+    -   h1 id="header">List King/h1>
+    -   h2>Buy groceries/h2>
+    -   ul>
     -       <li id="one" class="hot">fresh</em>
     -           figs</li>
     -       <li id="two" class="hot">pine nuts</li>
     -       <li id="three" class="hot">honey</li>
     -       <li id="four">balsamic vinegar</li>
-    -   </ul>
+    -   /ul>
     -   JavaScript
     -   //  Select the element and store it in a variable
     -   let el = document.getElementById('one');
