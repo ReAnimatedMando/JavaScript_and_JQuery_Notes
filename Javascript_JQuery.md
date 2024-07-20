@@ -1634,5 +1634,16 @@
         *   In the example, the first line of JS code finds the element whose id attribute has a value of one, and stores a reference to that node in a variable called el.
         *   The code then uses a property called className to update the value of the class attribute of the element stored in this variable. Its value is cool, and this triggers a new rule in the CSS that sets the background color of the element to aqua.
         *   Note how the className property is used on the variable that stores the reference to the element.
+*   NodeLists: DOM Queries that return more than one Element
+    -   When a DOM method can return more than one element, it returns a NodeList, even if it only finds one matching element.
+    -   A NodeList is a collection of element nodes. Each node is given an index number, just like an array.
+    -   The order in which the element nodes are stored in a NodeList is the same order that they appeared in the HTML page.
+    -   When a DOM query returns a NodeList, you may want to:
+        *   Select one element from the NodeList.
+        *   Loop through each item in the NodeList and perform the same statements on each of the element nodes.
+    -   NodeLists look like arrays and are numbered like arrays, but they are not actually arrays; they are a type of object called a COLLECTION.
+    -   Like any other object, a NodeList has properties and methods, notably:
+        *   The length property tells you how many items are in the NodeList
+        *   The item() method returns a specific node from the NodeList when you tell it the index number of the item that you want in the parentheses. However, it is more common to use array syntax with square brackets to retrieve an item from a NodeList.
 
 
