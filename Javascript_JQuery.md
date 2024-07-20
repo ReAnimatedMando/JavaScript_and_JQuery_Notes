@@ -1634,6 +1634,10 @@
         *   In the example, the first line of JS code finds the element whose id attribute has a value of one, and stores a reference to that node in a variable called el.
         *   The code then uses a property called className to update the value of the class attribute of the element stored in this variable. Its value is cool, and this triggers a new rule in the CSS that sets the background color of the element to aqua.
         *   Note how the className property is used on the variable that stores the reference to the element.
+            -   getElementByTagName('h1') - returns the one h1 element from the html doc.
+            -   getElementByTagName('li') - returns four li> elements, they appear in same order as they are entered into the html page.
+            -   getElementByClassName('hot') - returns only the li> elements that have a class of 'hot', not a tag name.
+            -   querySelectorAll('li[id]') - returns four elements, one for each of the li> elements on the page that have an id attribute, regardless of the values of the id attributes. (all)
 *   NodeLists: DOM Queries that return more than one Element
     -   When a DOM method can return more than one element, it returns a NodeList, even if it only finds one matching element.
     -   A NodeList is a collection of element nodes. Each node is given an index number, just like an array.
@@ -1650,5 +1654,6 @@
     -   In a live NodeList when your script updates the page, the NodeList is updated at the same time. The methods beginning getElementBy... return live NodeLists. They are also typically faster to generate than static NodeLists.
     -   In a Static NodeList when your script updates the page, the NodeList is not updated to reflect the changes made by the script.
     -   The new methods that begin querySelector... return static NodeLists. They reflect the document when the query was made. If the script changes the content of the page, the NodeList is not updated to reflect those changes.
+
 
 
