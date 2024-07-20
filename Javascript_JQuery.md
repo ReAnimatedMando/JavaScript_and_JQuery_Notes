@@ -1645,5 +1645,10 @@
     -   Like any other object, a NodeList has properties and methods, notably:
         *   The length property tells you how many items are in the NodeList
         *   The item() method returns a specific node from the NodeList when you tell it the index number of the item that you want in the parentheses. However, it is more common to use array syntax with square brackets to retrieve an item from a NodeList.
+*   Live & Static NodeLists
+    -   There are times when you will want to work with the same selection of elements several times, so the NodeList can be stored in a variable and re-used rather than collecting the same elements again.
+    -   In a live NodeList when your script updates the page, the NodeList is updated at the same time. The methods beginning getElementBy... return live NodeLists. They are also typically faster to generate than static NodeLists.
+    -   In a Static NodeList when your script updates the page, the NodeList is not updated to reflect the changes made by the script.
+    -   The new methods that begin querySelector... return static NodeLists. They reflect the document when the query was made. If the script changes the content of the page, the NodeList is not updated to reflect those changes.
 
 
