@@ -1611,5 +1611,28 @@
             -   This code will return the element node for the element whose id attribute has a value of one. You often see element nodes stored in a variable for use later in the script.
             -   Here the method is used on the document object so it looks for that element anywhere within the page. DOM methods can also by used on element nodes within the page to find descendants of that node.
     -   querySelector - is a more recent addition to the DOM, so it is not supported in older browsers. But it is very flexible because its parameter is a CSS selector, which means it can be used to accurately target many more elements.
+*   Selecting Elements using ID Attributes
+    -   Example;
+    -   HTML
+    -   <h1 id="header">List King</h1>
+    -   <h2>Buy groceries</h2>
+    -   <ul>
+    -       <li id="one" class="hot">fresh</em>
+    -           figs</li>
+    -       <li id="two" class="hot">pine nuts</li>
+    -       <li id="three" class="hot">honey</li>
+    -       <li id="four">balsamic vinegar</li>
+    -   </ul>
+    -   JavaScript
+    -   //  Select the element and store it in a variable
+    -   let el = document.getElementById('one');
+    -   
+    -   //  Change the value of the class attribute
+    -   el.className = 'cool';
+        *   getElementById() allows you to select a single element node by specifying the value of its id attribute
+        *   This method has one parameter: the value of the id attribute on the element you want to select. This value is placed inside quote marks because it is a string. The quotes can be single or double, but they must match.
+        *   In the example, the first line of JS code finds the element whose id attribute has a value of one, and stores a reference to that node in a variable called el.
+        *   The code then uses a property called className to update the value of the class attribute of the element stored in this variable. Its value is cool, and this triggers a new rule in the CSS that sets the background color of the element to aqua.
+        *   Note how the className property is used on the variable that stores the reference to the element.
 
 
