@@ -1668,6 +1668,19 @@
             -   1. Select elements that have a class attribute whose value is hot and store the NodeList in a variable called elements.
             -   2. Use the length property to check how many elements were found. If 1 or more are found, run the code in the if statement.
             -   3. Store the first element from the NodeList in a variable called firstItem, it says 0 because index numbers start at zero.
+    -   Array Syntax - Array syntax is preferred over the item() method because it is faster. Before selecting a node from a NodeList, check that it contains nodes. If you repeatedly use the NodeList, store it in a variable.
+        *   You can access individual nodes using a square bracket syntax similar to that used to access individual items from an array. You specify the index number of the element you want inside square brackets that follow the NodeList.
+        *   As with all DOM queries, if you need to access the same NodeList several times, store the result of the DOM query in a variable. In this example, the NodeList is stored in a variable called elements.
+        *   If you create a variable to hold a NodeList but there are not matching elements, the variable will be an empty NodeList. When you check the length property of the variable, it will return the number 0 because it does not contain any elements.
+        *   Example;
+        *   1. let elements = document.getElementByClassName('hot')
+        *   2. if (elements.length >= 1) {
+        *   3. let firstItem = elements(0);
+        *      }
+            -   1. Create a NodeList containing elements that have a class attribute whose value is hot, and store it in the variable elements.
+            -   2. If that number is greater than or equal to 1, run the code inside the if statement.
+            -   3. Get the first element from the NodeList, 0 because thats where index's start.
+
 
 
 
