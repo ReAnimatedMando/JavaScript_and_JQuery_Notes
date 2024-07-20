@@ -1654,6 +1654,20 @@
     -   In a live NodeList when your script updates the page, the NodeList is updated at the same time. The methods beginning getElementBy... return live NodeLists. They are also typically faster to generate than static NodeLists.
     -   In a Static NodeList when your script updates the page, the NodeList is not updated to reflect the changes made by the script.
     -   The new methods that begin querySelector... return static NodeLists. They reflect the document when the query was made. If the script changes the content of the page, the NodeList is not updated to reflect those changes.
+*   Selecting an Element from a NodeList
+    -   There are two ways to select an element from a NodeList: the item() method and array syntax. Both require the index number of the element you want.
+    -   The Item() Method
+        *   NodeLists have a method called item() which will return an individual node from the NodeList. You specify the index number of the element you want as a parameter of the method.
+        *   Executing code when there are no elements to work with wastes resources. So programmers often check that there is at least one item in the NodeList before running any code. To do this, use the length property of the NodeList - it tells you how many items the NodeList contains.
+        *   Look at this if statement, the condition is whether the length property of the NodeList is greater than zero. If it is, then the statements inside the if statement are executed. If not, the code continues to run after the second curly brace.
+        *   Example;
+        *   1. let elements = document.getElementByClassName('hot')
+        *   2. if (elements.length >= 1) {
+        *   3. let firstItem = elements.item(0);
+        *      }
+            -   1. Select elements that have a class attribute whose value is hot and store the NodeList in a variable called elements.
+            -   2. Use the length property to check how many elements were found. If 1 or more are found, run the code in the if statement.
+            -   3. Store the first element from the NodeList in a variable called firstItem, it says 0 because index numbers start at zero.
 
 
 
