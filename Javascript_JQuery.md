@@ -1600,5 +1600,16 @@
     -   Sometimes you will want to access one individual element or a fragment of the page that is stored within that one element. Other times you may want to select a group of elements, for example, every h1 element in the page or every li element within a particular list.
     -   Groups of element nodes - if a method can return more than one node, it will always return a NodeList. You then need to select the element you want from this list using an index number starting with 0 like any array.
     -   Fastest Route - Finding the quickest way to access an element within your web page will make the page seem faster and or more responsive. This usually means evaluating the minimum number of nodes on the way to the element you want to work with. For example, getElementById() will quickly return one element because no two elements on the same page should have the same value for an id attribute, but it can only be used when the element you to access has an id attribute.
+*   Methods that select individual Elements
+    -   getElementById() and querySelector() can both search an entire documnet and return individual elements. Both use a similar syntax.
+    -   getElementById() is the quickest and most efficient way to access an element because no two elements can share the same value for their id attributes. The syntax for this method is shown below.
+        *   document.getElementById('one')
+            -   document refers to the document object. You always have to access individual elements via the document object.
+            -   The getElementById() method indicates that you want to find an element based upon the value of its id attribute.
+            -   Member Operator - The dot notation indicates that the method on the right is being applied to the node on the left of the period.
+            -   The parameter ('one'), the method needs to know the value of the id attribute on the element you want. It is the parameter of the method.
+            -   This code will return the element node for the element whose id attribute has a value of one. You often see element nodes stored in a variable for use later in the script.
+            -   Here the method is used on the document object so it looks for that element anywhere within the page. DOM methods can also by used on element nodes within the page to find descendants of that node.
+    -   querySelector - is a more recent addition to the DOM, so it is not supported in older browsers. But it is very flexible because its parameter is a CSS selector, which means it can be used to accurately target many more elements.
 
 
