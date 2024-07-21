@@ -1712,6 +1712,33 @@
     -   els[1].className = 'cool';
         *   querySelector() returns the first element node that matches the CSS-style selector. querySelectorAll() returns a NodeList of all the matches. Both methods take a CSS selector as their only parameter. The CSS selector syntax offers more flexibility and accuracy when selecting an element than just specifying a class name or a tag name, and should also be familiar to front-end web devs who are used to targeting elements using CSS.
         *   These two methods were introduced by browser manufacturers because a lot of devs were including scripts like jQuery in their pages so that they could select elements using CSS selectors. If you look at the final line of code, array syntax is used to select the second item from the NodeList, even though that NodeList is stored in a variable.
+        *   JS code runs one line at a time, and statements affect the content of a page as the interpreter processes them.
+        *   If a DOM query runs when a page leads, the same query could return different elements if it is used again later in the page. See the changes the JS makes in the HTML below.
+            -   Example;
+            -   ul> 
+            -       li id = "one" class="hot">
+            -           em>fresh/em> figs/li>
+            -       li id="two" class="hot">pine nuts/li>
+            -       li id="three" class="hot">honey/li>
+            -       li id="four">balsamic vinegar/li>
+            -   /ul>
+                *   1. This is how the page starts. There are three li elements that have a class attribute whose value is hot. The querySelector() method finds the first one, and updates the value of its class from hot to cool. This also updates the DOM tree stored in memory so - after this line has run - only the second and third li elements have a class with a value of hot.
+            -   ul> 
+            -       li id = "one" class="COOL">
+            -           em>fresh/em> figs/li>
+            -       li id="two" class="hot">pine nuts/li>
+            -       li id="three" class="hot">honey/li>
+            -       li id="four">balsamic vinegar/li>
+            -   /ul>
+                * 2. When the second selector runs, there are now only two li elements whose class have a value of hot so it just selects these two. This time, array syntax is used to work with the second of the matching elements which is the third list item. Again the value of its class is changed from hot to cool.
+            -   ul> 
+            -       li id = "one" class="COOL">
+            -           em>fresh/em> figs/li>
+            -       li id="two" class="hot">pine nuts/li>
+            -       li id="three" class="COOL">honey/li>
+            -       li id="four">balsamic vinegar/li>
+            -   /ul>
+                *   3. When the second selector has done its job, the DOM tree now only holds one li element whose class has a value of hot. Any further code looking for li elements whose class value is hot would find only this one. However, if they were looking for li elements whose class value is cool, they would find two matching element nodes.
 
 
 
