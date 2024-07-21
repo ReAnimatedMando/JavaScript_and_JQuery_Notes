@@ -1690,7 +1690,17 @@
         *   The getElementByClassName () method allows you to select elements whose class attribute contains a specific value. The method has one parameter: the class name which is given in quotes within the parentheses after the method name. Because several elements can have the same value for their class attribute, this method always returns a NodeList.
         *   This example starts by looking for elements whose class attribute contains hot. The value of class attributes can contain several class names, each separated by a space. The result of this DOM query is stored in a variable called elements because it is used more than once in the example.
         *   An if statement checks if the query found more than two elements. If so, the third one is selected and stored in a variable called el. The class attribute of that element is then updated to say class. In turn, this triggers a new CSS style, changing the presentation of that element.
-
+*   Selecting Elements By Tag Name
+    -   Example;
+    -   let elements = document.getElementByTagName('li');          // Find li> elements
+    -   if (elements.length > 0) {                                    // If 1 or more are found
+    -   let el = elements[0];                                       // Select the first one using array syntax
+    -   el.className = 'cool';                                      // Change the value of the class attribute
+    -   }
+        *   The getElementByTagName() method allows you to select elements using their tag names. The element name is specified as a parameter, so it is placed inside the parentheses and is contained by quote marks. Note that you do not include the angled brackets that surround the tag name in the HTML, just the letters inside the brackets.
+        *   This example looks for any li> elements in the document. It stores the result in a variable called elements because the result is used more than once in this example.
+        *   An if statement checks if any li> elements were found. As with any element that can return a NodeList, you check that there will be a suitable element before you try to work with it.
+        *   If matching elements were found, the first one is selected and its class attribute is updated. This changes the color of the list item to make it aqua.
 
 
 
