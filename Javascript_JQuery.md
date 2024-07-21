@@ -1680,6 +1680,16 @@
             -   1. Create a NodeList containing elements that have a class attribute whose value is hot, and store it in the variable elements.
             -   2. If that number is greater than or equal to 1, run the code inside the if statement.
             -   3. Get the first element from the NodeList, 0 because thats where index's start.
+*   Selecing Elements Using Class Attributes
+    -   Example;
+    -   let elements =  document.getElementByClass('hot');       // find hot items
+    -   if (elements.length > 2) {                               // if 3 or more are found
+    -   let el = elements[2];                                    // select the third one from the NodeList
+    -   el.className = 'cool';                                   // change the value of its class attribute
+    -   }
+        *   The getElementByClassName () method allows you to select elements whose class attribute contains a specific value. The method has one parameter: the class name which is given in quotes within the parentheses after the method name. Because several elements can have the same value for their class attribute, this method always returns a NodeList.
+        *   This example starts by looking for elements whose class attribute contains hot. The value of class attributes can contain several class names, each separated by a space. The result of this DOM query is stored in a variable called elements because it is used more than once in the example.
+        *   An if statement checks if the query found more than two elements. If so, the third one is selected and stored in a variable called el. The class attribute of that element is then updated to say class. In turn, this triggers a new CSS style, changing the presentation of that element.
 
 
 
