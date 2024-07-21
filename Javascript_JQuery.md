@@ -1701,6 +1701,17 @@
         *   This example looks for any li> elements in the document. It stores the result in a variable called elements because the result is used more than once in this example.
         *   An if statement checks if any li> elements were found. As with any element that can return a NodeList, you check that there will be a suitable element before you try to work with it.
         *   If matching elements were found, the first one is selected and its class attribute is updated. This changes the color of the list item to make it aqua.
+*   Selecting Elements Using CSS Selectors
+    -   Example;
+    -   // querySelector() only returns the first match
+    -   let el = document.querySelector('li.hot');
+    -   el.className = 'cool';
+    -   // querySelectorAll returns a NodeList
+    -   // The second matching element, the third list item, is selected and changed
+    -   let els = document.querySelectorAll('li.hot');
+    -   els[1].className = 'cool';
+        *   querySelector() returns the first element node that matches the CSS-style selector. querySelectorAll() returns a NodeList of all the matches. Both methods take a CSS selector as their only parameter. The CSS selector syntax offers more flexibility and accuracy when selecting an element than just specifying a class name or a tag name, and should also be familiar to front-end web devs who are used to targeting elements using CSS.
+        *   These two methods were introduced by browser manufacturers because a lot of devs were including scripts like jQuery in their pages so that they could select elements using CSS selectors. If you look at the final line of code, array syntax is used to select the second item from the NodeList, even though that NodeList is stored in a variable.
 
 
 
