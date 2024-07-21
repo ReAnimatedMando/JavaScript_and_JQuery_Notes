@@ -1739,6 +1739,17 @@
             -       li id="four">balsamic vinegar/li>
             -   /ul>
                 *   3. When the second selector has done its job, the DOM tree now only holds one li element whose class has a value of hot. Any further code looking for li elements whose class value is hot would find only this one. However, if they were looking for li elements whose class value is cool, they would find two matching element nodes.
+*   Repeating Actions For an Entire NodeList
+    -   When you have a NodeList, you can loop through each node in the collection and apply the same statements to each.
+    -   Example;
+    -   let hotItems = document.querySelectorAll('li.hot');
+    -   for (let i = 0; i < hotItems.length; i++) {
+    -       hotItems[i].className = 'cool';
+    -   }
+        *   In this example, once a NodeList has been created, a for loop is used to go through each element in the NodeList. All of the statements inside the for loops curly braces are applied to each element in the NodeList one by one. To indicate which item of the NodeList is currently being worked with, the counter i is used in the array-style syntax.
+        *   1. The variable hotItems contains a NodeList. It contains all list items whose class attribute has a value of hot. They are collected using the querySelectorAll() method.
+        *   2. The length property of the NodeList indicates how many elements are in the NodeList. The number of elements dictates how many times the loop should run.
+        *   3. Array syntax is used to indicate which item in the NodeList is currently being worked with: hotItems[i] it uses the counter variable inside the square brackets.
 
 
 
