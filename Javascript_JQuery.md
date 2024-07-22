@@ -1762,6 +1762,15 @@
         *   In this example, the NodeList is generated using querySelectorAll(), and it is looking for any li> elements that have a class value of 'hot'
         *   The NodeList is stored in a variable called hotItems, and the number of elements in the list is found using the length property.
         *   For each of the elements in the NodeList, the value of the class attribute is changed to 'cool'
+    -   Play-by-play
+        *   for (let i = 0; i < hotItems.length; i++) {         // Loop through each item
+        *       hotItems[i].className = 'cool';                 // Change value of class attribute
+        *   }
+            -   At the start of this example, there are three list items with a class attribute whose value is hot so the value of hotItems.length is 3
+            -   At first, the value of the counter is set to 0, so the first item from the NodeList, which has an index of 0, is targeted and the value of its class attribute is set to cool.
+            -   When the value of the counter is 1, the second item from the NodeList, whose index is 1, is targeted and the class is changed to cool.
+            -   When the value of the counter is 2, the third item from the NodeList, whose index is 2, is targeted and the class is changed to cool.
+            -   When the value of the counter is 3, the condition no longer returns true, so the loop ends. The script then continues to the first line of code after the loop.
 
 
 
