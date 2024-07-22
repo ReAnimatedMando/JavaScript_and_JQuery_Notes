@@ -1750,6 +1750,18 @@
         *   1. The variable hotItems contains a NodeList. It contains all list items whose class attribute has a value of hot. They are collected using the querySelectorAll() method.
         *   2. The length property of the NodeList indicates how many elements are in the NodeList. The number of elements dictates how many times the loop should run.
         *   3. Array syntax is used to indicate which item in the NodeList is currently being worked with: hotItems[i] it uses the counter variable inside the square brackets.
+*   Looping through a NodeList
+    -   Example;
+    -   let hotItems = document.querySelectorAll('li.hot');     // Store NodeList in an array
+    -   if (hotItems.length > 0) {                              // if it contains items
+    -       for (let i = 0; i < hotItems.length; i++) {         // Loop through each item
+    -           hotItems[i].className = 'cool';                 // Change value of class attribute
+    -       }
+    -   }
+        *   If you want to apply the same code to numberous elements, looping through a NodeList is a powerful technique. It involves finding out how many items are in the NodeList, and then setting a counter to loop through them, one-by-one. Each time the loop runs, the script checks that the counter is less than the total number of items in the NodeList.
+        *   In this example, the NodeList is generated using querySelectorAll(), and it is looking for any li> elements that have a class value of 'hot'
+        *   The NodeList is stored in a variable called hotItems, and the number of elements in the list is found using the length property.
+        *   For each of the elements in the NodeList, the value of the class attribute is changed to 'cool'
 
 
 
