@@ -1779,6 +1779,9 @@
             -   These are properties of the current node not methods to select an element; therefore they do not end in parentheses.
             -   If you use these properties and they do not have a previous/next sibling or a last/first child, the result will be null.
             -   These properties are read-only; they can only be used to select a new node, not to update a parent, sibling, or child.
+*   Whitespace nodes
+    -   Traversing the DOM can be difficult because some browsers add a text node whenever they come across whitespace between elements. Most browsers, except IE, treat whitespaces between elements, such as spaces or carriage returns, as a text node, so the properties, previous/next sibling, and first/last child, return different elements in different browsers.
+    -   One of the most popular ways to address this kind of problem is to use a JS library such as jQuery, which helps deal with such problems. These types of browser inconsistencies were a big factor in jQuery's popularity.
 
 
 
