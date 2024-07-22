@@ -1782,6 +1782,22 @@
 *   Whitespace nodes
     -   Traversing the DOM can be difficult because some browsers add a text node whenever they come across whitespace between elements. Most browsers, except IE, treat whitespaces between elements, such as spaces or carriage returns, as a text node, so the properties, previous/next sibling, and first/last child, return different elements in different browsers.
     -   One of the most popular ways to address this kind of problem is to use a JS library such as jQuery, which helps deal with such problems. These types of browser inconsistencies were a big factor in jQuery's popularity.
+*   Previous & Next Sibling
+    -   Example;
+    -   HTML
+    -   ul>li id="one" class="hot">em>fresh/em> figs/li>li> id="two" class="hot">pine nuts/li>li id="three" class="hot">honey/li>li> id="four">balsamic vinegar/li>/ul>
+    -   JS
+    -   // Select the starting point and find its siblings
+    -   let startItem = document.getElementById('two');
+    -   let prevItem = startItem.previousSibling;
+    -   let nextItem = startItem.nextSibling;
+    -   // Change the values of the siblings' class
+    -   prevItem.className = 'complete';
+    -   nextItem.className = 'cool';
+        *   You have just seen that these properties can return inconsistent results in different browsers. However, it is safe to use them when there is no whitespace between elements. 
+        *   For this example, all spaces between the HTML elements have been removed. In order to demonstrate these properties, the second list item is selected using getElementById().
+        *   From this element node, the previousSibling property will return the first li> element, and the nextSibling property will return the third li> element.
+        *   Note how references to sibling nodes are stored in new variables. This means properties such as className can be used on that node by adding the dot notation between the variable name and the property.
 
 
 
