@@ -1771,6 +1771,14 @@
             -   When the value of the counter is 1, the second item from the NodeList, whose index is 1, is targeted and the class is changed to cool.
             -   When the value of the counter is 2, the third item from the NodeList, whose index is 2, is targeted and the class is changed to cool.
             -   When the value of the counter is 3, the condition no longer returns true, so the loop ends. The script then continues to the first line of code after the loop.
+*   Traversing the DOM
+    -   When you have an element node, you can select another element in relation to it using these five properties. This is known as traversing the DOM
+        *   parentNode - This property finds the element node for the containing, or parent, element in the HTML. If you started with the first li> element, then its parent node would be the one representing the ul> element.
+        *   previousSibling/nextSibling - These properties find the previous or next sibling of a node if there are siblings. If you started with the first li> element, it would not have a previous sibling. However, its next sibling would be the node representing the second li>.
+        *   firstChild/lastChild - These properties find the first or last child of the current element. If you started with the ul> element, the first child would be the node representing the first li> element, and the last child would be the last li>.
+            -   These are properties of the current node not methods to select an element; therefore they do not end in parentheses.
+            -   If you use these properties and they do not have a previous/next sibling or a last/first child, the result will be null.
+            -   These properties are read-only; they can only be used to select a new node, not to update a parent, sibling, or child.
 
 
 
