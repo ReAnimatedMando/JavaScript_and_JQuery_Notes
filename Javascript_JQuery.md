@@ -1817,6 +1817,18 @@
     -   firstItem.setAttributes('class', 'complete');
     -   lastItem.setAttributes('class', 'cool');
         *   These properties also return inconsistent results if there is whitespace between elements. In this example, a slightly different solution is used in the HTML - the closing tags are put next to the opening tags of the next element, making it a little more readable. The example starts by using the getElementsByTagName() method to select the ul> element from the page. From this element node, the firstChild property will return the first li> element, and the lastChild property will return the last li> element.
+*   How to get/update Element Content
+    -   So far this chapter has focused on finding elements in the DOM tree. The rest of this chapter shows how to access/update element content. Your choice of techniques depends upon what the element contains.
+    -   To work with the content of elements you can;
+        *   Navigate to the text nodes. This works best when the element contains only text, no other elements.
+        *   Work with the containing element. This allows you to access its text nodes and child elements. It works better when an element has text nodes and child elements that are siblings.
+    -   Text Nodes - Once you have navigated from an element to its text node, there is one property that you will commonly find yourself using:
+        *   property = node value, description = Accesses text from node
+    -   Containing Element - When you are working with an element node, rather than its text node, that element can contain markup. You have to choose whether you want to retrieve (get) or update (set) the markup as well as the text.
+        *   When you use these properties to update the content of an element, the new content will overwrite the entire contents of the element, both text and markup. For example, if you used any of these properties to update the content of the body> element, it would update the entire web page.
+        *   property = innerHTML, description = Gets/sets text and markup
+        *   property = textContent, description = Gets/sets text only
+        *   property = innerText, description = Gets/sets text only
 
 
 
