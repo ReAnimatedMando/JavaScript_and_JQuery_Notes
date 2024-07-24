@@ -1895,6 +1895,19 @@
         *   You can have as much or as little markup in the variable as you want. It is a quick way to add a lot of markup to the DOM tree.
         *   2. Select element whose content you want to update. i.e. the li> element.
         *   3. Update content of selected element with new markup.
-    -   
+    -   DOM Manipulation Methods - DOM manipulation easily targets individual nodes in the DOM tree, whereas innerHTML is better suited to updating entire fragments.
+    -   Approach
+        *   DOM manipulation refers to a set of DOM methods that allow you to create element and text nodes, and then attach them to the DOM tree or remove them from the DOM tree.
+    -   Adding content
+        *   To add content, you use a DOM method to create new content one node at a time and store it in a variable. Then another DOM method is used to attach it to the right place in the DOM tree.
+    -   Removing content
+        *   You can remove an element, along with any contents and child elements it may contain, from the DOM tree using a single method.
+    -   Example; Adding a list item
+        *   1. Create a new text node
+        *   2. Create new element node
+        *   3. Add text node to element node
+        *   4. Select element you want to add the new fragment to
+        *   5. Append the new fragment to the selected element
+
 
 
