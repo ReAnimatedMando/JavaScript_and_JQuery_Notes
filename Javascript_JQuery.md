@@ -1857,6 +1857,10 @@
         *   To collect the text from the li> elements in our example and ignore any markup inside the element, you can use the textContent property on the containing li> element. In this case it would return the value: fresh figs
         *   You can also use this property to update the content of the element; it replaces the entire content of it, including any markup.
         *   One issue with textContent property is that IE did not support until IE9
-    -   
+    -   innerText - should be avoided...
+        *   Support - Although most browser manufacturers adopted the property, firefox does not because innerText is not part of any standard.
+        *   Obeys CSS - It will not show any content that has been hidden by CSS. For example, if there were a CSS rule that hid the em> elements, the innerText would return only the word figs.
+        *   Performance - Because the innerText property takes into account layout rules that specify whether the element is visible or not, it can be slower to retrieve the content than the textContent property.
+
 
 
