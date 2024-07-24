@@ -1875,6 +1875,26 @@
     -   firstItem.textContent = 'sourdough bread';              // Update the first list item
         *   In order to demonstrate the difference between textContent and innerText, this example features a CSS rule to hide the contents of em>.
         *   In most browsers, the textContent collects the words fresh figs, innerText just shows figs because fresh (em) was hidden by CSS
-
+*   Adding or Removing HTML Content
+    -   There are two very different approaches to adding and removing content from a DOM tree: the innerHTML property and DOM manipulation.
+    -   The innerHTML Property
+        *   Note: there are security risks associated with using innerHTML
+    -   Approach
+        *   innerHTML can be used on any element node. It is used both to retrieve and replace content. To update an element, new content is provided as a string. It can contain markup for descendant elements.
+    -   Adding Content
+        *   To add new content:
+            -   1. Store new content, including markup, as a string in a variable.
+            -   2. Select the element whose content you want to replace.
+            -   3. Set the element's innerHTML property to be the new string.
+    -   Removing Content
+        *   To remove all content from an element, you set innerHTML to an empty string. To remove one element from a DOM fragment, you need to provide the entire fragment minus that element.
+    -   Example; Changing a list item
+        *   1. Create variable holding markup
+        *   let item;
+        *   item = 'em>Fresh/em> figs';
+        *   You can have as much or as little markup in the variable as you want. It is a quick way to add a lot of markup to the DOM tree.
+        *   2. Select element whose content you want to update. i.e. the li> element.
+        *   3. Update content of selected element with new markup.
+    -   
 
 
