@@ -1908,6 +1908,18 @@
         *   3. Add text node to element node
         *   4. Select element you want to add the new fragment to
         *   5. Append the new fragment to the selected element
+*   Access & Update Text & Markup with innerHTML
+    -   Using innerHTML, you can access and amend the contents of an element, including any child elements.
+    -   When getting HTML from an element, the innerHTML property will get the content of an element and return it as one long string, including any markup that the element contains.
+    -   When used to set new content for an element, it will take a string that can contain markup and process that string, adding any elements within it to the markup.
+    -   Get content
+        *   let elContent = document.getElementById('one').innerHTML
+            -   Collects the content of the list item and adds it to a variable elContent.
+        *   'em>fresh/em> figs'
+            -   The elContent variable now holds this string.
+        *   document.getElementById('one').innerHTML = elContent;
+            -   Adds content of the elContent variable, including markup, to the first li> item
+                *   Note: When adding new content using innerHTML, be aware that one missing closing tag could throw out the design of the entire page. Even worse, if innerHTML is used to add content that your users created to a page, they could add malicious content.
 
 
 
