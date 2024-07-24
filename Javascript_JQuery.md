@@ -1861,6 +1861,20 @@
         *   Support - Although most browser manufacturers adopted the property, firefox does not because innerText is not part of any standard.
         *   Obeys CSS - It will not show any content that has been hidden by CSS. For example, if there were a CSS rule that hid the em> elements, the innerText would return only the word figs.
         *   Performance - Because the innerText property takes into account layout rules that specify whether the element is visible or not, it can be slower to retrieve the content than the textContent property.
+*   Accessing Text Only
+    -   example;
+    -   let firstItem = document.getElementById('one');         // Find first list item
+    -   let showTextContent = firstItem.textContent;            // Get Value of textContent
+    -   let showInnerText = fisrtItem.innerText;                // Get value of innerText
+    -   
+    -   // Show the content of these two properties at the end of the list
+    -   let msg = 'p>textContent: ' + showTextContent + ' /p>';
+    -       msg += 'p>innerText: ' + showInnerText + '/p>';
+    -   let el = document.getElementById('scriptResults');
+    -   el.innerHTML = msg;
+    -   firstItem.textContent = 'sourdough bread';              // Update the first list item
+        *   In order to demonstrate the difference between textContent and innerText, this example features a CSS rule to hide the contents of em>.
+        *   In most browsers, the textContent collects the words fresh figs, innerText just shows figs because fresh (em) was hidden by CSS
 
 
 
