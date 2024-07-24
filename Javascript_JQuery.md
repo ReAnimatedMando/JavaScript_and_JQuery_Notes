@@ -1829,6 +1829,16 @@
         *   property = innerHTML, description = Gets/sets text and markup
         *   property = textContent, description = Gets/sets text only
         *   property = innerText, description = Gets/sets text only
+*   Access & Update a Text Node with NodeValue
+    -   When you select a text node, you can retrieve or amend the content of it using the nodeValue property.
+    -   In order to use nodeValue, you must be on a text node, not the element that contains the text.
+    -   example;
+    -   li id="one">em>fresh/em> figs/li>
+    -   document.getElementById('one').firstChild.nextSibling.nodeValue
+        *   getElementById selects the li> element
+        *   em> element is the first child of li>
+        *   the text node is the next sibling of the em> element
+        *   now that you have the text node you can get its value with nodeValue
 
 
 
