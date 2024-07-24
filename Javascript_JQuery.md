@@ -1851,6 +1851,12 @@
         *   Next the text content of that element is stored in a variable called elText.
         *   The third line of the text replaces the words 'pine nuts' with 'kale' using the String object's replace() method.
         *   The last line uses the nodeValue property to update the content of the text node with the updated value.
-
+*   Access & Update Text with textContent and innerText
+    -   The textContent property allows you to collect or update just the text that is in the containing element and its children
+    -   textContent
+        *   To collect the text from the li> elements in our example and ignore any markup inside the element, you can use the textContent property on the containing li> element. In this case it would return the value: fresh figs
+        *   You can also use this property to update the content of the element; it replaces the entire content of it, including any markup.
+        *   One issue with textContent property is that IE did not support until IE9
+    -   
 
 
