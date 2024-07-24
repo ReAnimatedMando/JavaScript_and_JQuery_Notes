@@ -1839,6 +1839,18 @@
         *   em> element is the first child of li>
         *   the text node is the next sibling of the em> element
         *   now that you have the text node you can get its value with nodeValue
+*   Accessing & Changing a Text Node
+    -   example;
+    -   let itemTwo = document.getElementById('two');       // Get second list item
+    -   let elText = itemTwo.firstChild.nodeValue;          // Get its text content
+    -   elText = elText.replace('pine nuts', 'kale');       // Change pine nuts to kale
+    -   itemTwo.firstChild.nodeValue = elText;              // Update the list item
+        *   To work with text in an element, first the element node is accessed and then its text node. The text node has a property called nodeValue which returns the text in that text node. You can also use the nodeValue property to update the content of a text node.
+        *   This example takes the text content of the second list item and changes it from pine nuts to kale.
+        *   The fist line collects the second list item.. It is stored in a variable called itemTwo.
+        *   Next the text content of that element is stored in a variable called elText.
+        *   The third line of the text replaces the words 'pine nuts' with 'kale' using the String object's replace() method.
+        *   The last line uses the nodeValue property to update the content of the text node with the updated value.
 
 
 
