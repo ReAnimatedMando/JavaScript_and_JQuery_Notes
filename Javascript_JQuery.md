@@ -1920,6 +1920,19 @@
         *   document.getElementById('one').innerHTML = elContent;
             -   Adds content of the elContent variable, including markup, to the first li> item
                 *   Note: When adding new content using innerHTML, be aware that one missing closing tag could throw out the design of the entire page. Even worse, if innerHTML is used to add content that your users created to a page, they could add malicious content.
+*   Update Text & Markup
+    -   Example;
+    -   //  Store the first list item in a variable
+    -   let firstItem = document.getElementById('one');
+    -   //  Get the content of the first list item
+    -   let itemContent = firstItem.innerHTML;
+    -   //  Update the content of the first list item so it is a link
+    -   firstItem.innerHTML = 'a href=\"http://example.org\">' + itemContent + '/a>';
+        *   This example starts by storing the first list item in a variable called firstItem
+        *   It then retrieves the content of this list item and stores it in a variable called itemContent.
+        *   Finally, the content of the list item is placed inside a link. Note how the quotes are escaped.
+        *   As the content of the string is added to the element using the innerHTML property, the browser will add any elements in the string to the DOM. In this example, an a> element has been added to the page. 
+        *   If you see attributes in your HTML code, escaping the quotation using backslash character can make it clearer that those characters are not part of the script.
 
 
 
