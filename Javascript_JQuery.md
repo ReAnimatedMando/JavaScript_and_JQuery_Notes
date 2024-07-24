@@ -1798,6 +1798,25 @@
         *   For this example, all spaces between the HTML elements have been removed. In order to demonstrate these properties, the second list item is selected using getElementById().
         *   From this element node, the previousSibling property will return the first li> element, and the nextSibling property will return the third li> element.
         *   Note how references to sibling nodes are stored in new variables. This means properties such as className can be used on that node by adding the dot notation between the variable name and the property.
+*   First & Last Child
+    -   Example;
+    -   HTML
+    -   ul>
+    -       li> id="one" class="hot">em>fresh/em> figs/li>
+    -       li> id="two" class="hot">pine nuts/li>
+    -       li> id="three" class="hot">honey/li>
+    -       li> id="four">balsamic vinegar/li>
+    -   ul>
+    -   JavaScript
+    -   //  Select the starting point and find its children
+    -   let startItem = document.getElementByTagName('ul')[0];
+    -   let firstItem = startItem.firstChild;
+    -   let lastItem = startItem.lastChild;
+    -   
+    -   //  Change the values of the children's class attributes
+    -   firstItem.setAttributes('class', 'complete');
+    -   lastItem.setAttributes('class', 'cool');
+        *   These properties also return inconsistent results if there is whitespace between elements. In this example, a slightly different solution is used in the HTML - the closing tags are put next to the opening tags of the next element, making it a little more readable. The example starts by using the getElementsByTagName() method to select the ul> element from the page. From this element node, the firstChild property will return the first li> element, and the lastChild property will return the last li> element.
 
 
 
