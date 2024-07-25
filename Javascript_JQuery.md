@@ -1999,6 +1999,15 @@
             -   It should not be used to add content that has come from a user, such as a username or blog comment, as it can pose a significant security risk which is discussed later
             -   It can be difficult to isolate single elements that you want to update within a larger DOM fragment
             -   Event handlers may no longer work as intended
-    
+    -   DOM Manipulation
+        *   DOM manipulation refers to using a set of methods and properties to access, create and update elements and text nodes.
+        *   Advantages;
+            -   It is suited to changing one element from a DOM fragment where there are many siblings.
+            -   It does not affect event handlers
+            -   It easily allows a script to add elements incrementally, when you do not want to alter a lot of code at once.
+        *   Disadvantages;
+            -   If you have to make a lot of changes to the content of a page, it is slower than innerHTML
+            -   You need to write more code to achieve the same thing compared with innerHTML
+
 
 
