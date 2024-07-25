@@ -1941,6 +1941,18 @@
             -   Creates new text node and stores it in a variable. It can be added to the element node using appendChild() method. This provides the content for the element, although you can skip if you want to attach empty element to the DOM tree.
         *   Add it to the DOM - appendChild()
             -   This adds it to the DOM tree. Allows you to specify which element you want this node added to as a child of it.
+*   Adding An Element to the DOM Tree
+    -   Example;
+    -   //  Create a new element and store it in a variable
+    -   let newEl = document.createElement('li');
+    -   //  Create a text node and store it in a variable\
+    -   let newText = document.createTextNode('quinoa');
+    -   //  Attach the new text node to the new element
+    -   newEl.appendChild(newText);
+    -   //  Find the position where the new element should be added
+    -   let position = document.getElementByTagName('ul')[0];
+    -   //  Insert the new element into its position
+    -   position.appendChild(newEl)
 
 
 
