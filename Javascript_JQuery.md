@@ -2008,6 +2008,25 @@
         *   Disadvantages;
             -   If you have to make a lot of changes to the content of a page, it is slower than innerHTML
             -   You need to write more code to achieve the same thing compared with innerHTML
+*   Cross-site Scripting (XSS) Attacks
+    -   If you add HTML to a page using innerHTML, or several jQuery methods, and attacker could gain access to your users' accounts.
+    -   How XSS happens;
+        *   XSS involves an attacker placing malicious code into a site. Websites often feature content created by many different people. i.e.
+            -   Users can create profiles or add comments
+            -   Multiple authors may contribute articles
+            -   Data can come from third-party sites such as Facebook, Twitter, news tickers, and other feeds
+            -   Files such as images and video may be uploaded
+        *   Data you do not have complete control over is known as untrusted data; it must be handled with care.
+        *   What can these attacks do?
+            -   XSS can give the attacker access to information in:
+                *   The DOM, including form data
+                *   That websites cookies
+                *   Session tokens: information that identifies you from other users when you log into a site
+            -   This could let the attacker access a user account and:
+                *   Make purchases with that account
+                *   Post defamatory content
+                *   Spread their malicious code further/faster
+    -   Even simple code can cause problems - malicious code often mixes HTML and JS, although URLs and CSS can be used to trigger XSS attacks.
 
 
 
