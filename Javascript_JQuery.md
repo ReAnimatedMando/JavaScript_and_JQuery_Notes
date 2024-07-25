@@ -1965,6 +1965,16 @@
             -   The removeChild() method takes one parameter: the reference to the element that you no longer want
     -   When you remove an element from the DOM, it will also remove any child elements.
     -   Removing elements from the DOM will affect the index number of siblings in a NodeList
+*   Removing an Element from the DOM Tree
+    -   Example;
+    -   let removeEl = document.getElementByTagName('li)[3];        // The element to remove
+    -   let containEl = removeEl.parentNode;                        // Its containing element
+    -   containerEl.removeChild(removeEl);                          // Remove the element
+        *   This example uses the removeChild() method to remove the fourth item from the list, along with its contents.
+        *   The first variable, removeEl, stores the actual element you want to remove from the page, the fourth list item.
+        *   The second variable, containerEl, stores the ul> element that contains the element you want to remove.
+        *   The removeChild() method is used on the variable that holds the container node.
+        *   It requires one parameter: the element you want to remove, which is stored in the second variable.
 
 
 
