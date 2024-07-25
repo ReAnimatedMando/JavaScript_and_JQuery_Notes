@@ -1953,6 +1953,18 @@
     -   let position = document.getElementByTagName('ul')[0];
     -   //  Insert the new element into its position
     -   position.appendChild(newEl)
+*   Removing Elements via DOM Manipulation
+    -   DOM manipulation can be used to remove elements from the DOM tree.
+        *   1. Store the element to be removed in a variable
+            -   You start by selecting the element that is going to be removed and store that element node in a variable
+            -   You can use any of the methods you saw in the section on DOM queries to select the element
+        *   2. Store the parent of that element in a variable
+            -   Next, you find the parent element that contains the element you want to remove and store that element node in a variable
+            -   The simplest way to get this element is to use the parentNode property of this element
+        *   3. Remove the element from its containing element
+            -   The removeChild() method takes one parameter: the reference to the element that you no longer want
+    -   When you remove an element from the DOM, it will also remove any child elements.
+    -   Removing elements from the DOM will affect the index number of siblings in a NodeList
 
 
 
