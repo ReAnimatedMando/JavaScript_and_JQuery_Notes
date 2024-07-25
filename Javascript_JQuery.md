@@ -1975,6 +1975,20 @@
         *   The second variable, containerEl, stores the ul> element that contains the element you want to remove.
         *   The removeChild() method is used on the variable that holds the container node.
         *   It requires one parameter: the element you want to remove, which is stored in the second variable.
-
+*   Comparing Techniques: Updating HTML Content
+    -   So far, you have seen three techniques for adding HTML to a web page...
+    -   document.write()
+        *   The document object's write() method is a simple way to add content that was not in the original source code to the page, but its use is rarely advised.
+        *   Advantages;
+            -   It is a quick and easy way to show beginners how content can be added to a page.
+        *   Disadvantages;
+            -   It only works when the page initially loads
+            -   If you use it after the page has loaded it can...
+                *   overwrite the whole page
+                *   not add the content to the page
+                *   create a new page
+            -   It can cause problems with XHTML pages that are strictly validated
+            -   This method is very rarely used by programmers these days and is generally frowned upon
+    
 
 
