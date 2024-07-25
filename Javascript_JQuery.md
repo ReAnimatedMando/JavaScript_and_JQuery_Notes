@@ -1933,6 +1933,14 @@
         *   Finally, the content of the list item is placed inside a link. Note how the quotes are escaped.
         *   As the content of the string is added to the element using the innerHTML property, the browser will add any elements in the string to the DOM. In this example, an a> element has been added to the page. 
         *   If you see attributes in your HTML code, escaping the quotation using backslash character can make it clearer that those characters are not part of the script.
+*   Adding Elements Using DOM Manipulation
+    -   DOM manipulation offers another technique to add new content to a page. It involves 3 steps.
+        *   Create the element - createElement()
+            -   Use this method to create a new node and store it in a variable, it is not yet added to the DOM tree.
+        *   Give it content - createTextNode()
+            -   Creates new text node and stores it in a variable. It can be added to the element node using appendChild() method. This provides the content for the element, although you can skip if you want to attach empty element to the DOM tree.
+        *   Add it to the DOM - appendChild()
+            -   This adds it to the DOM tree. Allows you to specify which element you want this node added to as a child of it.
 
 
 
