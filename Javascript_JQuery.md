@@ -1989,6 +1989,16 @@
                 *   create a new page
             -   It can cause problems with XHTML pages that are strictly validated
             -   This method is very rarely used by programmers these days and is generally frowned upon
+    -   element.innerHTML
+        *   The innerHTML property lets you get/update the entire content of any element, including markup, as a string.
+        *   Advantages;
+            -   You can use it to add a lot of new markup using less code than DOM manipulation methods
+            -   It can be faster than DOM manipulation when adding a lot of new element to a web page
+            -   It is a simple way to remove all of the content from one element, by assigning it a blank string
+        *   Disadvantages;
+            -   It should not be used to add content that has come from a user, such as a username or blog comment, as it can pose a significant security risk which is discussed later
+            -   It can be difficult to isolate single elements that you want to update within a larger DOM fragment
+            -   Event handlers may no longer work as intended
     
 
 
