@@ -2093,6 +2093,19 @@
         *   className               gets or sets the value of the class attribute
         *   id                      gets or sets the value of the id attribute
             -   You have seen that the DOM treats each HTML element as its own object in the DOM tree. The properties of the object correspond to the attributes that type of element can carry. 
+*   Check for an Attribute and get its Values
+    -   Example;
+    -   let firstItem = document.getElementById('one');     // Get first list item
+    -   if (firstItem.hasAttribute('class')) {              // If it has class attribute
+    -       let attr = firstItem.getAttribute('class');     // Get the attribute
+    -       // Add the value of the attribute after the list
+    -       let el = document.getElementById('scriptResults);
+    -       el.innerHTML = 'p>The first item has a class name: ' + attr + '/p>;
+    -   }
+        *   Before you work with an attribute, it is good practice to check whether it exists. This will save resources if the attribute cannot be found. The hasAttribute() method of any element node lets you check if an attribute exists. The attribute name is given as an argument in the parentheses. Using hasAttribute() in an if statement like this means that the code inside the curly braces will run only if the attribute exists on the given element.
+        *   In this example, the DOM query getElementById() returns the element whose id attribute has a value of one.
+        *   the hasAttribute() method is used to check whether this element has a class attribute, and returns a Boolean. This is used with an if statement so that the code in the curly braces will run only if the class attribute does exist.
+        *   The getAttribute() method returns the value of the class attribute, which is then written to the page.
 
 
 
