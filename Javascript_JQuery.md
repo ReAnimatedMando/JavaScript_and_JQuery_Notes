@@ -2076,6 +2076,23 @@
         *   You can still use innerHTML property and jQuery.html() method to add HTML to the DOM, but you must make sure that:
             -   You control all of the markup being generated, do not allow user content that could contain markup.
             -   The user's content is escaped and added as text using the approaches noted above, rather than adding the user's content as HTML.
+*   Attribute Nodes
+    -   Once you have an element node, you can use other properties and methods on that element node to access and change its attributes.
+        *   There are two steps to accessing and updating attributes. 
+            -   First, select the element node that carries the attribute and follow it with a period symbol
+            -   Then, use one of the methods or properties below to work with that elemetn's attribute
+                *   Example;
+                *   document.getElementById('one').getAttribute('class');
+        *   Method                  Description
+        *   getAttribute()          gets the value of an attribute
+        *   hasAttribute()          checks if element node has a specified attribute
+        *   setAttribute()          sets the value of an attribute
+        *   removeAttribute()       removes an attribute from an element node
+        *   
+        *   Property                Description
+        *   className               gets or sets the value of the class attribute
+        *   id                      gets or sets the value of the id attribute
+            -   You have seen that the DOM treats each HTML element as its own object in the DOM tree. The properties of the object correspond to the attributes that type of element can carry. 
 
 
 
