@@ -2130,6 +2130,11 @@
         *   Trying to remove an attribute that does not exist will not cause an error, but it is good practice to check for its existence before attempting to remove it.
         *   In this example, the getElementById() method is used to retrieve the first item from this list, which has an id attribute with a value of one.
         *   The script checks to see if the selected element has a class attribute and, if so, it is removed.
+*   Examing the DOM in Chrome
+    -   Modern browsers come with tools that help you inspect the page loaded in the browser and understand the structure of the DOM tree.
+        *   To get the developer tools in Chrome on a mac, go to the view menu, select developer and then developer tools. On a PC, go to tools or more tools and select developer tools. Or right-click on any element and select inspect element.
+        *   Select Elements from the menu that runs across the top of this tool. The source of the page will be shown on the left and several other options to the right. Any element that has child elements has an arrow next to it that lets you expand and collapse the item to show and hide its content.
+        *   The properties panel tells you the type of object the selected element is, in some versions of Chrome this is shown as a tab. When you highlight different elements in the main left-hand window, you can see the values in the properties panel on the right reflect that element.
 
 
 
