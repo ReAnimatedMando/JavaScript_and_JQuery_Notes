@@ -2135,6 +2135,11 @@
         *   To get the developer tools in Chrome on a mac, go to the view menu, select developer and then developer tools. On a PC, go to tools or more tools and select developer tools. Or right-click on any element and select inspect element.
         *   Select Elements from the menu that runs across the top of this tool. The source of the page will be shown on the left and several other options to the right. Any element that has child elements has an arrow next to it that lets you expand and collapse the item to show and hide its content.
         *   The properties panel tells you the type of object the selected element is, in some versions of Chrome this is shown as a tab. When you highlight different elements in the main left-hand window, you can see the values in the properties panel on the right reflect that element.
+*   Examining DOM in FireFox
+    -   FireFox has similar built-in-tools, but you can also download a DOM inspector tool that shows the text nodes.
+        *   If you search online for DOM inspector, you will find the tool designed for FireFox shown on the left. In the screen shot, you can see a similar tree view to the one shown in Chrome, but it also shows you where there are whitespace nodes, they are shown as text. In the panel to the right, you can see the value in the nodes; whitespace nodes have no value in this panel.
+        *   FireFox also has a 3d view of the DOM, where a box is drawn around each element, and you can change the angle of the page to show which parts of it stick out more than others. The further they protrude the further into child elements they appear.
+        *   This can give you an interesting and quick glimpse into the compexity of the markup used on a page and the depth to which elements are nested.
 
 
 
