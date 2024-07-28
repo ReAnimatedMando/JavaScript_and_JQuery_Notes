@@ -2106,6 +2106,20 @@
         *   In this example, the DOM query getElementById() returns the element whose id attribute has a value of one.
         *   the hasAttribute() method is used to check whether this element has a class attribute, and returns a Boolean. This is used with an if statement so that the code in the curly braces will run only if the class attribute does exist.
         *   The getAttribute() method returns the value of the class attribute, which is then written to the page.
+*   Creating Attributes & Changing their Values
+    -   Example;
+    -   let firstItem = document.getElementById('one')      // Get the first item
+    -   firstItem.className = 'complete';                   // Change its class attribute
+    -   
+    -   let fourthItem = document.getElementByTagName('li').item(3);    // Get fourth item
+    -   fourthItem.setAttribute('class', 'cool');           // Add an attribute to it
+        *   The classname property allows you to change the value of the class attribute. If the attribute does not exist, it will be created and given the specified value.
+        *   You have seen this property used throughout the chapter to update the status of the list items. Here, you see another way to achieve this task.
+        *   The setAttribute() method allows you to update the value of any attribute. It takes two parameters: the attribute name, and the value for the attribute.
+        *   When there is a property, like the className or id properties, it is generally considered better to update the properties rather than use a method because behind the scenes, the method would just be setting the properties anyway.
+        *   When you update the value of an attribute, especially the class attribute, it can be used to trigger new CSS rules, and therefore change the appearance of the elements.
+        *   NOTE: These techniques override the entire value of the class attribute. They do not add a new value to the existing value of the class attribute.
+        *   If you wanted to add a new value onto the existing value of the class attribute, you would need to read the content of the attribute first, then add the new text to that existing value of the attribute, or use the jQuery.addClass() method covered on pg320.
 
 
 
