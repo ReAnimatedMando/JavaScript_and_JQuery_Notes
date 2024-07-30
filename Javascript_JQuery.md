@@ -2140,6 +2140,16 @@
         *   If you search online for DOM inspector, you will find the tool designed for FireFox shown on the left. In the screen shot, you can see a similar tree view to the one shown in Chrome, but it also shows you where there are whitespace nodes, they are shown as text. In the panel to the right, you can see the value in the nodes; whitespace nodes have no value in this panel.
         *   FireFox also has a 3d view of the DOM, where a box is drawn around each element, and you can change the angle of the page to show which parts of it stick out more than others. The further they protrude the further into child elements they appear.
         *   This can give you an interesting and quick glimpse into the compexity of the markup used on a page and the depth to which elements are nested.
+##  Events
+*   Events
+    -   When you browse the web, your browser registers different types of events. It's the browser's way of saying, "Hey, this just happened." Your script can then respond to these events.
+        *   Scripts often respond to these events by updating the content of the web page (via the DOM) which makes the page feel more interactive. In this section, you will learn how.
+        *   Interactions Create Events
+            -   Events occur when users click or tap on a link, hover or swipe over an element, type on the keyboard, resize the window, or when the page they requested has loaded. 
+        *   Events Trigger Code
+            -   When an event occurs, or fires, it can be used to trigger a particular function. Different code can be triggered when users interact with different parts of the page.
+        *   Code Responds to Users
+            -   In the last chapter, you saw how the DOM can be used to update a page. The events can trigger the kinds of changes the DOM is capable of. This is how a web page reacts to users.
 
 
 
