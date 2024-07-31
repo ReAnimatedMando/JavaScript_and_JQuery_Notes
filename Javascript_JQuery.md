@@ -2194,6 +2194,15 @@
                 *   When an event has occurred, it is often described as having fired or been raised.
             -   Events trigger scripts
                 *   Events are said to trigger a function or script.
+*   How Events Trigger JS Code
+    -   When the user interacts with the HTML on a web page, there are three steps involved in getting it to trigger some JS code. Together these steps are known as event handling.
+        *   1. Select the element node(s) you want the script to respond to.
+            -   For example, if you want to trigger a function when a user clicks on a specific link, you need to get the DOM node for that link element. You do this using a DOM query.
+        *   2. Indicate which event on the selected node(s) will trigger the response.
+            -   Programmers call this binding and event to a DOM node. The previous two pages showed a selection of the popular events that you can monitor for. 
+        *   3. State the code you want to run when the event occurs.
+            -   When the event occurs, on a specified element, it will trigger a function. This may be a named or an anonymous function.
+                *   The UI events that relate to the browser window, rather than the HTML page loaded in it, work with the window object rather than an element node. Examples include the events that occur when a requested page has finished loading, or when the user scrolls. Some events work with most element nodes, such as the mouseover event, which is triggered when the user rolls over any element. Other events only work with specific element nodes, such as the submit event, which only works with a form.
 
 
 
