@@ -2203,6 +2203,16 @@
         *   3. State the code you want to run when the event occurs.
             -   When the event occurs, on a specified element, it will trigger a function. This may be a named or an anonymous function.
                 *   The UI events that relate to the browser window, rather than the HTML page loaded in it, work with the window object rather than an element node. Examples include the events that occur when a requested page has finished loading, or when the user scrolls. Some events work with most element nodes, such as the mouseover event, which is triggered when the user rolls over any element. Other events only work with specific element nodes, such as the submit event, which only works with a form.
+    -   Here you can see how event handling can be used to provide feedback to users filling in a registration form. It will how an error message if their username is too short.
+        *   1. Select Element
+            -   The element that users are interacting with is the text input where they inter the username
+        *   2. Specify Event
+            -   When users move out of the text input, it loses focus, and the blur event fires on this element.
+        *   3. Call Code
+            -   When the blur event fires on the username input, it will trigger a function called checkUsername(). This function checks if the username is less than 5 characters.
+            -   If there are not enough characters, it shows an error message that prompts the user to enter a longer username.
+            -   If there are enough characters, the element that holds the error message should be cleared.
+            -   This is because an error message may have been shown to the user already and they subsequently corrected their mistake. If the error message was still visible when they had filled in the form correctly, it would be confusing.
 
 
 
