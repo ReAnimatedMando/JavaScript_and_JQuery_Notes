@@ -2191,6 +2191,9 @@
         *   DOMNodeInsertedIntoDocument Node has been inserted as a descendant of another node
         *   DOMNodeRemovedFromDocument  Node has been removed as a descendant of another node
             -   Events fire or are raised
-                *   When an event 
+                *   When an event has occurred, it is often described as having fired or been raised.
+            -   Events trigger scripts
+                *   Events are said to trigger a function or script.
+
 
 
