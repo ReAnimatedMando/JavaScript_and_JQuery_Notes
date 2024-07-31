@@ -2150,6 +2150,15 @@
             -   When an event occurs, or fires, it can be used to trigger a particular function. Different code can be triggered when users interact with different parts of the page.
         *   Code Responds to Users
             -   In the last chapter, you saw how the DOM can be used to update a page. The events can trigger the kinds of changes the DOM is capable of. This is how a web page reacts to users.
-
+*   Different Event Types
+    -   Here is a selection of the events that occur in the browser while you are browsing the web. Any of these events can be used to trigger a function in your JS code. 
+    -   UI Events
+        *   Event           Description
+        *   load            Web page has finished loading
+        *   unload          Web page is unloading(usually because a new page was requested)
+        *   error           Browser encounters a JS error or an asset doesn't exist
+        *   resize          Browser window has been resized
+        *   scroll          User has scrolled up or down the page
+    -   
 
 
