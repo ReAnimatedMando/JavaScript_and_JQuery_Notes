@@ -2165,7 +2165,7 @@
         *   keyup           User releases a key
         *   keypress        Character is being inserted(repeats while key is depressed)
     -   Mouse Events
-        *   click           User pressed and releases a button over the same element
+        *   click           User presses and releases a button over the same element
         *   dblclick        User presses and releases a button twice over the same element
         *   mousedown       User presses a mouse button while over an element
         *   mouseup         User releases a mouse button while over an element
@@ -2175,6 +2175,15 @@
     -   Focus Events
         *   focus/focusin   Element gains focus
         *   blur/focusout   Element loses focus
+    -   Form Events
+        *   input           Value in any input> or textarea> has changed, or any element with contenteditable attribute
+        *   change          Value in select box, checkbox, or radio button changes
+        *   submit          User submits a form using button or key
+        *   reset           User clicks on a form's reset button, rare these days
+        *   cut             User cuts content from a form field
+        *   copy            User copies content from a form field
+        *   paste           User pastes content into a form field
+        *   select          User selects some text in a form field
     -   
 
 
