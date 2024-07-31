@@ -2154,11 +2154,16 @@
     -   Here is a selection of the events that occur in the browser while you are browsing the web. Any of these events can be used to trigger a function in your JS code. 
     -   UI Events
         *   Event           Description
+        *   
         *   load            Web page has finished loading
         *   unload          Web page is unloading(usually because a new page was requested)
         *   error           Browser encounters a JS error or an asset doesn't exist
         *   resize          Browser window has been resized
         *   scroll          User has scrolled up or down the page
+    -   Keyboard Events
+        *   keydown         User first presses a key(repeats while a key is depressed)
+        *   keyup           User releases a key
+        *   keypress        Character is being inserted(repeats while key is depressed)
     -   
 
 
