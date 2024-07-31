@@ -2172,6 +2172,9 @@
         *   mousemove       User moves the mouse(not a touchscreen)
         *   mouseover       User moves the mouse over an element(not touchscreen)
         *   mouseout        User moves the mouse off an element(not touchscreen)
+    -   Focus Events
+        *   focus/focusin   Element gains focus
+        *   blur/focusout   Element loses focus
     -   
 
 
