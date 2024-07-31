@@ -2184,6 +2184,13 @@
         *   copy            User copies content from a form field
         *   paste           User pastes content into a form field
         *   select          User selects some text in a form field
-    -   
+    -   Mutation Events
+        *   DOMSubtreeModified  Change has been made to document
+        *   DOMNodeInserted     Node has been inserted as a direct child of another node
+        *   DOMNodeRemoved      Node has been removed from another node
+        *   DOMNodeInsertedIntoDocument Node has been inserted as a descendant of another node
+        *   DOMNodeRemovedFromDocument  Node has been removed as a descendant of another node
+            -   Events fire or are raised
+                *   When an event 
 
 
