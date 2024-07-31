@@ -2164,6 +2164,14 @@
         *   keydown         User first presses a key(repeats while a key is depressed)
         *   keyup           User releases a key
         *   keypress        Character is being inserted(repeats while key is depressed)
+    -   Mouse Events
+        *   click           User pressed and releases a button over the same element
+        *   dblclick        User presses and releases a button twice over the same element
+        *   mousedown       User presses a mouse button while over an element
+        *   mouseup         User releases a mouse button while over an element
+        *   mousemove       User moves the mouse(not a touchscreen)
+        *   mouseover       User moves the mouse over an element(not touchscreen)
+        *   mouseout        User moves the mouse off an element(not touchscreen)
     -   
 
 
