@@ -2213,6 +2213,8 @@
             -   If there are not enough characters, it shows an error message that prompts the user to enter a longer username.
             -   If there are enough characters, the element that holds the error message should be cleared.
             -   This is because an error message may have been shown to the user already and they subsequently corrected their mistake. If the error message was still visible when they had filled in the form correctly, it would be confusing.
+*   Three Ways to Bind an Event to an Element
+    -   Event handlers let you indicate which event you are waiting for on any particular element. There are three types of event handlers.
 
 
 
