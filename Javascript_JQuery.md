@@ -2224,6 +2224,10 @@
         *   DOM event handlers were introduced in the original specification for the DOM. They are considered better than HTML event handlers because they let you separate the JS from the HTML.
         *   Support in all major browsers is very strong for this approach. The main drawback is that you can only attach a single function to any event. For example, the submit event of a form cannot trigger one function that checks the contents of a form, and a second to submit the form data if it passes the check.
         *   As a result of this limitation, if more than one script is used on the same page, and both scripts respond to the same event, then one or both of the scripts may not work as intended.
-    -   
+    -   DOM Level 2 Event Listeners
+        *   Event listeners were introduced in an update to the DOM specification, they are now the favored way of handling events.
+        *   The syntax is quite different and, unlike traditional event handlers, these newer event listeners allow one event to trigger multiple functions. As a result, there are less likely to be conflicts between different scripts that run on the same page.
+        *   This approach does not work with IE8 or earlier. Differences in browser support for the DOM and events helped speed adoption of jQuery.
+
 
 
