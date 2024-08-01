@@ -2215,6 +2215,11 @@
             -   This is because an error message may have been shown to the user already and they subsequently corrected their mistake. If the error message was still visible when they had filled in the form correctly, it would be confusing.
 *   Three Ways to Bind an Event to an Element
     -   Event handlers let you indicate which event you are waiting for on any particular element. There are three types of event handlers.
-
+    -   HTML Event Handlers
+        *   This is bad practice but you need to be aware of it because you may see it in older code.
+        *   Early versions of HTML included a set of attributes that could respond to events on the element they were added to. The attribute names matched the event names. their values called the functions that were to run when that event occured. 
+        *   For example, a onclick="hide()"> indicated that when a user clicked on this a> element, the hide() function would be called.
+        *   This method of event handling is no longer used because it is better to separate the JS from the HTML. You should use one of the other approaches shown now.
+    -   
 
 
