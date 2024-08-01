@@ -2220,6 +2220,10 @@
         *   Early versions of HTML included a set of attributes that could respond to events on the element they were added to. The attribute names matched the event names. their values called the functions that were to run when that event occured. 
         *   For example, a onclick="hide()"> indicated that when a user clicked on this a> element, the hide() function would be called.
         *   This method of event handling is no longer used because it is better to separate the JS from the HTML. You should use one of the other approaches shown now.
+    -   Traditional DOM Event Handlers
+        *   DOM event handlers were introduced in the original specification for the DOM. They are considered better than HTML event handlers because they let you separate the JS from the HTML.
+        *   Support in all major browsers is very strong for this approach. The main drawback is that you can only attach a single function to any event. For example, the submit event of a form cannot trigger one function that checks the contents of a form, and a second to submit the form data if it passes the check.
+        *   As a result of this limitation, if more than one script is used on the same page, and both scripts respond to the same event, then one or both of the scripts may not work as intended.
     -   
 
 
