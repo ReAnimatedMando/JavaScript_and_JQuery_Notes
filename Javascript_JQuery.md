@@ -2231,6 +2231,20 @@
 *   HTML Event Handler Attributes (DO NOT USE)
     -   In the HTML, the first input> element has an attribute called onblur, triggered when the user leaves the element. The value of the attribute is the name of the function that it should trigger. The value of the event handler attribute would be JS. Often it would call a function that was written either in the head> element or a separate JS file.
     -   a> elements can have onclick, onmouseover, onmouseout, form> elements can have onsubmit, input> elements for text can have onkeypress, onfocus, onblur.
-*   
+*   Traditional DOM Event Handlers
+    -   All modern browsers understand this way of creating an event handler, but you can only attach one function to each event handler.
+    -   Example;
+    -   element.onevent = functionName;
+    -   This is the syntax to bind an event to an element using an event handler, and to indicate which function should execute when that event fires.
+    -   Example 2;
+    -   function checkUsername() {
+    -   // code to check the length of username
+    -   }
+    -   let el = document.getElementById('username');
+    -   el.onblur = checkUsername;
+        *   Here, the event handler is on the last line, after the function has been defined and the DOM element node selected.
+        *   When a function is called, the parentheses that follow its name tell the JS interpreter to "run this code now"
+        *   We don't want the code to run until the event fires, so the parentheses are omitted from the event handler on the last line.
+
 
 
