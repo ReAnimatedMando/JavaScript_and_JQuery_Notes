@@ -2245,6 +2245,25 @@
         *   Here, the event handler is on the last line, after the function has been defined and the DOM element node selected.
         *   When a function is called, the parentheses that follow its name tell the JS interpreter to "run this code now"
         *   We don't want the code to run until the event fires, so the parentheses are omitted from the event handler on the last line.
+*   Using DOM Event Handlers
+    -   Example;
+    -   function checkUsername() {                                              // Declare function
+    -       let elMsg = document.getElementById('feedback');                    // Get feedback element
+    -       if (this.value.length < 5) {                                        // If username too short
+    -       elMsg.textContent = 'Username must be 5 characters or more';        // Set message
+    -       } else {                                                            // Otherwise
+    -       elMsg.textContent = '';                                             // Clear message
+    -       }
+    -   }
+    -   let elUsername = document.getElementById('username');                   // Get username input
+    -   elUsername.onblur = checkUsername;                                      // When it loses focus call checkUsername()
+        *   In this example, the event handler appears on the last line of the JS. Before the DOM event handler, two things are put in place:
+            -   If you use a named function when the event fires on your chosen DOM node, write that function first.
+            -   The DOM element node is stored in a variable. Here the text input, whose id attribute has a value of username, is placed into a variable called elUsername.
+        *   When using event handlers, the event name is preceded by the word "on"... onsubmit, onchange, onfocus, onblur...
+            -   On the last line of the code, the event handler elUsername.onblur indicates that the code is waiting for the blur event to fire on the element stored in the variable called elUsername.
+            -   This is followed by an = sign, then the name of the function that will run when the event fires on that element. Note that there are no parentheses on the function name. This means you cannot pass arguments to this function.
+            -   Browser support: on line 3, the checkUsername() function uses the this keyword in the conditional statement to check the number of characters the user entered. It works in most browsers because they know this refers to the element the event happened on.
 
 
 
