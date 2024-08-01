@@ -2276,6 +2276,26 @@
         *   A reference to the DOM element node is often stored in a variable
         *   The code starts by defining the named function. 
         *   The Function is called by the event listener on the last line, but the parentheses are omitted.
-*   
+*   Using Event Listeners
+    -   Example;
+    -   function checkUsername() {                                              // Declare function
+    -       let elMsg = document.getElementById('feedback');                    // Get feedback element
+    -       if (this.value.length < 5) {                                        // If username too short
+    -       elMsg.textContent = 'Username must be 5 characters or more';        // Set message
+    -       } else {                                                            // Otherwise
+    -       elMsg.textContent = '';                                             // Clear message
+    -       }
+    -   }
+    -   let elUsername = document.getElementById('username');                   // Get username input
+                  
+    -   elUsername.addEventListener('blur', checkUsername, false)               // When it loses focus call checkUsername()
+        *   The event listener appears on the last line, before you write an event listener...
+            -   If you use a named function when the event fires on your chosen DOM node, write that function first.
+            -   The DOM element node is stored in a variable. Here the text input, whose id attribute has a value of username, is placed into a variable called elUsername.
+            -   The addEventListener() method takes 3 properties
+                *   The event you want it to listen for. blur
+                *   The code that you want it to run when the event fires. checkUsername() Function. Parantheses omitted since it can't take an argument.
+                *   A Boolean indicating how events flow.
+
 
 
