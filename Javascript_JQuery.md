@@ -2264,6 +2264,18 @@
             -   On the last line of the code, the event handler elUsername.onblur indicates that the code is waiting for the blur event to fire on the element stored in the variable called elUsername.
             -   This is followed by an = sign, then the name of the function that will run when the event fires on that element. Note that there are no parentheses on the function name. This means you cannot pass arguments to this function.
             -   Browser support: on line 3, the checkUsername() function uses the this keyword in the conditional statement to check the number of characters the user entered. It works in most browsers because they know this refers to the element the event happened on.
-
+*   Event Listeners
+    -   Event listeners are a more recent approach to handling events. They can deal with more than one function at a time but they are not supported in older browsers.
+    -   Example;
+    -   Syntax: element.addEventListener('event', functionName, [boolean])
+    -   function checkUsername() {
+    -       // code to check the length of username
+    -   }
+    -   let el = document.getElementById('username');
+    -   el.addEventListener('blur', checkUsername, false);
+        *   A reference to the DOM element node is often stored in a variable
+        *   The code starts by defining the named function. 
+        *   The Function is called by the event listener on the last line, but the parentheses are omitted.
+*   
 
 
