@@ -2228,6 +2228,9 @@
         *   Event listeners were introduced in an update to the DOM specification, they are now the favored way of handling events.
         *   The syntax is quite different and, unlike traditional event handlers, these newer event listeners allow one event to trigger multiple functions. As a result, there are less likely to be conflicts between different scripts that run on the same page.
         *   This approach does not work with IE8 or earlier. Differences in browser support for the DOM and events helped speed adoption of jQuery.
-
+*   HTML Event Handler Attributes (DO NOT USE)
+    -   In the HTML, the first input> element has an attribute called onblur, triggered when the user leaves the element. The value of the attribute is the name of the function that it should trigger. The value of the event handler attribute would be JS. Often it would call a function that was written either in the head> element or a separate JS file.
+    -   a> elements can have onclick, onmouseover, onmouseout, form> elements can have onsubmit, input> elements for text can have onkeypress, onfocus, onblur.
+*   
 
 
