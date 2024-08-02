@@ -2296,6 +2296,15 @@
                 *   The event you want it to listen for. blur
                 *   The code that you want it to run when the event fires. checkUsername() Function. Parantheses omitted since it can't take an argument.
                 *   A Boolean indicating how events flow.
+*   Using Parameters with Event Handlers & Listeners
+    -   Because you cannot have parentheses after the function names in event handlers or listeners, passing arguments requires a workaround
+        *   Usually, when a function needs some information to do its job, you pass arguments within the parentheses that follow the function name. When the interpreter sees the parentheses after a function call, it runs the code straight away. In an event handler, you want it to wait until the event triggers it. Therefore, if you need to pass arguments to a function that is called by an event handler or listener, you wrap the function call in an anonymous function.
+            -   el.addEventListener('blur', function() {
+            -   checkUsername(5);
+            -   }, false);
+                *   The named function (checkUsername) includes parentheses containing the parameter after the function name.
+                *   The anonymous function (function()) is used as the second argument. It "wraps around" the named function.
+            -   The named function that requires the arguments lives inside the anonymous function. Although the anonymous function has parentheses, it only runs when the even is triggered. The named function can use arguments as it only runs if the anonymous function is called.
 
 
 
