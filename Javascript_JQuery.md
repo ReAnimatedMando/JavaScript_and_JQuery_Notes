@@ -2342,6 +2342,8 @@
     -   Event handlers/listeners can be bound to the containing li>, ul>, and html> elements, plus the document object, and the window object. The order in which the events fire is known as event flow, and events flow in two directions.
         *   Event Bubbling - The event starts at the most-specific node and flows outwards to the least specific one. This is the default type of event flow with very wide browser support.
         *   Event Capturing - The event starts at the least specific node and flows inwards to the most specific one. This is not supported in IE 8 and earlier.
+*   Why Flow Matters?!
+    -   The flow of events only really matter when your code has event handlers on an element and one of its ancestor or descendant elements.
 
         
 
