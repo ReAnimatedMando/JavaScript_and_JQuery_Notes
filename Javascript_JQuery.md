@@ -2324,6 +2324,19 @@
         *   The value that is passed into checkUsername() function is used in the conditional statement to check if the name is long enough, and provide feedback if the username name is too short.
         *   The Event Listener on the last three lines is longer than the previous example because the call to the checkUsername() function needs to include the value for the minLength parameter.
         *   To recieve this information, the event listener uses an anonymous function, which acts like a wrapper. Inside that wrapper the checkUsername() function is called, and passed an argument.
+*   Browser Support IE5-8
+    -   IE 5-8 did not support addEventListener(). Instead it used its own method called attachEvent(). Use conditional statement below in its stead for IE 5-8.
+        *   if (el.addEventListener) {
+        *     el.addEventListener('blur', function(){
+        *       checkUsername(5);
+        *       }, false );
+        *   } else {
+        *       el.attachEvent('onblur', function() {
+        *           checkUsername(5);
+        *       });
+        *   }
+            -   Using an if...else statement, you can check if the browser supports the addEvenListener() method. The condition in the if statement will return true if the browser supports the addEventListener, and you can use it. If the browser down not support the method, it returns false, and the code will try to use the attachEvent method.
 
+        
 
 
