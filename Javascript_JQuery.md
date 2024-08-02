@@ -2305,6 +2305,25 @@
                 *   The named function (checkUsername) includes parentheses containing the parameter after the function name.
                 *   The anonymous function (function()) is used as the second argument. It "wraps around" the named function.
             -   The named function that requires the arguments lives inside the anonymous function. Although the anonymous function has parentheses, it only runs when the even is triggered. The named function can use arguments as it only runs if the anonymous function is called.
+*   Using Parameters with Event Listeners
+    -   Example:
+    -   let elUsername = document.getElementById('username');               // Get username input
+    -   let elMsh = document.getElementById('feedback');                    // Get feedback element
+    -   function checkUsername(minLenght) {                                 //  Declare function
+    -       if (elUsername.value.length < minLength) {                      // If username too short
+    -       // Set the error message
+    -       elMsg.textContent = 'Username must be ' + minLength + ' characters or more';
+    -     } else {                                                          // Otherwise
+    -       elMsg.innerHTML = '';                                           // Clear message
+    -     }
+    -   }
+    -   elUsername.addEventListener('blur', function() {                    // When it loses focus
+    -       checkUsername(5);                                               // Pass argument here
+    -   }, false);
+        *   The first line of this example shows the updated checkUsername() function. The minLength parameter specifies the minimum number of characters that the username should be.
+        *   The value that is passed into checkUsername() function is used in the conditional statement to check if the name is long enough, and provide feedback if the username name is too short.
+        *   The Event Listener on the last three lines is longer than the previous example because the call to the checkUsername() function needs to include the value for the minLength parameter.
+        *   To recieve this information, the event listener uses an anonymous function, which acts like a wrapper. Inside that wrapper the checkUsername() function is called, and passed an argument.
 
 
 
