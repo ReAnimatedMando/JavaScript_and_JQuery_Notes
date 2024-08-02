@@ -2336,6 +2336,12 @@
         *       });
         *   }
             -   Using an if...else statement, you can check if the browser supports the addEvenListener() method. The condition in the if statement will return true if the browser supports the addEventListener, and you can use it. If the browser down not support the method, it returns false, and the code will try to use the attachEvent method.
+*   Event Flow
+    -   HTML elements nest inside other elements. If you hover or click on a link, you will also be hovering or clicking on its parent elements.
+    -   Imagine a list item contains a link. When you hover over the link or click on it, JS can trigger events on the a> element, and also any elements the a> element sits inside.
+    -   Event handlers/listeners can be bound to the containing li>, ul>, and html> elements, plus the document object, and the window object. The order in which the events fire is known as event flow, and events flow in two directions.
+        *   Event Bubbling - The event starts at the most-specific node and flows outwards to the least specific one. This is the default type of event flow with very wide browser support.
+        *   Event Capturing - The event starts at the least specific node and flows inwards to the most specific one. This is not supported in IE 8 and earlier.
 
         
 
