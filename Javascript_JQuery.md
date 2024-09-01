@@ -2369,7 +2369,15 @@
             -   Works with new elements; If you add new elements to the DOM tree, you do not have to add event handlers to the new elements because the job has been delegated to an ancestor.
             -   Solves limitations with THIS keyword; the THIS keyword is used to identify an event's target, but that technique did not work when the function needed parameters.
             -   Simplifies your code; It requires fewer functions to be written, and there are fewer ties between the DOM and your code, which helps maintainability.
-*   
+*   Changing Default Behavior
+    -   The event object has methods that change: the default behavior of and element and how the element's ancestors respond to the event.
+        *   preventDefault();
+            -   Some events, such as clicking on links and submitting forms, take the user to another page. To prevent the default behavior of such elements, you can use the event object's preventDefault() method.
+        *   stopPropagation();
+            -   Once you have handled an event using one element, you may want to stop that event from bubbling up to its ancestor elements, especially if there are separate event handlers responding to the same events on the containing elements. To stop the event bubbling up, you can use the event object's stopPropagation() method.
+        *   Using Both Methods;
+            -   You will sometimes see the following used in similar situations that are in a function: return false; It prevents the default behavior of the element, and prevents the event from bubbling up or capturing further. It also works in all browsers. Note, however, when the interpreter comes across the return false statement, it stops processing any subsequent code within that function and moves to the next statement after the function was called. Since this blocks any further code within the function, it is often better to use the preventDefault() method rather than return false.
+
         
 
 
