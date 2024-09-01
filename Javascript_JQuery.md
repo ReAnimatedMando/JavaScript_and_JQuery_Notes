@@ -2361,6 +2361,14 @@
     -   Method;     Purpose
     -   preventDefault()    Cancel default behavior of the event if it can be canceled
     -   stopPropagation()   Stops the event from bubbling or capturing any further
+*   Event Delegation
+    -   Creating event listeners for a lot of elements can slow down a page, but event flow allows you to listen for an event on a parent element. 
+        *   If users can interact with a lot of elements on the page, such as; a lot of buttons in the UI, a long list, every cell of a table.... adding event listeners to each element can use a lot of memory and slow down performance.
+        *   Because events affect containing or ancestor elements, you can place event handlers on a containing element and use the event object's target property to find which of its children the event happened on. By attaching an event listener to a containing element, you are only responding to one element, rather than having an event handler for each child element. You are delegating the job of the event listener to a parent of the elements.
+        *   other benefits include;
+            -   Works with new elements; If you add new elements to the DOM tree, you do not have to add event handlers to the new elements because the job has been delegated to an ancestor.
+            -   Solves limitations with THIS keyword; the THIS keyword is used to identify an event's target, but that technique did not work when the function needed parameters.
+            -   Simplifies your code; It requires fewer functions to be written, and there are fewer ties between the DOM and your code, which helps maintainability.
 *   
         
 
