@@ -2344,7 +2344,24 @@
         *   Event Capturing - The event starts at the least specific node and flows inwards to the most specific one. This is not supported in IE 8 and earlier.
 *   Why Flow Matters?!
     -   The flow of events only really matter when your code has event handlers on an element and one of its ancestor or descendant elements.
-
+*   The Event Object
+    -   When an event occurs, the event object tells you information about the event, and the element it happened upon.
+        *   Everytime an event fires, the event object contains helpful data about the event such as;
+            -   Which element the event happened on
+            -   Which key was pressed for a keypress event
+            -   What part of the viewport the user clicked for a click event
+        *   The event object is passed to any function that is the event handler or listener. If you need to pass arguments to a named function, the event object will first be passed to the anonymous wrapper function (automatically), then you must specify it as a parameter of the named function. When the event object is passed into a function, it is often given the parameter name e for event. It is a widely used shorthand.
+            -   Note, however, that some programmers also use the parameter name e to refer to the error object; so e may mean event or error.
+    -   Examples;
+    -   property;   Purpose;
+    -   target      The target of the event, most specific element intaracted with
+    -   type        Type of event that was fired
+    -   cancelable  Whether you can cancel the default behavior of an element
+    -
+    -   Method;     Purpose
+    -   preventDefault()    Cancel default behavior of the event if it can be canceled
+    -   stopPropagation()   Stops the event from bubbling or capturing any further
+*   
         
 
 
