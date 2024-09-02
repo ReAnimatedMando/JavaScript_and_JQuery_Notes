@@ -2382,6 +2382,19 @@
         *   The this keyword refers to the owner of a function. This works when no parameters are being passed to the function and therefore it is not called from an anonymous function.
         *   If you pass parameters to the function, the this keyword no longer works because the owner of the function is no longer the element that the event listener was bound to, it is an anonymous function. You could pass the element the event was called on as another parameter of the function. 
         *   In both cases the event object is the preferred approach.
+*   Different Types of Events
+    -   Events are defined in;
+        *   The W3C DOM specification
+        *   The HTML5 specification
+        *   In Browser Object Models
+            -   W3C DOM Events
+                *   The DOM events specification is managed by the W3C which also looks after specifications including HTML5, CSS, and XML. Most of the events you will meet are a part of this DOM specification.
+                *   Browsers implement all the events using the same event object that you already met. If also provides feedback such as which element the event occurred on, which key a user pressed, or where the cursor is positioned.
+            -   HTML5 Events
+                *   The HTML5 specification details events that browsers are expected to support that are specifically used with HTML. For example, events that are fired when a form is submitted or form elements are changed... submit, input, change. There are also new events introduced with the HTML5 specification that are only supported by more recent browsers.... readystatechange, DOMContentLoaded, hashchange.
+            -   BOM Events
+                *   Browser manufacturers also implement some events as part of their browser object model. Typically these are events not yet covered by W3C specification. Several of these dealt with touchscreen devices... touchstart, touchend, touchmove, orientationchange.
+            -    Other events are being added to capture gestures and take advantage of accelerometers. Care is needed using such features, as different browsers often create different implementations of similar functionality.
 
         
 
