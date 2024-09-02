@@ -2377,6 +2377,11 @@
             -   Once you have handled an event using one element, you may want to stop that event from bubbling up to its ancestor elements, especially if there are separate event handlers responding to the same events on the containing elements. To stop the event bubbling up, you can use the event object's stopPropagation() method.
         *   Using Both Methods;
             -   You will sometimes see the following used in similar situations that are in a function: return false; It prevents the default behavior of the element, and prevents the event from bubbling up or capturing further. It also works in all browsers. Note, however, when the interpreter comes across the return false statement, it stops processing any subsequent code within that function and moves to the next statement after the function was called. Since this blocks any further code within the function, it is often better to use the preventDefault() method rather than return false.
+*   What Element did an Event Occur on?
+    -   When calling a function, the event object's target property is the best way to determine which element the event occurred on. But you see the approach below used; it relies on the this keyword.
+        *   The this keyword refers to the owner of a function. This works when no parameters are being passed to the function and therefore it is not called from an anonymous function.
+        *   If you pass parameters to the function, the this keyword no longer works because the owner of the function is no longer the element that the event listener was bound to, it is an anonymous function. You could pass the element the event was called on as another parameter of the function. 
+        *   In both cases the event object is the preferred approach.
 
         
 
