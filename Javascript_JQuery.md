@@ -2403,6 +2403,9 @@
     -   error                   Fires when the web page encounters a JavaScript error or an asset doesn't exist.
     -   resize                  Fires when the browser window has been resized.
     -   scroll                  Fires when user scrolls up or down the page. It can relate to the entire page or a specific element.
+*   Load
+    -   The load event is commonly used to trigger scripts that access the contents of a page. The event is automatically raised by the window object when a page has finished loading the HTML and all of its resources: images, CSS, scripts, as well as 3rd party content such as ad banners.
+    -   Because the load event only fires when everything else on the page has loaded, images, scripts, and ads, the user already have started to use the page before the script has started to run. Users particularly notice when a script changes the appearance of the page, changes focus, or selects form elements after they have started to use it, this can make the site look slower to load, and shift user focus becoming distracting.
 
         
 
