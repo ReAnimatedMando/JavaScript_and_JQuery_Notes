@@ -2395,6 +2395,14 @@
             -   BOM Events
                 *   Browser manufacturers also implement some events as part of their browser object model. Typically these are events not yet covered by W3C specification. Several of these dealt with touchscreen devices... touchstart, touchend, touchmove, orientationchange.
             -    Other events are being added to capture gestures and take advantage of accelerometers. Care is needed using such features, as different browsers often create different implementations of similar functionality.
+*   User Interface Events
+    -   UI events occur as a result of interaction with the browser window rather than the HTML page contained within it, ex, a page having loaded or the browser window being resized.
+    -   Event                   Trigger                     
+    -   load                    Fires when the web page has finished loading. It can also fire on nodes of other elements that load, such as images, scripts, or objects.
+    -   unload                  Fires when the web page is unloading, usually because a new page has been requested. See also beforeunload event.
+    -   error                   Fires when the web page encounters a JavaScript error or an asset doesn't exist.
+    -   resize                  Fires when the browser window has been resized.
+    -   scroll                  Fires when user scrolls up or down the page. It can relate to the entire page or a specific element.
 
         
 
