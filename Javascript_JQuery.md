@@ -2406,7 +2406,15 @@
 *   Load
     -   The load event is commonly used to trigger scripts that access the contents of a page. The event is automatically raised by the window object when a page has finished loading the HTML and all of its resources: images, CSS, scripts, as well as 3rd party content such as ad banners.
     -   Because the load event only fires when everything else on the page has loaded, images, scripts, and ads, the user already have started to use the page before the script has started to run. Users particularly notice when a script changes the appearance of the page, changes focus, or selects form elements after they have started to use it, this can make the site look slower to load, and shift user focus becoming distracting.
-
+* Focus & Blur Events
+    -   The HTML elements you can interact with, such as links and form elements, can gain focus. These events fire when they gain or lose focus.
+    -   The focus and blur events are most commonly used on forms. They can particularly helpful when:
+        * You want to show tips or feedback to users as they interact with an individual element within a form (tips are usually shown in other elements and not the one they are interacting with)
+        * You need to trigger form validation as a user moves from one control to the next rather than waiting for them to submit the entire form first
+    -   Event
+        focus - trigger, when an element gains focus, the focus event fires for that DOM node.
+        blur - trigger, when an element loses focus, the blur event fires for that DOM node.
+* 
         
 
 
