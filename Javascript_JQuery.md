@@ -2417,23 +2417,23 @@
 *   Focus & Blur
     -   Ex.
         *   function checkUsername() {                                       // Declare function
-            var username = el.value;                                         // Store username in variable 
-            if (username.length < 5) {                                       // If username < 5 characters
-                elMsg.className = 'warning';                                 // Change class on message 
-                elMsg.textContent = 'Not long enough, yet...'                // Update message    
-            } else {                                                         // Otherwise    
-                elMsg.textContent = '';                                      // Clear message    
-            }
-        }
-        function tipUsername() {                                             // Declare function    
-            elMsg.className = 'tip';                                         // Change class for message    
-            elMsg.innerHTML = 'Username must be at least 5 characters';      // Add message 
-        }
-        var el = document.getElementById('username');                        // Username input 
-        var elMsg = document.getElementById('feedback');                     // Element to hold message 
-        // When the username input gains/loses focus call functions above 
-        el.addEvenListener('focus', tipUsername, false);                     // Focus call tipUsername()
-        el.addEvenListener('blur', checkUsername, false);                    // Blur call checkUsername()
+                -   var username = el.value;                                         // Store username in variable 
+                -   if (username.length < 5) {                                       // If username < 5 characters
+                -       elMsg.className = 'warning';                                 // Change class on message 
+                -       elMsg.textContent = 'Not long enough, yet...'                // Update message    
+                -   } else {                                                         // Otherwise    
+                -       elMsg.textContent = '';                                      // Clear message    
+                -   }
+            -   }
+            -   function tipUsername() {                                             // Declare function    
+                -   elMsg.className = 'tip';                                         // Change class for message    
+                -   elMsg.innerHTML = 'Username must be at least 5 characters';      // Add message 
+            -   }
+            -   var el = document.getElementById('username');                        // Username input 
+            -   var elMsg = document.getElementById('feedback');                     // Element to hold message 
+            -   // When the username input gains/loses focus call functions above 
+            -   el.addEvenListener('focus', tipUsername, false);                     // Focus call tipUsername()
+            -   el.addEvenListener('blur', checkUsername, false);                    // Blur call checkUsername()
 *   Mouse Events
     -   The mouse events are fired when the mouse is moved and also when its buttons are clicked.
         *   All of the elements on a page support the mouse events, and all of these bubble. Note that actions are different on touchscreen devices.
@@ -2453,6 +2453,18 @@
         *   Screen - The screenX and screenY properties indicate the position of the cursor within the entire screen on your monitor, measuring from top left corner of the screen, rather than the browser.
         *   Page - The pageX and pageY properties indicate the position of the cursor within the entire page. The top of the page may be outside of the viewport so even if the cursor is in the same position, page and client coordinates can be different.
         *   Client - The clientX and clientY properties indicate the position of the cursor within the browser's viewport. If the user has scrolled down and the top of the page is no longer in view, it will not affect the client coordinates.
+*   Determining Position 
+    -   variable and function example of how to get event occurances
+        *   let sx = document.getElementById('sx');                 // Element to hold screenX 
+        *   let sy = document.getElementById('sy');                 // Element to hold screenY 
+        *   let px = document.getElementById('px');                 // Element to hold pageX 
+        *   let py = document.getElementById('py');                 // Element to hold pageY 
+        *   let cx = document.getElementById('cx');                 // Element to hold clientX 
+        *   let cy = document.getElementById('cy');                 // Element to hold clientY 
+        *   function showPosition(event) {}                         // Declare function that will update element with position elements 
+        *   sx.value = event.screenX;                               // Update element with screenX. do that same for all other element positions 
+        *   let el = document.getElementById('body');               // Get body element 
+        *   el.addEvenListener('mousemove', showPosition, false)    // Move updates position 
 
 
 
