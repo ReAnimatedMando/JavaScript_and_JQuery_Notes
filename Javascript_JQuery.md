@@ -2448,7 +2448,11 @@
     -   mousemove           Cursor moved around an element                      cursor moved                // fires repeatedly 
         *   CSS uses :hover pseudo-class to change appearance of cursor at specified instances.
         *   mousedown and mouseup are used to add drag and drop functionality 
-*   Click 
-    -   
+*   Where Events Occur 
+    -   The event object can tell you where the cursor was positioned when an event was triggered.
+        *   Screen - The screenX and screenY properties indicate the position of the cursor within the entire screen on your monitor, measuring from top left corner of the screen, rather than the browser.
+        *   Page - The pageX and pageY properties indicate the position of the cursor within the entire page. The top of the page may be outside of the viewport so even if the cursor is in the same position, page and client coordinates can be different.
+        *   Client - The clientX and clientY properties indicate the position of the cursor within the browser's viewport. If the user has scrolled down and the top of the page is no longer in view, it will not affect the client coordinates.
+
 
 
