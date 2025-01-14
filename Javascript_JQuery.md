@@ -2406,7 +2406,7 @@
 *   Load
     -   The load event is commonly used to trigger scripts that access the contents of a page. The event is automatically raised by the window object when a page has finished loading the HTML and all of its resources: images, CSS, scripts, as well as 3rd party content such as ad banners.
     -   Because the load event only fires when everything else on the page has loaded, images, scripts, and ads, the user already have started to use the page before the script has started to run. Users particularly notice when a script changes the appearance of the page, changes focus, or selects form elements after they have started to use it, this can make the site look slower to load, and shift user focus becoming distracting.
-* Focus & Blur Events
+*   Focus & Blur Events
     -   The HTML elements you can interact with, such as links and form elements, can gain focus. These events fire when they gain or lose focus.
     -   The focus and blur events are most commonly used on forms. They can particularly helpful when:
         * You want to show tips or feedback to users as they interact with an individual element within a form (tips are usually shown in other elements and not the one they are interacting with)
@@ -2414,7 +2414,7 @@
     -   Event
         focus - trigger, when an element gains focus, the focus event fires for that DOM node.
         blur - trigger, when an element loses focus, the blur event fires for that DOM node.
-* Focus & Blur
+*   Focus & Blur
     -   Ex.
         *   function checkUsername() {                                       // Declare function
             var username = el.value;                                         // Store username in variable 
@@ -2434,6 +2434,21 @@
         // When the username input gains/loses focus call functions above 
         el.addEvenListener('focus', tipUsername, false);                     // Focus call tipUsername()
         el.addEvenListener('blur', checkUsername, false);                    // Blur call checkUsername()
-        
+*   Mouse Events
+    -   The mouse events are fired when the mouse is moved and also when its buttons are clicked.
+        *   All of the elements on a page support the mouse events, and all of these bubble. Note that actions are different on touchscreen devices.
+    -   Event               Trigger                                             Touch 
+    -   
+    -   Click               Fires when user clicks on primary mouse btn         A tap on the touchscreen will be treated like a single left click 
+    -   dblClick            Fires when user clicks primary btn twice            A dbl tap will be treated as a dbl left click 
+    -   mousedwn            User clicks down on any btn                         Can use touchstart event 
+    -   mouseup             User releases btn                                   Can use touchend event 
+    -   mouseover           Cursor is outside element then moved inside         cursor moved over an element 
+    -   mouseout            Cursor outside element then moved inside another    cursor moved off an element
+    -   mousemove           Cursor moved around an element                      cursor moved                // fires repeatedly 
+        *   CSS uses :hover pseudo-class to change appearance of cursor at specified instances.
+        *   mousedown and mouseup are used to add drag and drop functionality 
+*   Click 
+    -   
 
 
