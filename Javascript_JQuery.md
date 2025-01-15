@@ -2473,6 +2473,13 @@
         *   Event - keyup > Trigger - Fires when the user releases a key on the keyboard. Keyup fires after a character shows on screen.
             -   Events fire in this order... keydown, keypress, keyup.
         *   Which key was pressed? - The property keyCode returns ASCII code that represents the character for that key. Corresponding characters are on a ASCII table.
+* Form Events
+    -   There are two events that are commonly used with forms. In particular you are likely to see submit used in form validation.
+        *   Event - submit > Trigger - When a form is submitted, the submit event fires on the node representing the form> element. It is most commonly used when checking the values a user has entered into a form before sending it to the server.
+        *   Event - change > Trigger - Fires when the status fo several form elements change. Examples are dropdown boxes, radio buttons, checkboxes etc...
+        *   Event - input > Trigger - The input event, which you saw earlier is commonly used with input> and textarea> elements.
+    -   Focus and blur events are often used with forms, but can also be used in conjunction with other elements.
+    -   Validation aka checking form values. If users miss required information or enter incorrect information, checking it using JS is faster than sending the data to the server for it to be checked.
 
 
 
