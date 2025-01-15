@@ -2465,6 +2465,14 @@
         *   sx.value = event.screenX;                               // Update element with screenX. do that same for all other element positions 
         *   let el = document.getElementById('body');               // Get body element 
         *   el.addEvenListener('mousemove', showPosition, false)    // Move updates position 
+*   Keyboard Events 
+    -   The keyboard events are fired when a user interacts with the keyboard, they fire on any kind of device with a keyboard.
+        *   Event - input > Trigger - Fires when the value of an input> or textarea> element changes.
+        *   Event - keydown > Trigger - Fires when the user presses any key on the keyboard. If the key is held down the event fires repeatedly.
+        *   Event - keypress > Trigger - Fires when the user presses a key that would result in a character being shown on the screen.
+        *   Event - keyup > Trigger - Fires when the user releases a key on the keyboard. Keyup fires after a character shows on screen.
+            -   Events fire in this order... keydown, keypress, keyup.
+        *   Which key was pressed? - The property keyCode returns ASCII code that represents the character for that key. Corresponding characters are on a ASCII table.
 
 
 
