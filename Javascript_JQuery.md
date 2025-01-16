@@ -2480,6 +2480,16 @@
         *   Event - input > Trigger - The input event, which you saw earlier is commonly used with input> and textarea> elements.
     -   Focus and blur events are often used with forms, but can also be used in conjunction with other elements.
     -   Validation aka checking form values. If users miss required information or enter incorrect information, checking it using JS is faster than sending the data to the server for it to be checked.
+*   Mutation Events and Observers
+    -   Whenever elements are added to or removed from the DOM, its structure changes. This change triggers a mutation event.
+    -   When your script adds or removes content from a page it is updating the DOM tree. There are many reasons why you might want to respond to the DOM tree being updated, you might want to tell the user that the page has changed.
+        *   Event > DOMNodeInserted - Trigger > Fires when a node is inserted into the DOM tree.
+        *   Event > DOMNodeRemoved - Trigger > Fires when a node is removed from the DOM tree.
+        *   Event > DOMSubtreeModified - Trigger > Fires when the DOM structure changes.
+        *   Event > DOMNodeInsertedIntoDocument - Trigger > Fires when a node is inserted into the DOM tree as a descendant of another node that is already in the document.
+        *   Event > DOMNodeRemovedFromDocument - Trigger > Fires when a node is removed from the DOM tree as a descendant of another node that is already in the document.
+    -   Problems with mutation events...
+        *   If your script makes a lot of changes to a page, you end up with a lot of mutation events firing. This can also trigger other event listeners as they propagate through the DOM, which modify other parts of the DOM, triggering more mutation events. Therefore being replaced by mutation observers.
 
 
 
