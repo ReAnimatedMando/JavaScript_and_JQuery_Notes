@@ -2490,6 +2490,11 @@
         *   Event > DOMNodeRemovedFromDocument - Trigger > Fires when a node is removed from the DOM tree as a descendant of another node that is already in the document.
     -   Problems with mutation events...
         *   If your script makes a lot of changes to a page, you end up with a lot of mutation events firing. This can also trigger other event listeners as they propagate through the DOM, which modify other parts of the DOM, triggering more mutation events. Therefore being replaced by mutation observers.
+*   HTML 5 Events
+    -   Here are three page level that have been included in versions of the HTML5 spec that have become popular very quickly.
+        *   Event > DOMContentLoaded - Trigger > Event fires when the DOM tree is formed. Scripts start to run earlier than using the load event which waits for other resources such as images and ads to load.
+        *   Event > hashchange - Trigger > Event fires when the URL hash changes without the window refreshing. 
+        *   Event > beforeunload - Trigger > Event fires on window object before page is unloaded. Only used to help the user. Letting user know if changes haven't been saved.
 
 
 
