@@ -2505,6 +2505,15 @@
         *   The jQuery() function has one parameter. $('li.hot') finds li elements with the class hot.
         *   The jQuery object has many methods that you can use to work with the elements you select. The methods represent tasks that you commonly need to perform with elements.
         *   $('li.hot').addClass('complete'), adds new value to the class attribute of li element selected.
+*   Why use jQuery?
+    -   jQuery doesn't do anything you cannot achieve with pure javascript. It is just a JavaScript file but estimates show it has been used on over a quarter of the sites on the web, because it makes coding simpler.
+        *   Simple selectors;
+            -   it's not always easy to select elements you want using the DOM tree.
+            -   Uses language that you're already familiar with.
+            -   Offers additional functionality through extra CSS style selectors.
+        *   Common tasks in less code;
+            -   loop through items, add/remove elements from the DOM tree, handle events, fade elements into/out of view, handle Ajax requests.
+            -   jQuery Simplifies these tasks and allows you to write less code in achieving them. 
         
 
 
