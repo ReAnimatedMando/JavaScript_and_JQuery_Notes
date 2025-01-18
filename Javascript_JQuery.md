@@ -2500,6 +2500,11 @@
     -   Select Elements - It is simpler to access elements using jQuery's CSS-style selecors than it is using DOM queries. The selectors are also more powerful and flexible.
     -   Perform Tasks - jQuery methods let you update the DOM tree, animate elements into and out of view, and loop through a set of elements, all in one line of code.
     -   Handle Events - jQuery includes methods that allow you to attach event listeners to selected elements without having to write any fallback code to support older browsers.
-
+    -   jQuery is a JavaScript file that you include in your web pages. It lets you find elements using CSS-style selectors and then do something with the elements using jQuery methods.
+        *   A function called jQuery() lets you find one or more elements in the page. $() is often used as shorthand.
+        *   The jQuery() function has one parameter. $('li.hot') finds li elements with the class hot.
+        *   The jQuery object has many methods that you can use to work with the elements you select. The methods represent tasks that you commonly need to perform with elements.
+        *   $('li.hot').addClass('complete'), adds new value to the class attribute of li element selected.
+        
 
 
