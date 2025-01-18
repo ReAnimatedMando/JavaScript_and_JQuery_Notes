@@ -2514,6 +2514,8 @@
         *   Common tasks in less code;
             -   loop through items, add/remove elements from the DOM tree, handle events, fade elements into/out of view, handle Ajax requests.
             -   jQuery Simplifies these tasks and allows you to write less code in achieving them. 
-        
+        *   Cross-browser compatibility;
+            -   jQuery automatically handles the inconsistent ways which browsers select and handle elements and events.
+            -   jQuery uses conditional statements to check if browsers support it. If not, it checks the next best option and uses that instead.
 
 
