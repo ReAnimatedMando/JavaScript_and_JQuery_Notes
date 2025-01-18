@@ -2495,6 +2495,11 @@
         *   Event > DOMContentLoaded - Trigger > Event fires when the DOM tree is formed. Scripts start to run earlier than using the load event which waits for other resources such as images and ads to load.
         *   Event > hashchange - Trigger > Event fires when the URL hash changes without the window refreshing. 
         *   Event > beforeunload - Trigger > Event fires on window object before page is unloaded. Only used to help the user. Letting user know if changes haven't been saved.
+*   JQuery 
+    -   Offers a simple way to achieve a variety of common JavaScript tasks quickly and consistently, acrss all major browsers and without any fallback code needed.
+    -   Select Elements - It is simpler to access elements using jQuery's CSS-style selecors than it is using DOM queries. The selectors are also more powerful and flexible.
+    -   Perform Tasks - jQuery methods let you update the DOM tree, animate elements into and out of view, and loop through a set of elements, all in one line of code.
+    -   Handle Events - jQuery includes methods that allow you to attach event listeners to selected elements without having to write any fallback code to support older browsers.
 
 
 
