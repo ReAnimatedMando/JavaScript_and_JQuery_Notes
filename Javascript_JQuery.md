@@ -2517,5 +2517,29 @@
         *   Cross-browser compatibility;
             -   jQuery automatically handles the inconsistent ways which browsers select and handle elements and events.
             -   jQuery uses conditional statements to check if browsers support it. If not, it checks the next best option and uses that instead.
-
+*   Finding elements in jQuery
+    -   Basic Selectors
+        *   * - All elements
+        *   element - All elements with that element name
+        *   #id - Elements whose id attribute has the value specified
+        *   .class - Elements whose class attribute has the value specified
+        *   selector1, selector2 - Elements that match more than one selector
+    -   Hierarchy
+        *   ancestor descendant - An element that is a descendant of another element
+        *   parent > child - An element that is a direct child of another element
+        *   previous + next - Adjacent sibling selector only selects elements that are immediately followed by the previous element
+        *   previous - sibling - Sibling selector will select any elements that are a sibling of the previous element
+    -   Basic Filters
+        *   :not(selector) - All elements except the one in the selector
+        *   :first - The first element from the selection
+        *   :last - The last element from the selection
+        *   :even - Elements with an even number index from the selection
+        *   :odd - Elements with an odd number index from the selection
+        *   :eq(index) - Elements with an index number equal to the one in the parameter
+        *   :gt(index) - Elements with an index number greater than the parameter
+        *   :lt(index) - Elements with an index number less than the parameter
+        *   :header - All h1-h6 elements
+        *   :animated - Elements that are currently being animated
+        *   :focus - The element that currently has focus
+    
 
