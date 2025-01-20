@@ -2579,5 +2579,41 @@
         *   :enabled - All enabled form elements
         *   :disabled - All disabled form elements
         *   :checked - All checked radio buttons or checkboxes
-    
+*   Doing Things with Your selection        
+    -   Content Filters 
+        *   Get/Change Content
+            -   .html(), .text(), .replaceWith(),remove()
+        *   Elements    
+            -   .before(), .after(), .prepend(), .append(), .remove(), .clone(), .unwrap(), .detach(), .empty(), .add()
+        *   Attributes  
+            -   .attr(), .removeAttr(), .addClass(), .removeClass(), .css()
+        *   Form Values
+            -   .val(), .isNumeric()
+    -   Finding Elements
+        *   General 
+            -   .find(), .closest(), .parent(), .parents(), .children(), .siblings(), .next(), .nextAll(), .prev(), .prevAll()
+        *   Filter/Test
+            -   .filter(), .not(), .has(), .is(), :contains()
+        *   Order selection
+            -   .eq(), .lt(), .gt()
+    -   Dimension/Position
+        *   Dimension
+            -   .height(), .width(), .innerHeight(), .innerWidth(), .outerHeight(), .outerWidth(), $(document).height(), $(document).width(), $(window).height(), $(window).width()
+        *   Position
+            -   .offest(), .position(), .scrollLeft(), .scrollTop()
+    -   Effects & animation
+        *   Basic   
+            -   .show(), .hide(), .toggle()
+        *   Fading
+            -   .fadeIn(), .fadeOut(), .fadeTo(), .fadeToggle
+        *   Sliding
+            -   .slideDown(), .slideUp(), .slideToggle()
+        *   Custom 
+            -   .delay(), .stop(), .animate()
+    -   Events
+        *   Document/Files
+            -   .ready(), .load()
+        *   User Interaction 
+            -   .on()
+
 
