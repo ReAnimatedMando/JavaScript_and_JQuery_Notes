@@ -2541,5 +2541,43 @@
         *   :header - All h1-h6 elements
         *   :animated - Elements that are currently being animated
         *   :focus - The element that currently has focus
+    -   Content Filters
+        *   :contains('text') - Elements that contain the specified text as a parameter
+        *   :empty - All elements that have no children
+        *   :parent - All elements that have a child node
+        *   :has(selector) - Elements that contain at least one element that matches the selector
+    -   Visibility Filters
+        *   :hidden - All elements that are hidden
+        *   :visible - All elements that consume space in the layout of the page
+    -   Child Filters
+        *   :nth-child(expr) - The value here is not zero-based
+        *   :first-child - First child from the current selection
+        *   :last-child - Last child from the current selection
+        *   :only-child - When there is only one child of the element
+    -   Attribute Filters
+        *   [attribute] - Elements that carry the specified attribute with any value
+        *   [attribute='value'] - Elements that carry the specified attribute with the specified value
+        *   [attribute!='value'] - Elements that carry the specified attribute but not the specified value
+        *   [attribute^='value'] - The value of the attribute begins with this value
+        *   [attribute='value'] - The value of this attribute ends with this value
+        *   [attribute*='value'] - The value should appear somewhere in the attribute
+        *   [attribute|='value'] - Equal to given string, or starting with the string and followed by a hyphen
+        *   [attribute~='value'] - The value should be one of the values in a space separated list
+        *   [attribute] [attribute2] - Elements that match all of the selectors
+    -   Form
+        *   :input - All input Elements
+        *   :text - All text inputs
+        *   :password - All password inputs
+        *   :radio - All radio buttons
+        *   :checkbox - All checkboxes
+        *   :submit - All submit buttons
+        *   :image - All img> elements
+        *   :reset - All reset buttons
+        *   :button - All button> elements
+        *   :file - All file inputs
+        *   :selected - All selected items from dropdown lists
+        *   :enabled - All enabled form elements
+        *   :disabled - All disabled form elements
+        *   :checked - All checked radio buttons or checkboxes
     
 
