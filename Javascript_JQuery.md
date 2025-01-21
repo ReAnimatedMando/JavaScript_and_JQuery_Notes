@@ -2626,5 +2626,13 @@
         *   Store references to the nodes in the jQuery object 
             -   This takes time, processing resources, and memory.
             -   So instead of repeating the process over, you store a reference to the jQuery object in a variable.
-
+*   Looping
+    -   Instead of looping like in javascript, you can update all returned elements using just one method, using the selector.
+*   Chaining
+    -   You can also use several methods at a time using dot notation to separate each method. This is referred to as chaining.
+*   Checking a Page is Ready to Work With
+    -   the .ready() method checks that the page is ready for your code to work with.
+    -   The load event - fires after the page and all its resources ie. images, css, and scripts have loaded. Use when your script relies on assets to have loaded.
+    -   The ready method - fires as soon as the DOM has loaded, does not wait for assets, and makes the page look as if it is loading faster.
+*   
 
