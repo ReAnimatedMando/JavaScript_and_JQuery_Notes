@@ -2615,5 +2615,16 @@
             -   .ready(), .load()
         *   User Interaction 
             -   .on()
+*   jQuery Objects Store References to Elements
+    -   When you create a selection with jQuery, it stores a reference to the corresponding nodes in the DOM tree. It does not create copies of them.
+    -   When programmers say that a variable or object is storing a reference to something, what it is doing is storing the location a piece of information in the browser's memory.
+*   Caching jQuery Selections in Variables 
+    -   A jQuery object stores references to elements. Caching a jQuery object stores a reference to it in a variable.
+    -   To create a jQuery object the interpreter must...
+        *   find the matching nodes in the DOM tree
+        *   Create the jQuery object
+        *   Store references to the nodes in the jQuery object 
+            -   This takes time, processing resources, and memory.
+            -   So instead of repeating the process over, you store a reference to the jQuery object in a variable.
 
 
