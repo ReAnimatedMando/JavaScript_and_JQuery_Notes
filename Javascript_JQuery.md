@@ -2634,5 +2634,9 @@
     -   the .ready() method checks that the page is ready for your code to work with.
     -   The load event - fires after the page and all its resources ie. images, css, and scripts have loaded. Use when your script relies on assets to have loaded.
     -   The ready method - fires as soon as the DOM has loaded, does not wait for assets, and makes the page look as if it is loading faster.
+*   Getting Element Content
+    -   The .html() and .text() methods both retrieve and update the content of elements.
+    -   .html() is used to retrieve information from a jQuery selection, it retrieves only the HTML inside the first element in the matched set, along with any of its descendants.
+    -   .text() is used to retrieve the text from a jQuery selection, it returns the content from every element in the jQuery selection, along with the text from any descendants.
 *   
 
