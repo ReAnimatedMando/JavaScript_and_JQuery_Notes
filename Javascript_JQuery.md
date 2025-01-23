@@ -2661,5 +2661,9 @@
     -   .css() method lets you retrieve and set values of CSS properties.
         *   To get the value of a CSS property, you indicate which property you want to retrieve in parenthese. $('li').css('background-color')...css('background-color', '#2727272'), the second value is the new css property...
         *   You can set multiple properties using object literal notation. Remember key value pairs in objects..css({'background-color': '#272727'})
-
-
+*   Working with Each Element in a Selections   
+    -   jQuery allows you to recreate the functionality of a loop on a selection of elements, using .each() method.
+        *   .each() - like a loop, allows you to perform one or more statements on each of the items in the selection of elements that is returned by a selector.
+        *   $('li').each(function() {let ids = this.id; $(this).append(' <em class="order">' + ids + '<em>');});
+            -   ^ contains all of the li elements, .each applies same code to each element selection, an anonymous function is run for each of the items in the list.
+*   
