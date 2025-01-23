@@ -2643,5 +2643,13 @@
     -   .text() - This method gives every element in the matched set the same new text content. Any markup would be shown as text.
     -   .replaceWith() - This method replaces every element in a matched set with new content. It also returns the replaced elements.
     -   .remove() - This method removes all of the elements in the matched set.
+*   Inserting Elements
+    -   Inserting new elements involves two steps: Create the new elements in a jQuery object; Use a method to insert the content into the page.
+    -   Creating new elements in jQuery object, var $newFragment = $('<li>'); creates a variable called newFragment and stores a jQuery object in it, in this case an empty li element.
+    -   Adding new elements to the page, once the object is created, you use a method to add the content to the DOM tree.
+        *   .before() - inserts before selected elements.
+        *   .after() - inserts after selected elements.
+        *   .prepend() - inserts content inside the selected element after the opening tag.
+        *   .append() - inserts contents inside the selected element before the closing tag.
 *   
 
