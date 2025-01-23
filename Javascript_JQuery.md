@@ -2651,5 +2651,11 @@
         *   .after() - inserts after selected elements.
         *   .prepend() - inserts content inside the selected element after the opening tag.
         *   .append() - inserts contents inside the selected element before the closing tag.
-*   
+*   Getting & Setting Attribute Values
+    -   You can create attributes, or access and update their contents, using the following four methods...
+        *   .attr() - Get or set a specified attribute and its value. $(li#one).attr('id', 'hot') - first argument is the attribute, second is the new value.
+        *   .removeAttr() - Removes specified attribute.
+        *   .addClass - adds new value to the existing value of the class attribute.
+        *   .removeClass() - Removes a value from the class attribute, leaving others intact.
+
 
