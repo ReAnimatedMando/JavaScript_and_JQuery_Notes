@@ -2657,5 +2657,9 @@
         *   .removeAttr() - Removes specified attribute.
         *   .addClass - adds new value to the existing value of the class attribute.
         *   .removeClass() - Removes a value from the class attribute, leaving others intact.
+*   Getting & Setting CSS Properties
+    -   .css() method lets you retrieve and set values of CSS properties.
+        *   To get the value of a CSS property, you indicate which property you want to retrieve in parenthese. $('li').css('background-color')...css('background-color', '#2727272'), the second value is the new css property...
+        *   You can set multiple properties using object literal notation. Remember key value pairs in objects..css({'background-color': '#272727'})
 
 
