@@ -2638,5 +2638,10 @@
     -   The .html() and .text() methods both retrieve and update the content of elements.
     -   .html() is used to retrieve information from a jQuery selection, it retrieves only the HTML inside the first element in the matched set, along with any of its descendants.
     -   .text() is used to retrieve the text from a jQuery selection, it returns the content from every element in the jQuery selection, along with the text from any descendants.
+*   Updating Elements
+    -   .html() - This method gives every element in the matched set the same new content. The new content may include html.
+    -   .text() - This method gives every element in the matched set the same new text content. Any markup would be shown as text.
+    -   .replaceWith() - This method replaces every element in a matched set with new content. It also returns the replaced elements.
+    -   .remove() - This method removes all of the elements in the matched set.
 *   
 
