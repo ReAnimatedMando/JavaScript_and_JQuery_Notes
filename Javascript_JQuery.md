@@ -2689,4 +2689,11 @@
         *   timeStamp - Number of milliseconds from Jan 1st 1970 to when the event was triggered... known as Unix Time
         *   .preventDefault() - Prevents the default
         *   .stopPropagation() - Stops the event bubbling up to ancestors
+*   Additional Parameters For Event Handlers
+    -   The .on() method has two optional properties that let you: Filter the initial jQuery selection to respond to a subset of the elements; Pass extra information into the event handler using object literal notation
+    -   .on(events[, selector][, data] function(e));
+        *   Here you can see two additional properties that can be used with the .on() method
+        *   When square brackets are used inside a method, they signify that the parameter is optional
+        *   Leaving out a parameter written in square brackets will not stop the method working
+        *   You can leave a space separating events if there are more than one. 'focus click'...
 *   
