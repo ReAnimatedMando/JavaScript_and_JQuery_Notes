@@ -2678,4 +2678,15 @@
         *   Form - submit, select, change
         *   Document - ready, load, unload
         *   Browser - error, resize, scroll
+*   The Event Object    
+    -   Every event handling function recieves an event object. It has methods and properties related to the event that occured.
+        *   Type - type of event.... click, mouseover....
+        *   Which - button or key that was pressed
+        *   Data - An object literal containing extra information passed to the function when the event fires
+        *   Target - DOM element that initiated the event
+        *   pageX - Mouse position from left edge of viewport
+        *   pageY - Mouse position from top of viewport
+        *   timeStamp - Number of milliseconds from Jan 1st 1970 to when the event was triggered... known as Unix Time
+        *   .preventDefault() - Prevents the default
+        *   .stopPropagation() - Stops the event bubbling up to ancestors
 *   
