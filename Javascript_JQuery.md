@@ -2666,4 +2666,16 @@
         *   .each() - like a loop, allows you to perform one or more statements on each of the items in the selection of elements that is returned by a selector.
         *   $('li').each(function() {let ids = this.id; $(this).append(' <em class="order">' + ids + '<em>');});
             -   ^ contains all of the li elements, .each applies same code to each element selection, an anonymous function is run for each of the items in the list.
+*   Event Methods
+    -   The .on() method is used to handle all events. Behind the scenes, jQuery handles all of the cross-browser issues you saw in the last chapter.
+    -   Using the .on() method is no different than using any other jQuery method...
+        *   You use a selector to create a jQuery selection
+        *   Use .on() to indicate which event you want to respond to. It adds an event listener to each element in the selection
+    -   Some of the most popular .on() events are...
+        *   UI - focus, blur, change
+        *   Keyboard - input, keydown, keyup, keypress
+        *   Mouse - click, dblclick, mouseup, mousedown, mouseover, mousemove, mouseout, hover
+        *   Form - submit, select, change
+        *   Document - ready, load, unload
+        *   Browser - error, resize, scroll
 *   
