@@ -2720,4 +2720,17 @@
         *   You can animate any CSS property whose value can be represented as a number such as height, width, and font-size. Not a string value such as font-family or text-transform.
         *   CSS properties are written in camel case.
         *   CSS properties are specified using object literal notation and can take three optional parameters.
+*   Traversing the DOM
+    -   When you have a jQuery selection, you can use these methods to access other element nodes relative to the initial selection
+        *   .find() - All elements within current selection that match selector
+        *   .closest() - Nearest ancestor that matches selector
+        *   .parent() - Direct parent of current selection
+        *   .parents() - All parents of current selection
+        *   .children() - All children ....
+        *   .siblings() - All siblings....
+        *   .next() - Next sibling of current ....
+        *   .nextAll() - All subsequent siblings of current ...
+        *   .prev() - Previous sibling of current element
+        *   .prevAll() - All previous siblings ....
+            -   If the original selection contains multiple elements, these methods will work on all of the elements in the selection.
 *   
