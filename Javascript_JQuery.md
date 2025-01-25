@@ -2696,4 +2696,23 @@
         *   When square brackets are used inside a method, they signify that the parameter is optional
         *   Leaving out a parameter written in square brackets will not stop the method working
         *   You can leave a space separating events if there are more than one. 'focus click'...
-*   
+*   Effects
+    -   When you start using jQuery, the effects methods can enhance your web page with transitions and movement.
+        *   Basic Effects   
+            -   .show() - Displays selected elements
+            -   .hide() - Hides selected elements
+            -   .toggle() - Toggles between showing and hiding seleceted elements
+        *   Fading Effects
+            -   .fadeIn() - Fades in selected elements making them opaque
+            -   .fadeOut() - Fades out selected elements making them transparent
+            -   .fadeTo() - Changes opacity of selected elements
+            -   .fadeToggle() - Hides or shows selected elements by changing their opacity
+        *   Sliding Effects 
+            -   .slideUp() - Shows selected elements with a sliding motion
+            -   .slideDown() - Hides selected elements with a sliding down motion
+            -   .slideToggle() - Hides or shows selected elements with a sliding motion
+        *   Custom Effects
+            -   .delay() - Delays execution of subsequent items in queue
+            -   .stop() - Stops an animation if it is currently running
+            -   .animate() - Creates custom animations
+
