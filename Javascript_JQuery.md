@@ -2715,4 +2715,9 @@
             -   .delay() - Delays execution of subsequent items in queue
             -   .stop() - Stops an animation if it is currently running
             -   .animate() - Creates custom animations
-
+*   Animation CSS Properties
+    -   The .animate() method allows you to create some of your own effects and animations by changing CSS properties
+        *   You can animate any CSS property whose value can be represented as a number such as height, width, and font-size. Not a string value such as font-family or text-transform.
+        *   CSS properties are written in camel case.
+        *   CSS properties are specified using object literal notation and can take three optional parameters.
+*   
