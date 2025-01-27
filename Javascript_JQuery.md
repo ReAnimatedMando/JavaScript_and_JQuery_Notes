@@ -2733,4 +2733,14 @@
         *   .prev() - Previous sibling of current element
         *   .prevAll() - All previous siblings ....
             -   If the original selection contains multiple elements, these methods will work on all of the elements in the selection.
+*   Add & Filter Elements in a Selections
+    -   Once you have a jQuery selection, you can add more elements to it, or you can filter the selection to work with a subset of the elements.
+        *   Adding Elements to a selection
+            -   .add() - Selects all elements that contain the text specified, parameter is case sensitive
+        *   Filtering with a second selector
+            -   .filter() - Finds elements in matched that in turn match a second selector
+            -   .find() - Finds descendants of elements in matched set that match the selector
+            -   .not()/:not() - Finds elements that do not match the selector
+            -   .has()/:has() - Finds elements from the matched set that have a descendant that matches the selector
+            -   :contains() - Selects all elements that contain the text specified, parameter is case sensitive
 *   
