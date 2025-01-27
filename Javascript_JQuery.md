@@ -2765,4 +2765,19 @@
     -   :selected - all elements that are seleceted
     -   :submit - button and input elements with type attribute submit
     -   :text - input elements with a type attribute of text
+*   Form Methods & Events
+    -   Retrieve the value of elements
+        *   .val() - Primarily used with input, select, and textarea elements. Used to get first element in a matched set or update the value of all of them
+    -   Other methods
+        *   .filter() - used to filter jQuery selections using a second selector
+        *   .is() - Often used with filters to check whether a form input is selected/checked
+        *   .isNumeric() - checks whether the value represents a numeric value and returns a boolean
+    -   Events
+        *   .on() - used to handle all events
+            -   blur - when an element loses focus
+            -   change - when the value of an input changes
+            -   focus - an element gains focus
+            -   select - when option for a select element is changed
+            -   submit - when a form is submitted
 *   
+
