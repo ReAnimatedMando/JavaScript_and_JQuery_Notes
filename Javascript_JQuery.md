@@ -2743,4 +2743,10 @@
             -   .not()/:not() - Finds elements that do not match the selector
             -   .has()/:has() - Finds elements from the matched set that have a descendant that matches the selector
             -   :contains() - Selects all elements that contain the text specified, parameter is case sensitive
+*   Finding Items by Order
+    -   Each item returned by a jQuery selector is given an index number, which can be used to filter the selection
+        *   Finding elements by index number
+            -   .eq() - The element that matches the index number
+            -   :lt() - Elements with an index less than the number specified
+            -   :gt() - Elements with an index greater than the number specified
 *   
