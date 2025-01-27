@@ -2749,4 +2749,20 @@
             -   .eq() - The element that matches the index number
             -   :lt() - Elements with an index less than the number specified
             -   :gt() - Elements with an index greater than the number specified
+*   Selecting Form Elements
+    -   :button - button and input elements whose type attribute has a value of button
+    -   :checkbox - input elements with type attribute of checkbox
+    -   :checked - checked elements from checkboxes and radio buttons
+    -   :disabled - all disabled elements
+    -   :enabled - all enabled elements
+    -   :focus - Element that currently has focus
+    -   :file - all file input elements
+    -   :image - all image inputs
+    -   :input - all button, input, select, and textarea elements
+    -   :password - all password inputs
+    -   :radio - all radio inputs
+    -   :reset - all inputs that are reset buttons
+    -   :selected - all elements that are seleceted
+    -   :submit - button and input elements with type attribute submit
+    -   :text - input elements with a type attribute of text
 *   
