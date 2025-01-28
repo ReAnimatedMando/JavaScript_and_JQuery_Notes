@@ -2779,5 +2779,9 @@
             -   focus - an element gains focus
             -   select - when option for a select element is changed
             -   submit - when a form is submitted
+*   Working with forms
+    -   New jQuery objects can be created to hold new item button elements, the form to add new button items, and the add button.
+    -   jQuery methods can show the button and hide the form. If users click the new item button the button is hidden and the form shown.
+    -   The new item is then added to the list.
 *   
 
