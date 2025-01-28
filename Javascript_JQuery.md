@@ -2792,5 +2792,17 @@
             -   .unwrap() - Removes parents of matched set, leaving matched elements.
         *   Copy
             -   .clone() - Creates a copy of the matched set including descendants and text nodes.
+*   Box Dimensions 
+    -   These methods allow you to discover or update the width and height of all boxes on the page.
+        *   Retrieve or set box dimensions 
+            -   .height() - Height of box, no margin, border, or padding.
+            -   .width() - Width of box, no margin, border, or padding.
+        *   Retrieve box dimensions only 
+            -   .innerHeight() - height of box plus padding.
+            -   .innerWidth() - width of box plus padding.
+            -   .outerHeight() - Height of box plus padding and border.
+            -   .outerWidth() - Width of box plus padding and border.
+            -   .outerHeight(true) - height of box plus padding, border, and margin.
+            -   .outerWidth(true) - width of box plus padding, border, and margin.
 *   
 
