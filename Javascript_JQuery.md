@@ -2783,5 +2783,14 @@
     -   New jQuery objects can be created to hold new item button elements, the form to add new button items, and the add button.
     -   jQuery methods can show the button and hide the form. If users click the new item button the button is hidden and the form shown.
     -   The new item is then added to the list.
+*   Cutting & Copying Elements
+    -   Once you have a jQuery selection, you can use these methods to remove those elements or make a copy of them.
+        *   Cut
+            -   .remove() - Removes matched elements from DOM tree including any descendants and text nodes
+            -   .detach() - Same as .remove() but keeps a copy of them in memory.
+            -   .empty() - Removes child nodes and descendants from any elements in matched set.
+            -   .unwrap() - Removes parents of matched set, leaving matched elements.
+        *   Copy
+            -   .clone() - Creates a copy of the matched set including descendants and text nodes.
 *   
 
