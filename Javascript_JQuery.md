@@ -2804,5 +2804,9 @@
             -   .outerWidth() - Width of box plus padding and border.
             -   .outerHeight(true) - height of box plus padding, border, and margin.
             -   .outerWidth(true) - width of box plus padding, border, and margin.
+*   Windows & Page Dimensions
+    -   The .height() and .width() methods can be used to determine the dimensions of both the browser window and the HTML document. There are also methods to get and set the position of the scroll bars.
+        *   .scrollLeft() - Gets the horizontal position of the scroll bar for the first element in the jQuery selection, or sets the horizontal scroll bar position for matched nodes.
+        *   .scrollTop() - Gets the vertical position of the scroll bar for the first element in the jQuery selection, or sets the vertical scroll bar position for matched nodes.
 *   
 
