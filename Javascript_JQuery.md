@@ -2812,5 +2812,9 @@
     -   .offset() and .position() methods can be used to determine the position of elements on the page.
         *   .offset() - Gets or sets coordinates of the element relative to the top left hand corner of the document object.
         *   .position() - Gets or sets coordinates of the element relative to any ancestor that has been taken out of normal flow. if none it will return same as .offset().
+*   Determining Position of Items on the Page
+    -   Can be used for pop-ups as users get within a certain distance from bottom or top of page.
+    -   These methods help determine end zones. Every time a user scrolls the scroll bar position is checked from the top of the page.
+    -   If the scroll bar is further down the page than the start of the end zone, the box/popup is animated, if not, it is hidden.
 *   
 
