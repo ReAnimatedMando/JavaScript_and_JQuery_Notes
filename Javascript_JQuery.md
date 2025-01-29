@@ -2808,5 +2808,9 @@
     -   The .height() and .width() methods can be used to determine the dimensions of both the browser window and the HTML document. There are also methods to get and set the position of the scroll bars.
         *   .scrollLeft() - Gets the horizontal position of the scroll bar for the first element in the jQuery selection, or sets the horizontal scroll bar position for matched nodes.
         *   .scrollTop() - Gets the vertical position of the scroll bar for the first element in the jQuery selection, or sets the vertical scroll bar position for matched nodes.
+*   Position of Elements on the Page
+    -   .offset() and .position() methods can be used to determine the position of elements on the page.
+        *   .offset() - Gets or sets coordinates of the element relative to the top left hand corner of the document object.
+        *   .position() - Gets or sets coordinates of the element relative to any ancestor that has been taken out of normal flow. if none it will return same as .offset().
 *   
 
