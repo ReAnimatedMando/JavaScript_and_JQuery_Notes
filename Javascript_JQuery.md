@@ -2816,5 +2816,10 @@
     -   Can be used for pop-ups as users get within a certain distance from bottom or top of page.
     -   These methods help determine end zones. Every time a user scrolls the scroll bar position is checked from the top of the page.
     -   If the scroll bar is further down the page than the start of the end zone, the box/popup is animated, if not, it is hidden.
+*   Including your jQuery in your page
+    -   In addition to hosting the jQuery file with the rest of your website, you can also use a version that is hosted by other companies. However, you should still include a fallback version.
+    -   A Content Delivery Network(CDN) is a series of servers spread out around the world. They are designed to serve static files such as HTML, CSS, JavaScript, images, audio, and video files, very quickly.
+    -   The CDN tries to find a server near you, then sends files from that server so the data does not travel as far. With jQuery, users might have already downloaded and cached the file from a CDN when visiting another site.
+    -   When including jQuery in your pages, you can try to load it from one of the CDN's. Then you check if it loaded, and if not, you can include a version that is stored on your own servers, this is known as fallback.
 *   
 
