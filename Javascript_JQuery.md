@@ -2821,5 +2821,10 @@
     -   A Content Delivery Network(CDN) is a series of servers spread out around the world. They are designed to serve static files such as HTML, CSS, JavaScript, images, audio, and video files, very quickly.
     -   The CDN tries to find a server near you, then sends files from that server so the data does not travel as far. With jQuery, users might have already downloaded and cached the file from a CDN when visiting another site.
     -   When including jQuery in your pages, you can try to load it from one of the CDN's. Then you check if it loaded, and if not, you can include a version that is stored on your own servers, this is known as fallback.
+*   Where to Place Your Scripts 
+    -   The position of script> link elements can affect how quickly a web page seems to load.
+    -   Usually a browser will collect up to two files at a time from each different server. However, when a browser starts to download a JavaScript file, it stops all other downloads and pauses laying out the page until the script has finished loading and been processed.
+    -   Therefore, if you place the script at the end of the page, before the closing body tag, it will not affect the rendering of the rest of the page.
+    -   also, consider, the script needs access to HTML within the page so the HTML needs to have loaded.
 *   
 
