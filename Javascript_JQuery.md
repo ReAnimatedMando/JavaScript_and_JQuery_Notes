@@ -2830,5 +2830,10 @@
     -   jQuery is an example of what programmers call a javascript library. It is a javascript file that you include in your page, which then lets you use the functions, objects, methods, and properties it contains.
     -   Once you have included the script in your page, its functionality is available to use.
     -   One drawback with a library is that they will usually contain functionality you will not need to use. This is downloaded code that could slow down your site. You can strip out the subset of the library you need or write your own script to do that job.
+*   Preventing Conflicts with other Libraries
+    -   $() is shorthand for jQuery, this symbol $.. is used by other libraries. To avoid conflicts with those scripts, use these techniques.
+        *   You can use .noConflict() method at start of your script, to tell jQuery to release the $ shortcut so other scripts can use it and use full jQuery name instead.
+        *   You can wrap your script in IIFE and still use $
+        *   Or you can specify your own alias instead. var $j = jQuery.noConflict.
 *   
 
