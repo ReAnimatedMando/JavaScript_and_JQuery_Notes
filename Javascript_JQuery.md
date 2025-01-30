@@ -2826,5 +2826,9 @@
     -   Usually a browser will collect up to two files at a time from each different server. However, when a browser starts to download a JavaScript file, it stops all other downloads and pauses laying out the page until the script has finished loading and been processed.
     -   Therefore, if you place the script at the end of the page, before the closing body tag, it will not affect the rendering of the rest of the page.
     -   also, consider, the script needs access to HTML within the page so the HTML needs to have loaded.
+*   JavaScript Libraries
+    -   jQuery is an example of what programmers call a javascript library. It is a javascript file that you include in your page, which then lets you use the functions, objects, methods, and properties it contains.
+    -   Once you have included the script in your page, its functionality is available to use.
+    -   One drawback with a library is that they will usually contain functionality you will not need to use. This is downloaded code that could slow down your site. You can strip out the subset of the library you need or write your own script to do that job.
 *   
 
