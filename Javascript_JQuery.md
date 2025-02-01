@@ -2849,5 +2849,7 @@
 *   How Ajax Works
     -   When using Ajax, the browser requests information from a web server. It then processes the server's response and shows it within the page.
         *   The browser requests information from the server > The server responds with data, HTML, XML, or JSON > the browser processes the content and adds it to the page.
+*   Handling Ajax Requests & Responses
+    -   To create an Ajax request, browsers use the XMLHttpRequest object. When the server responds to the browser's request, the same object will process the result.
 *   
 
