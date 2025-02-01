@@ -2835,5 +2835,8 @@
         *   You can use .noConflict() method at start of your script, to tell jQuery to release the $ shortcut so other scripts can use it and use full jQuery name instead.
         *   You can wrap your script in IIFE and still use $
         *   Or you can specify your own alias instead. var $j = jQuery.noConflict.
+*   Ajax & JSON
+    -   Ajax is a technique for loading data into part of a page without having to refresh the entire page. The data is often sent in a format called JavaScript Object notation or JSON.
+    -   The ability to load new content into part of a page improves the user experience because the user does not have to wait for an entire page to load if only part of it is being updated.
 *   
 
