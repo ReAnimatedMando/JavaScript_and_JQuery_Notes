@@ -2846,5 +2846,8 @@
 *   Why use Ajax?
     -   Ajax uses an asynchronous processing model. This means the use can do other things while the web browser is waiting for the data to load, speeding up the user experience.
     -   Once a page has loaded, if you want to update what the user sees in the window, typically you would refresh the entire page. With Ajax, if you only want to update a part of the page, you can just update the content of one element.
+*   How Ajax Works
+    -   When using Ajax, the browser requests information from a web server. It then processes the server's response and shows it within the page.
+        *   The browser requests information from the server > The server responds with data, HTML, XML, or JSON > the browser processes the content and adds it to the page.
 *   
 
