@@ -2843,5 +2843,8 @@
     -   websites with user-generated content such as twitter and Flickr may allow you to display your info such as your latest tweets/photos on your website. This involves collecting data from their servers.
     -   shopping carts that update without you leaving the page and confirming when an item is added.
     -   username checks availability when registering for a website.
+*   Why use Ajax?
+    -   Ajax uses an asynchronous processing model. This means the use can do other things while the web browser is waiting for the data to load, speeding up the user experience.
+    -   Once a page has loaded, if you want to update what the user sees in the window, typically you would refresh the entire page. With Ajax, if you only want to update a part of the page, you can just update the content of one element.
 *   
 
