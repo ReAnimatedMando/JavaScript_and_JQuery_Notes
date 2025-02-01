@@ -2838,5 +2838,10 @@
 *   Ajax & JSON
     -   Ajax is a technique for loading data into part of a page without having to refresh the entire page. The data is often sent in a format called JavaScript Object notation or JSON.
     -   The ability to load new content into part of a page improves the user experience because the user does not have to wait for an entire page to load if only part of it is being updated.
+*   What is Ajax?
+    -   live search/auto complete commonly use Ajax.
+    -   websites with user-generated content such as twitter and Flickr may allow you to display your info such as your latest tweets/photos on your website. This involves collecting data from their servers.
+    -   shopping carts that update without you leaving the page and confirming when an item is added.
+    -   username checks availability when registering for a website.
 *   
 
