@@ -2872,5 +2872,7 @@
         *   In JSON the key should be placed in double quotes.
         *   Key is separated from its value by a colon:
         *   each key/value pair is separated by a comma. However, note that there is no comma after the last pair.
+*   Loading HTML with Ajax
+    -   HTML is the easiest type of data to add into a page using Ajax. The browser renders it just like any other HTML. The CSS rules for the rest fo the page are applied to the new content.
 *   
 
