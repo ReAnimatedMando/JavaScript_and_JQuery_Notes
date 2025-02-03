@@ -2851,5 +2851,18 @@
         *   The browser requests information from the server > The server responds with data, HTML, XML, or JSON > the browser processes the content and adds it to the page.
 *   Handling Ajax Requests & Responses
     -   To create an Ajax request, browsers use the XMLHttpRequest object. When the server responds to the browser's request, the same object will process the result.
+*   Data Formats 
+    -   The response to an Ajax request usually comes in one of three forms;
+        *   HTML - you are probably most familiar with HTML and when you want to update a section of a web page, it is the simplest way to get data into a page.
+            -   It's easy to write, request and display.
+            -   the data sent from the server goes straight into the page.
+        *   XML - looks similar to HTML but the tag names are different because they describe the data that they contain. The syntax is also more strict.
+            -   It is a flexible data format and can represent complex structures.
+            -   It works well with different platforms and applications.
+            -   It is processed using the same DOM methods as HTML.
+        *   JSON -  JavaScript Object Notation uses a similar syntax to object literal notation in order to represent data.
+            -   It can be called from any domain.
+            -   It is more concise than HTML & XML
+            -   It is commonly used with javascript and is gaining wider use.
 *   
 
