@@ -2867,5 +2867,10 @@
 *   XML - Extensible Markup Language 
     -   XML looks a lot like HTML, but the tags contain different words. The purpose of the tags is to describe the kind of data that they hold.
     -   events, locations, date, map.. You can see that the data describes specific information by the tag.
+*   JSON: JavaScript Object Notation
+    -   Data can be formatted using JSON, it looks very similar to object literal syntax but it is not an object.
+        *   In JSON the key should be placed in double quotes.
+        *   Key is separated from its value by a colon:
+        *   each key/value pair is separated by a comma. However, note that there is no comma after the last pair.
 *   
 
