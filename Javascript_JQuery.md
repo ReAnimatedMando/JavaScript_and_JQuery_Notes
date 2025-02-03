@@ -2864,5 +2864,8 @@
             -   It can be called from any domain.
             -   It is more concise than HTML & XML
             -   It is commonly used with javascript and is gaining wider use.
+*   XML - Extensible Markup Language 
+    -   XML looks a lot like HTML, but the tags contain different words. The purpose of the tags is to describe the kind of data that they hold.
+    -   events, locations, date, map.. You can see that the data describes specific information by the tag.
 *   
 
