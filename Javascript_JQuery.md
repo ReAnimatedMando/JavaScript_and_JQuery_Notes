@@ -2879,5 +2879,13 @@
 *   Loading JSON with Ajax
     -   The request for JSON data uses the same syntax you saw in the requests for HTML & XML data. When the server responds, the JSON will be converted into HTML.
     -   DESERIALIZING - is the process of taking the JSON which is transmitted as a string, and converting it into a JavaScript object.
+*   Working with Data from other servers
+    -   Ajax works smoothly with data from your own server but - for security reasons - browsers do not load Ajax responses from other domains. There are 3 common workarounds...
+        *   A proxy file on the web server
+            -   The first way to load data from a remote server is to create a file on YOUR server that collects the data from the remote server. The other pages then request the data from your server. This is called proxy because it acts on behalf of the other page.
+        *   JSONP 
+            -   Involves adding a script element into the page, which loads JSON data from another server. The script contains a call to a function, and the JSON-formatted data is provided as an argument to that function.
+        *   Cross-Origin Resource Sharing
+            -   Everytime a browser and server communicate, they send information to each other using HTTP headers. CORS involves adding extra information to the HTTP headers to let the browser and server know that they should be communicating with each other.
 *   
 
