@@ -2887,5 +2887,8 @@
             -   Involves adding a script element into the page, which loads JSON data from another server. The script contains a call to a function, and the JSON-formatted data is provided as an argument to that function.
         *   Cross-Origin Resource Sharing
             -   Everytime a browser and server communicate, they send information to each other using HTTP headers. CORS involves adding extra information to the HTTP headers to let the browser and server know that they should be communicating with each other.
+*   How JSONP Works 
+    -   First, the page must include a function to process the JSON data. It then requests the data from the server using a <script> element.
+    -   The server returns a file that calls the function that processes the data. The JSON data provided as an argument to that function.
 *   
 
