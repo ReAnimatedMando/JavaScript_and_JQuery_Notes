@@ -2910,4 +2910,9 @@
             -   .fail() - Code to run if request was unsuccessful
             -   .always() - Code to run if request succeeded or failed
             -   .abort() - Halt the communication
+*   Loading HTML into a jQuery page
+    -   The .load() method is the simplest of the jQuery Ajax methods. It can only be used to load HTML from the server, but when the server responds, the HTML is then loaded into the jQuery Selection for you.
+        *   You start by selecting the element that you want the HTML code to appear inside.
+        *   Then you use the .load() method to specify the URL of the HTML page to load.
+        *   You can specify that you want to load only part of the page rather than the whole page.
 *   
