@@ -2890,5 +2890,12 @@
 *   How JSONP Works 
     -   First, the page must include a function to process the JSON data. It then requests the data from the server using a <script> element.
     -   The server returns a file that calls the function that processes the data. The JSON data provided as an argument to that function.
+*   JQuery & Ajax Requests
+    -   jQuery provides several methods that handle Ajax requests. Just like other examples in this chapter, the process involves two steps: making a request and handling the response.
+        *   .load() - Loads HTML fragments into an element. It is the simplest method for retrieving data.
+        *   $.get() - Loads data using the HTTP GET method. Used to request data from the server.
+        *   $.post() - Loads data using the HTTP POST method. Used to send data that updates data on the server.
+        *   $.getJSON() - Loads JSON data using a GET request. Used for JSON data.
+        *   $.getScript() - Loads and executes JavaScript data using GET. Used for JavaScript.
+        *   $.ajax() - This method is used to perform all requests. The above methods all use this under the hood.
 *   
-
