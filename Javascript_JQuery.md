@@ -2898,4 +2898,16 @@
         *   $.getJSON() - Loads JSON data using a GET request. Used for JSON data.
         *   $.getScript() - Loads and executes JavaScript data using GET. Used for JavaScript.
         *   $.ajax() - This method is used to perform all requests. The above methods all use this under the hood.
+*   JQuery & Ajax Responses
+    -   When using the .load() method, the HTML returned from the server is inserted into a jQuery selection. For other methods, you specify what should be done when the data that is returned using the jqXHR object.
+        *   JQXHR PROPERTIES 
+            -   responseText - Text-based data returned
+            -   responseXML - XML data returned 
+            -   status - Status code
+            -   statusText - Status description
+        *   JQXHR METHODS 
+            -   .done() - Code to run if request was successful
+            -   .fail() - Code to run if request was unsuccessful
+            -   .always() - Code to run if request succeeded or failed
+            -   .abort() - Halt the communication
 *   
