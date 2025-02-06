@@ -2927,4 +2927,13 @@
             -   selects all of the information from the form.
             -   puts it into a string ready to send to the server
             -   encodes characters that cannot be used in a query string 
+*   Loading JSON & Handling Ajax Errors 
+    -   You can load JSON data using the $.getJSON method. There are also methods that help you deal with the response if it fails.
+    -   Loading 
+        *   If you want to load JSON data, there is a method called $.getJSON which will retrieve JSON from the same server that the page is from.
+    -   Ajax and errors
+        *   Occassionally a request for a web page will fail and Ajax requests are no exception. jQuery provides two methods that can trigger code depending on whether the request was successful or not.
+        *   .done() - an event method that fires when the request has successfully completed
+        *   .fail() - an event method that fires when the request did not complete successfully
+        *   .always() - an event method that fires when the request has completed whether successful or not
 *   
