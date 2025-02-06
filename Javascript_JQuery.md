@@ -2915,4 +2915,9 @@
         *   You start by selecting the element that you want the HTML code to appear inside.
         *   Then you use the .load() method to specify the URL of the HTML page to load.
         *   You can specify that you want to load only part of the page rather than the whole page.
+*   jQuery's Ajax Shorthand
+    -   $.get(url[, data][, callback][, type]) - to get request for data 
+    -   $.post(url[, data][, callback][, type]) - to update data on the server 
+    -   $.getJSON(url[, data][, callback]) - data using a GET request 
+    -   $.getScript(url[, data][, callback]) - loads and executes javascript
 *   
