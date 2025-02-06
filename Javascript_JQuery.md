@@ -2920,4 +2920,11 @@
     -   $.post(url[, data][, callback][, type]) - to update data on the server 
     -   $.getJSON(url[, data][, callback]) - data using a GET request 
     -   $.getScript(url[, data][, callback]) - loads and executes javascript
+*   Sending Forms Using Ajax 
+    -   To send data to the server, you are likely to use the .post method. jQuery also provides the .serialize method to collect form data.
+        *   The HTTP POST method is often used when sending form data to a server and it has a corresponding function, the .post method. It takes the same parameters as the .get method.
+        *   jQuery's .serialized method:
+            -   selects all of the information from the form.
+            -   puts it into a string ready to send to the server
+            -   encodes characters that cannot be used in a query string 
 *   
