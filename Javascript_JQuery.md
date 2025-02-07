@@ -2936,4 +2936,15 @@
         *   .done() - an event method that fires when the request has successfully completed
         *   .fail() - an event method that fires when the request did not complete successfully
         *   .always() - an event method that fires when the request has completed whether successful or not
+*   Ajax Requests with Fine-Grained Control 
+    -   The $.ajax() methods gives you greater control over Ajax requests. Behind the scenes, this method is used by all of jQuery's Ajax shorthand methods.
+    -   With over 30 different settings that you can use to control Ajax requests...
+        *   type - Can take values GET or POST depending on whether the request is made using HTTP GET or POST.
+        *   url - The page the request is being sent to    
+        *   data - The data that is being sent to the server with the request 
+        *   success - A function that runs if the Ajax request completes
+        *   error - A function that runs if there is an error with the Ajax request 
+        *   beforeSend - A function that is run before Ajax request starts 
+        *   complete - Runs after success/error events 
+        *   timeout - The number of milliseconds to wait before the event should fail 
 *   
