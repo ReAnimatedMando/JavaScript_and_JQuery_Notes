@@ -2952,4 +2952,8 @@
     -   Browsers, the DOM is and API. It allows scripts to access and update contents of a web page while loaded in the browser.
     -   Scripts, jQueryis a JavaScript file with an API. It allows you to select elements then use its methods to work with those elements.
     -   Platforms, Sites such as Facebook, Google, and Twitter open up their platforms so that you can access and update data they store.
+*   What the API can do?
+    -   You do not always need to know how a script or program works, as long as you know how to ask it to do something, and how to process its response.
+    -   If there is a script or program that offers functionality you need, consider using it rather than writing something yourself.
+    -   You just need to understand what the API allows you to do, how to access it, and what format to expect replies.
 *   
