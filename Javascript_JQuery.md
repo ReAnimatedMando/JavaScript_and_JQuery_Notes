@@ -2956,4 +2956,7 @@
     -   You do not always need to know how a script or program works, as long as you know how to ask it to do something, and how to process its response.
     -   If there is a script or program that offers functionality you need, consider using it rather than writing something yourself.
     -   You just need to understand what the API allows you to do, how to access it, and what format to expect replies.
+*   Feature Detection
+    -   When you write code that uses API's, you may need to check if the browser supports that feature.
+    -   It is possible to check whether a browser supports an object using a conditional statement.
 *   
