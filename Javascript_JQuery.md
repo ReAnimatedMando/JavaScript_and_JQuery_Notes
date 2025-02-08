@@ -2947,4 +2947,9 @@
         *   beforeSend - A function that is run before Ajax request starts 
         *   complete - Runs after success/error events 
         *   timeout - The number of milliseconds to wait before the event should fail 
+*   UI & API
+    -   User interfaces allow humans to interact with programs. Application Programming Interfaces (API's) let programs talk to eachother.
+    -   Browsers, the DOM is and API. It allows scripts to access and update contents of a web page while loaded in the browser.
+    -   Scripts, jQueryis a JavaScript file with an API. It allows you to select elements then use its methods to work with those elements.
+    -   Platforms, Sites such as Facebook, Google, and Twitter open up their platforms so that you can access and update data they store.
 *   
