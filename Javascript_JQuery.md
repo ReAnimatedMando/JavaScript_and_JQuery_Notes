@@ -2959,4 +2959,8 @@
 *   Feature Detection
     -   When you write code that uses API's, you may need to check if the browser supports that feature.
     -   It is possible to check whether a browser supports an object using a conditional statement.
+*   Modernizer
+    -   Modernizr is a script you can use in your pages to tell whether the browser supports features of HTML, CSS, & JavaScript.
+    -   You do need to download the script from the modernizr website. 
+    -   Then you include it in your script.
 *   
