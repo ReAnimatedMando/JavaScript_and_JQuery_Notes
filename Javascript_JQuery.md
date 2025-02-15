@@ -2963,4 +2963,16 @@
     -   Modernizr is a script you can use in your pages to tell whether the browser supports features of HTML, CSS, & JavaScript.
     -   You do need to download the script from the modernizr website. 
     -   Then you include it in your script.
+*   Geolocation API: Finding Users' Locations
+    -   An increasing number of sites offer extra functionality to users who disclose their location. The users' location can be requested using the Geolocation API.
+        *   Lets users share their location with websites. 
+        *   Location data is provided in the form of latitude and longitude.
+        *   Geolocation API is available by default in any browser that supports it. 
+    -   Requesting a user's location
+        *   is it supported?
+        *   call method: navigator.geolocation.getCurrentPosition()
+        *   if not supported then run statements that do not use geolocation.
+    -   Processing the resonse 
+        *   success? returns objects, position and position coordinates
+        *   failure? returns object, position error.
 *   
