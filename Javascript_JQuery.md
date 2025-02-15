@@ -2988,4 +2988,13 @@
         *   Position.coords.heading - degrees clockwise from north
         *   Position.coords.speed - speed in meters per second
         *   Position.coords.timestamp - time since created
+*   Web Storage API: Storing Data in Browsers
+    -   Web storage lets you store data in the browser. There are two types of storage, local and session.
+        *   To save an item into the storage object you use the setItem() method.
+            -   The two parameters taken are the name of the key and the value associated with it. 
+                *   localStorage.setItem('age', '12')
+        *   To access info and store in variable
+            -   let age = localStorage.getItem('age')
+        *   Number of items stored 
+            -   let items = localStorage.length 
 *   
