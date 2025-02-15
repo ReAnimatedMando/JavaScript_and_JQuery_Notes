@@ -2975,4 +2975,17 @@
     -   Processing the resonse 
         *   success? returns objects, position and position coordinates
         *   failure? returns object, position error.
+*   The Geolocation API 
+    -   method  
+        *   getCurrentPosition(success, fail)
+            -   returns - requests position of user, if user permits, returns the users' lat and long and other location info. if fail, no location returned.
+    -   property    
+        *   Position.coords.latitude - lat in decimal degrees
+        *   Position.coords.longitude - long in decimal degrees
+        *   Position.coords.accuracy - accuracy of lat and long in meters
+        *   Position.coords.altitude - meters above sea level
+        *   Position.coords.altitudeAccurace - accuracy of alt in meters
+        *   Position.coords.heading - degrees clockwise from north
+        *   Position.coords.speed - speed in meters per second
+        *   Position.coords.timestamp - time since created
 *   
