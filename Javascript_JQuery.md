@@ -2997,4 +2997,13 @@
             -   let age = localStorage.getItem('age')
         *   Number of items stored 
             -   let items = localStorage.length 
+    -   Properties
+        *   setItem - creates new key/value pair
+        *   getItem - gets the value for the specified key 
+        *   removeItem - removes the key/value pair for the specified key 
+        *   clear - clears all information from that storage object 
+        *   length - number of keys 
+*   History API & Pushstate
+    -   If you move from one page to another, the browser's history remembers which pages you visited. But Ajax applications do not load new pages, so they can use the history API to update the location bar and history. This enables you to use back and forward buttons to revisit pages after you have left them.
+    -   You can update the browsers history stack using the pushState() and replaceState() methods. Extra information can be stored with each item.
 *   
