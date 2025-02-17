@@ -3010,4 +3010,12 @@
     -   pushState() adds an entry to the history object. 
     -   replaceState() updates the current entry.
         *   Both take the same three parameters... state, title, url
+*   The History Object
+    -   history.back() - takes you back in the history, i.e. the browsers back button
+    -   history.forward() - takes you forward in the history, i.e. the browsers forward button
+    -   history.go() - takes you to a specific page in the history
+    -   history.pushState() - adds an item to the history stack
+    -   history.replaceState() - does the same as pushState except it modifies the current history
+    -   length - property tells you how many items are in the history object
+    -   window.onpopstate - used to handle the user moving backwards or forwards
 *   
