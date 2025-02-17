@@ -3006,4 +3006,8 @@
 *   History API & Pushstate
     -   If you move from one page to another, the browser's history remembers which pages you visited. But Ajax applications do not load new pages, so they can use the history API to update the location bar and history. This enables you to use back and forward buttons to revisit pages after you have left them.
     -   You can update the browsers history stack using the pushState() and replaceState() methods. Extra information can be stored with each item.
+*   Adding information to the history object
+    -   pushState() adds an entry to the history object. 
+    -   replaceState() updates the current entry.
+        *   Both take the same three parameters... state, title, url
 *   
