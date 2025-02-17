@@ -3022,4 +3022,8 @@
     -   There are hundreds of scripts available for free on the web. Many have an API you need to use to get them to work for you.
     -   These scripts are shared by devs 
     -   It can pay to check if someone else has already done the hard work for you. However, it's wise to check if it has been updated fairly recently, that the javaScript is separate from the HTML, and if reviews of the script are available.
+*   jQuery UI
+    -   The jQuery foundation maintain its own set of jQuery plugins called jQuery UI. They help create user interfaces.
+        *   Widgets, effects, and interactions include some of the plugins that include the methods to create these.
+    -   First you must include jQuery in your page, then include the jQuery UI script. The syntax is very similar to using other jQuery methods.
 *   
