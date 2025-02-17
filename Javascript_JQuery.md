@@ -3018,4 +3018,8 @@
     -   history.replaceState() - does the same as pushState except it modifies the current history
     -   length - property tells you how many items are in the history object
     -   window.onpopstate - used to handle the user moving backwards or forwards
+*   Scrips w/ API's
+    -   There are hundreds of scripts available for free on the web. Many have an API you need to use to get them to work for you.
+    -   These scripts are shared by devs 
+    -   It can pay to check if someone else has already done the hard work for you. However, it's wise to check if it has been updated fairly recently, that the javaScript is separate from the HTML, and if reviews of the script are available.
 *   
