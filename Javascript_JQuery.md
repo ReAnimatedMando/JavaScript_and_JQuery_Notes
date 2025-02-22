@@ -3026,4 +3026,6 @@
     -   The jQuery foundation maintain its own set of jQuery plugins called jQuery UI. They help create user interfaces.
         *   Widgets, effects, and interactions include some of the plugins that include the methods to create these.
     -   First you must include jQuery in your page, then include the jQuery UI script. The syntax is very similar to using other jQuery methods.
+*   Angularjs
+    -   AngularJS is a framework that makes it easier to create web apps. In particular, it assists in creating apps that write, read, update, and delete data in a database on a server.
 *   
