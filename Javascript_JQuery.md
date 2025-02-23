@@ -3033,4 +3033,6 @@
     -   Features such as allowing people to like sites or add comments, include maps on your page, display your latest tweets on your page or send new tweets.
     -   You can access these by including a script they provide on your page. That script will typically create an object, like jQuery. That object will have methods and properties you can access.
     -   The syntax varies from platform to platform.
+*   Google Maps API's
+    -   Currently, one of the most popular API's in use on the web is the Google Maps API, which allows you to add their maps to your page.
 *   
