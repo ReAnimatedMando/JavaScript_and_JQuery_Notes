@@ -3028,4 +3028,9 @@
     -   First you must include jQuery in your page, then include the jQuery UI script. The syntax is very similar to using other jQuery methods.
 *   Angularjs
     -   AngularJS is a framework that makes it easier to create web apps. In particular, it assists in creating apps that write, read, update, and delete data in a database on a server.
+*   Platform API's
+    -   Many large websites expose their API's that allow you to access and update the data on their sites, including Facebook, Google, and Twitter.
+    -   Features such as allowing people to like sites or add comments, include maps on your page, display your latest tweets on your page or send new tweets.
+    -   You can access these by including a script they provide on your page. That script will typically create an object, like jQuery. That object will have methods and properties you can access.
+    -   The syntax varies from platform to platform.
 *   
