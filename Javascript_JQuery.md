@@ -3037,4 +3037,6 @@
     -   Currently, one of the most popular API's in use on the web is the Google Maps API, which allows you to add their maps to your page.
 *   JavaScript can be hard to learn and everyone makes mistakes when writing it. This chapter will help you learn how to find the errors in your code. It will also teach you how to write scripts that deal with potential errors gracefully.
     -   When you are writing JavaScript, do not expect to write it perfectly the first time. Programming is like problem solving: you are given a puzzle and not only do you have to solve it, but you also need to create the instructions that allow the computer to solve it too.
-*   
+*   Order Of Execution 
+    -   To find the source of an error, it helps to know how scripts are processed. The order in which statements are executed can be complex; some tasks cannot complete until another statement or function has been run.
+    
