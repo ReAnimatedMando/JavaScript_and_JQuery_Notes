@@ -3050,4 +3050,11 @@
         *   The first two execution contexts correspond with the notion of scope.
             -   Global Scope - If a variable is declared outside a function, it can be used anywhere because it has global scope. If you do not use the var keyword when creating a variable, it is placed in global scope.
             -   Function Level Scope - When a variable is declared within a function it can only be used within that function. This is because it has function-level scope.
+*   The Stack 
+    -   The JavaScript interpreter processes one line of code at a time. When a statement needs data from another function, it stacks, or piles, the new function on top of the current task.
+        *   When a statement has to call some other code in order to do its job, the new task goes to the top of the pile of things to do.
+        *   Once the new task has been performed, the interpreter can go back to the task at hand.
+        *   Each time a new item is added to the stack, it creates a new execution context.
+        *   Variables defined in a function are only available in that function.
+        *   If a function gets called a second time, the variables can have different values.
 *   
