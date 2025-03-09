@@ -3057,4 +3057,8 @@
         *   Each time a new item is added to the stack, it creates a new execution context.
         *   Variables defined in a function are only available in that function.
         *   If a function gets called a second time, the variables can have different values.
+*   Execution Context & Hoisting
+    -   Each time a script enters a new execution context, there are two phases of activity.
+        *   Prepare - new scope is created > Variables, functions, and arguments are created.
+        *   Execute - Now it can assign values to variables > Reference functions and run their code > Execute statements
 *   
