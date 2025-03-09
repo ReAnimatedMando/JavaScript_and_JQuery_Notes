@@ -3061,4 +3061,8 @@
     -   Each time a script enters a new execution context, there are two phases of activity.
         *   Prepare - new scope is created > Variables, functions, and arguments are created.
         *   Execute - Now it can assign values to variables > Reference functions and run their code > Execute statements
+*   Understanding Scope
+    -   In the interpreter, each execution context has its own variables object. It holds the variables, functions, and parameters available within it. Each execution context can also access its parent's variables object.
+    -   Functions in JavaScript are said to have lexical scope. They are linked to the object they were defined within.
+        *   Children can ask the parents for information in their variables but the parents cannot get variables from their children. Each child will get the same answer from the parent.
 *   
