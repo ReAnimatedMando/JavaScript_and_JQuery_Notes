@@ -3065,4 +3065,6 @@
     -   In the interpreter, each execution context has its own variables object. It holds the variables, functions, and parameters available within it. Each execution context can also access its parent's variables object.
     -   Functions in JavaScript are said to have lexical scope. They are linked to the object they were defined within.
         *   Children can ask the parents for information in their variables but the parents cannot get variables from their children. Each child will get the same answer from the parent.
+*   Understanding Errors
+    -   If a JavaScript statement generates an error, then it throws an exception. At that point, the interpreter stops and looks for exception handling code. If you are anticipating that something in your code may cause an error, you can use a set of statements to handle the error.
 *   
