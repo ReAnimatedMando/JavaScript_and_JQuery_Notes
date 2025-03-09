@@ -3067,4 +3067,9 @@
         *   Children can ask the parents for information in their variables but the parents cannot get variables from their children. Each child will get the same answer from the parent.
 *   Understanding Errors
     -   If a JavaScript statement generates an error, then it throws an exception. At that point, the interpreter stops and looks for exception handling code. If you are anticipating that something in your code may cause an error, you can use a set of statements to handle the error.
+*   Error Objects
+    -   Error objects can help you find where your mistakes are and browsers have tools to help you read them.
+    -   When an error object is created it will contain the name, message, fileNumber, and lineNumber properties. You can see all the information in the JavaScript console / error console of the browser.
+    -   There are 7 types of error objects in JavaScript... Error, SyntaxError, ReferenceError, TypeError, RangeError, URIError, and EvalError.
+    -   Error objects will vary from browser to browser.
 *   
