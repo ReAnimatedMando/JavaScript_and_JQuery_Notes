@@ -3076,4 +3076,12 @@
     -   Now that you know what an error is and how the browser treats them, there are two things you can do with the errors.
         *   Debug the script to fix the errors - track down the source of the error and fix it. 
         *   Handle errors gracefully - Use try, catch, throw, and finally statements.
+*   A Debugging Workflow
+    -   Debugging is about deduction: eliminating potential causes of an error. Here is a workflow for techniques you will meet over the next few pages of notes. Try to narrow down where the problem might be, then look for clues.
+    -   where is the problem? Especially important in a long script. 
+        *   Look at error message for relevant script.
+        *   Look for line number where it became a problem for your interpreter. 
+        *   Look at type error.
+    -   What exactly is the problem?
+        *   Actual line code causing the error.
 *   
