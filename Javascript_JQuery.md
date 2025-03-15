@@ -3084,4 +3084,7 @@
         *   Look at type error.
     -   What exactly is the problem?
         *   Actual line code causing the error.
+*   Browser Dev Tools & JavaScript Console.
+    -   The JS console will tell you when there is a problem with a script, where to look for the problem, and what kind of issue it seems to be. 
+    -   The JS console is just one of several dev tools that are found in modern browsers.
 *   
