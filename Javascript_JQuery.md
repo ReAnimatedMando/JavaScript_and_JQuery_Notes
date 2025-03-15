@@ -3072,4 +3072,8 @@
     -   When an error object is created it will contain the name, message, fileNumber, and lineNumber properties. You can see all the information in the JavaScript console / error console of the browser.
     -   There are 7 types of error objects in JavaScript... Error, SyntaxError, ReferenceError, TypeError, RangeError, URIError, and EvalError.
     -   Error objects will vary from browser to browser.
+*   How To Deal w/ Errors
+    -   Now that you know what an error is and how the browser treats them, there are two things you can do with the errors.
+        *   Debug the script to fix the errors - track down the source of the error and fix it. 
+        *   Handle errors gracefully - Use try, catch, throw, and finally statements.
 *   
