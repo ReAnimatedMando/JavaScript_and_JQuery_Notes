@@ -3092,4 +3092,6 @@
 *   Stepping Through Code 
     -   If you set multiple breakpoints, you can step through them one-by-one to see where values change and a problem might occur.
         *   When you set breakpoints, you will see that the debugger lets you step through the code line by line and see the values of variables as your script progresses. When you are doing this, if the debugger comes across a function, it will move onto the next line after the function. This is called stepping over the function. You can also tell the debugger to step into a function.
+*   Conditional Breakpoints
+    -   You can indicate that a breakpoint should be triggered only if a condition that you specify is met. The condition can use existing variables.
 *   
