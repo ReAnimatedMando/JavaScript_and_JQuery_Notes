@@ -3087,4 +3087,6 @@
 *   Browser Dev Tools & JavaScript Console.
     -   The JS console will tell you when there is a problem with a script, where to look for the problem, and what kind of issue it seems to be. 
     -   The JS console is just one of several dev tools that are found in modern browsers.
+*   Breakpoints 
+    -   You can pause the execution of a script on any line using breakpoints. Then you can check the values stored in variables at that point in time.
 *   
