@@ -3110,4 +3110,24 @@
     -   Search - stack overflow is a Q&A site for programmers.
     -   Code Playgrounds - If you want to ask about problematic code on a forum, in addition to pasting the code into a post, you could add it to a code playground such as jsbin.com.
     -   Validation tools.
+*   Common Errors - Here is a list of common errors you may find in your script.
+    -   Check your code for case sensitive errors
+    -   declaring variables with var
+    -   Check if a variables value is out of scope.
+    -   Do not use reserved words or dashes in variable names
+    -   Check your single and double quotes.
+    -   Check that you have escaped quotes in variable values.
+    -   Check your ID values in your HTML.
+    -   Missed/extra characters
+    -   every statement should end in a semicolon
+    -   missing closing braces or parentheses
+    -   accidental commas
+    -   always use parentheses to surround a condition you are testing
+    -   missing parameters when calling a function
+    -   null is for objects, undefined is for properties, methods, or variables.
+    -   check that script has loaded.
+    -   conflicts between different scripts.
+    -   data type issues
+    -   using = rather than == will assign a value to a variable not check that they match.
+    -   Try to use strict comparison ===
 *   
