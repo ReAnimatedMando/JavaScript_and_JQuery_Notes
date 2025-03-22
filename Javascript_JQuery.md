@@ -3102,4 +3102,12 @@
 *   Throwing Errors
     -   If you know something might cause a problem for your script, you can generate your own errors before the interpreter creates them... throw new Error('message');
         *   This creates a new error object. The parameter is the message you want associated with the error. This message should be as descriptive as possible.
+*   Debugging Tips - Here are a selection of practical tips that you can try to use when debugging your scripts.
+    -   Another Browser - some problems are browser specific.
+    -   Add numbers - Write numbers to the console so you can see which items get logged. It shows how far your code runs before errors stop it.
+    -   Strip it back - remove parts of code, and strip it down to the minimum you need. you can remove or code or comment it out.
+    -   Explaining the code - explain the code to someone else.
+    -   Search - stack overflow is a Q&A site for programmers.
+    -   Code Playgrounds - If you want to ask about problematic code on a forum, in addition to pasting the code into a post, you could add it to a code playground such as jsbin.com.
+    -   Validation tools.
 *   
