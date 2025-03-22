@@ -3099,4 +3099,7 @@
         *   try - to execute this code...
         *   Catch - if there is an exception, run this code...
         *   Finally - this always gets executed!
+*   Throwing Errors
+    -   If you know something might cause a problem for your script, you can generate your own errors before the interpreter creates them... throw new Error('message');
+        *   This creates a new error object. The parameter is the message you want associated with the error. This message should be as descriptive as possible.
 *   
